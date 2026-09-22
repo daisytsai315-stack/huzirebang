@@ -1,8 +1,8 @@
 # 2026-09-22 短篇市场快照
 
-## 短篇热榜例文-投稿168｜9月21日 知乎风短篇小说热榜
-- 公众号发布时间：2026-09-21
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+## 短篇热榜例文-投稿168｜9月22日 知乎风短篇小说热榜
+- 公众号发布时间：2026-09-22
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
 ### 知乎热门
 #### 1.《虞悠究竟选择谁》
@@ -17,48 +17,14 @@
 【也不知道女主宝宝选谁，反正都不亏。】
 我根据弹幕对男配们的评价。
 - 标签：追妻、弹幕、网恋
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 2.《淮雪》
-- 导语：打算跟暗恋对象告白那天。
-我意外穿越。
-来到十年后，发现自己不仅已婚，还贼有钱。
-正躺在医院病房里。
-有护士来提醒我，“江小姐，您老公过来看你了。”
-我茫然抬眼，跟推门而进的男人四目相对。
-“……”
-怎么是高中有名的高岭之花，跟我八竿子打不着的周临？
-他安静看着我。
-“我不知道你出车祸。”
-“也不是故意不管你，是你姐扭伤了脚，情况紧急，我送她来医院的时候，顾不上看手机。”
-我若有所思了会儿，点点头
-- 标签：穿越、婚姻
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
-
-#### 3.《白月光回港》
+#### 2.《白月光回港》
 - 导语：估计讲述女主回港，看见弹幕，得知自己是炮灰白月光，而男主失忆忘记女主，两人再次重逢男主还是爱上了她。女主和原女主联手打造事业，最后爱情事业双丰收的甜宠文。
 - 标签：弹幕、失忆、白月光
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 4.《开朝》
-- 导语：二十五岁那年，我给萧大头纳了第一个妾，嫁妆是一座城。
-二十六岁，我给他纳了第二个，嫁妆是十里粮仓。
-四十二岁，他纳了第十八个妾，人多得我已经记不住名字。
-而我从一个农妇，变成了大昭开国的皇后。
-- 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
-
-#### 5.《归雀来兮》
-- 导语：裴骁从边关凯旋时，带回一名医女。他称医女为救命恩人，皇帝大喜，竟将医女封作县主。满京上下都看得出裴骁待医女绝非寻常，等着看我的笑话。我想着大局为重，少生事端，原本只想着避开二人行事。谁料，那医女竟在庆功宴后主动向我搭话了。
-- 标签：古言
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
-
-#### 6.《恶毒炮灰死后他们却都后悔了》
-- 导语：因为万人迷师弟把法器给了我，魔物误把我认成大佬们的心上人，于是我被折磨死了。死后魂魄却没有消失反而被困在宗门看着他们。之后我还认识了和我同样处于魂体状态的司焰。一开始师尊师兄魔尊都对我的死表现得毫无波动，可渐渐的他们却后悔了，还想法设法地想要我活过来，却失败。我在和司焰的相处中也互生感情，我们在一起成为道侣。后来司焰魂魄归位活了，也给我重塑了身躯，我们幸福生活在一起渣男们则下场凄惨
-- 标签：追妻
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
-
-#### 7.《引导型真心》
+#### 3.《引导型真心》
 - 导语：我的自拍照下，忽然有人留言。
 【真有长这样的，我让我竹马开大G免费带你。】
 评论区嘻嘻哈哈：【大小姐，你太慷慨了。】
@@ -70,43 +36,42 @@
 【男主和女主赌气，说对你一见钟情，为了圆谎才跑来撩拨你的。】
 【等女主发完be
 - 标签：弹幕
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 8.《比妻管严更可怕的是妻不管》
-- 导语：清冷校草失忆后，不相信女主是他的病娇女友，拿一百万要和她分手，在男主失忆的三天里，女主发现了男主的秘密。原来他不是爱学习的好学生，并且非常富有，女主一步步深挖，才发现男主在暗中付出了很多，只是打着学习的幌子享受她极端的爱而已。男主恢复记忆之后，后悔莫及，而女主也教会了他，如何开展一段健康的恋爱关系。
-- 标签：追妻、失忆
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+#### 4.《韫迟》
+- 导语：跳槽新公司，上司正好是我的初恋。
+分手时，他说他从没爱过我，希望再见面时我们只是陌生人。
+再重逢，我只当我们是第一次见面，规规矩矩做自我介绍。
+晚上，部门同事打着给我迎新的名义，顺便聚餐。
+沈韫也在其中。
+几杯啤酒下肚，大家玩起真心话大冒险。
+我不幸中标。
+同事朝我狡黠一笑：“做好心理准备哦，我们玩的可都是成年人的话题。”
+“真心话，拿走你第一次的那个人，你还爱吗？”
+“大冒险，给你前任打个电话，
+- 标签：未自动识别
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 9.《重回遇见黄毛老公那天，我不要他了》
-- 导语：将黄毛培养成清冷霸总后的第七年，他回家越来越晚。
-又一次独守空房后，眼前飘过弹幕。
-【这么大的bug还没修复呢？女配和男主结婚了，女主咋办？】
-【男主现在天天跟女主一个办公室，真是差一步美满。】
-【别怕，系统那边回复明天bug修复，一切重新开始。】
-原来当初裴衍的同桌并不是我，因为我坐错了位置，才让他和官配女主错过。
-裴衍回来时，已经是深夜。
-他似乎有些意外我在家，眼睛忍不住亮起。
-“如果重来一次
-- 标签：重生、弹幕、婚姻
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+#### 5.《不是直男吗？怎么还哭着和你病娇哥哥抢我呀》
+- 导语：网恋男友第一次和我打视频时。
+我正好在洗澡。
+镜头不小心扫到腹下。
+男友愤怒至极。
+「宝宝！你浴室里的野男人是谁？」
+我一脸懵逼。
+他明明见过我的。
+难道，他以为我是女生吗？
+望着他愤怒的英俊面庞，我咬唇不安地说道：
+「就是我自己，我是男生呀。」
+男友脸色猛地一僵，好半天没有出声。
+我心狠狠往下一坠。
+就在我以为他是纯直男要分手时，他忽然弯唇笑道：
+「哈哈逗你玩的啦。」
+「小笨蛋这么不经吓，怎么办
+- 标签：网恋
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 10.《兰因难许》
-- 导语：皇帝爱上了我老婆。
-我是个无能的丈夫，只能拱手相让。
-老婆没了。
-我又娶了第二个。
-没多久，又被皇上夺了。
-我成了全京城最大的笑柄。
-后来，陛下召我入宫，目光痛苦而灼灼：
-「爱卿，朕想清楚了，朕是不愿看她们围着你！
-「或许，朕有龙阳之好。」
-等会儿。
-龙阳之好？
-可我是个女的。
-- 标签：古言、婚姻
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
-
-#### 11.《恐游世界偶遇前男友》
+#### 6.《恐游世界偶遇前男友》
 - 导语：不辞而别的第三年，我在恐游世界中偶遇前男友。
 彼时他名声大噪，身边也已经有了新的人。
 众人表面恭维，背后却将八卦传得风生水起：
@@ -120,27 +85,43 @@
 我压低帽檐，淡淡道：
 “羡慕呢。”
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 12.《匣中玉》
-- 导语：父亲定罪后。
-家人求到我面前。
-「只要他肯出面，说一句此案有疑情，父亲就能从死刑改判流放。」
-在他们来之前。
-我已经找过夫君无数次。
-如今。
-他为了避着我。
-已经不肯回家了。
-穷途末路之下。
-我只能找出当初我救下太子时。
-太子送我的那块玉佩。
-既然我的夫君刚正不阿。
-那我这个感天动地的孝女。
-只好换个能为我徇私枉法的夫君了。
+#### 7.《藕花深处》
+- 导语：我生来不驯礼教。
+曾在世家公子前，脱袜戏水。
+也曾与情郎私会，闹得声名狼藉。
+可偏偏，我是先帝钦定的太子妃。
+皇后为逼我退婚，召我入内，疾言厉色：
+“太子自小稳重，端方守礼。”
+“你这般寡廉鲜耻，怎配做他的妻子？”
+前世，我一气之下嫁入东宫。
+成亲后，卫询果然不喜我。
+他厌我轻浮，毫无国母仪态。
+更厌我霸道，六宫之内，只许他有一个女人。
+夫妻多年，从未给
 - 标签：古言
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 13.《高需求殿下看见弹幕后》
+#### 8.《我命真好啊》
+- 导语：上辈子给夫君白月光当替身。
+锦衣绫罗，山珍海味应有尽有。
+床笫间也屡屡强迫他配合我。
+日子过得滋润无比。
+夫君却日渐消瘦，内耗半生。
+临终前，他恨恨道：
+「我竟爱上了鱼目，合该去死。」
+「下辈子，莫要出现在我面前了。」
+谁管他？
+重生后，我照旧下山等冤大头来找我。
+可这次，他没有出现。
+却等来了侯府寻亲。
+要接我这个失散多年的二小姐回去享福。
+不是，我命咋这么好？
+- 标签：替身、重生、白月光、古言
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+
+#### 9.《高需求殿下看见弹幕后》
 - 导语：作为女尊国下一任女帝，我不得不克己复礼，禁欲疏离。
 好不容易娶了正夫，我心底里那点邪恶的心思藏不住了，整天都想把人往房间里带。
 我在书房看书，舒然来叫我用膳，我带回房间砰砰砰。
@@ -149,9 +130,9 @@
 我那么漂亮可爱的正夫，现如今显得格外憔悴，眼下都有了黑眼圈。
 可我只觉得可爱，正想
 - 标签：弹幕、女尊
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 14.《叩心无应》
+#### 10.《叩心无应》
 - 导语：和 BOSS 谈了九年地下恋。
 团建漂流，船翻了。
 他再一次下意识先救实习生。
@@ -163,39 +144,23 @@
 我淡笑附和：「期待吃到他们的喜糖。」
 抬眼，却对上封敛舟僵住的神情。
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 15.《韫迟》
-- 导语：跳槽新公司，上司正好是我的初恋。
-分手时，他说他从没爱过我，希望再见面时我们只是陌生人。
-再重逢，我只当我们是第一次见面，规规矩矩做自我介绍。
-晚上，部门同事打着给我迎新的名义，顺便聚餐。
-沈韫也在其中。
-几杯啤酒下肚，大家玩起真心话大冒险。
-我不幸中标。
-同事朝我狡黠一笑：“做好心理准备哦，我们玩的可都是成年人的话题。”
-“真心话，拿走你第一次的那个人，你还爱吗？”
-“大冒险，给你前任打个电话，
+#### 11.《秦少，不是不喜欢男的吗》
+- 导语：到现场时。
+秦家少爷正在和他姐姐吵架。
+「我说我喜欢男人只是搪塞爸妈，你莫名其妙给我找个男人相亲，问过我意见吗？那人到底给了你什么好处？」
+「见见呗，万一喜欢。」
+「放屁！我死也不可能喜欢男的，等人来了我就让他滚。我是绝对不会——」
+看见我，秦圆热情的招呼我过去。
+「顾屿，这儿！」
+男人目光一凝，话卡在了喉咙里。
+在他姐嘲讽的目光中，他梗着脖子继续说。
+「我绝对不会告诉你我的微信是名字全拼加三个六
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 16.《亡夫回魂》
-- 导语：我是古堡副本里的寡夫npc，疯狂思念早死的公爵老公。
-会把玩家当成自己早死的老公。
-掀起小裙子求摸摸。
-一旦被玩家拒绝，就恼怒驱逐他们。
-不拒绝，也驱逐，因为都不是我老公。
-可这天我早死的老公好像真得回来。
-但不止一个。
-- 标签：婚姻
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
-
-#### 17.《好女人》
-- 导语：在女尊世界中，众人都看不起男总裁，只有女主愿意娶男总裁。但男总裁只愿意和女主结婚，心里并不喜欢女主。后来女主展现人格魅力，男总裁爱上了女主，愿意为女主洗手做羹汤，不再当总裁。但女主认为他失去了魅力，进而厌恶了他。
-- 标签：女尊、豪门、婚姻
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
-
-#### 18.《悠悠我心》
+#### 12.《悠悠我心》
 - 导语：自入国公府，我谨小慎微，唯恐露怯。
 假千金姐姐说，花津蟹膏腴，让我尝尝。
 我不会吃，于是说不喜欢吃。
@@ -210,9 +175,25 @@
 我急中失智。
 “他家不是还有个小儿子吗？我嫁给他
 - 标签：真假千金
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 19.《渣了眼盲王爷后，我又被抓回来了》
+#### 13.《好女人》
+- 导语：在女尊世界中，众人都看不起男总裁，只有女主愿意娶男总裁。但男总裁只愿意和女主结婚，心里并不喜欢女主。后来女主展现人格魅力，男总裁爱上了女主，愿意为女主洗手做羹汤，不再当总裁。但女主认为他失去了魅力，进而厌恶了他。
+- 标签：女尊、豪门、婚姻
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+
+#### 14.《许我春朝》
+- 导语：我陪楚珣征战天下，登基之时，群臣请谏说我出身低微，当封他的贵女表妹为后。
+楚珣沉思，“谁能有孤的身份高贵，不如这样，阿芙为帝，孤为皇后，众爱卿这下可满
+意？”
+群臣战战兢兢后悔多嘴。
+帝王讽笑。
+他们怎么会明白，年少最是落魄至极时，楚珣带着满身的伤，跳了七次河。
+每一次，都被阿芙哼哧哼哧地捞起来了。
+- 标签：追妻
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+
+#### 15.《渣了眼盲王爷后，我又被抓回来了》
 - 导语：三年前，我穿成了眼盲王爷身边的小医师。
 不但治好了他的眼睛，还亲自治好了他的不举。
 之后我功成身退，抱着系统奖励的5000万回到了我原来的世界。
@@ -224,23 +205,70 @@
 我正坐在他院子外面纳闷。
 一张软萌的小脸突然好奇地凑过
 - 标签：穿越、古言
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
-#### 20.《木偶戏》
-- 导语：谢家世代以制作活偶的秘术闻名京州。
-我是谢临最喜欢的木偶，日日陪在他身边，形影不离。
-可直到那天林昭出现，我才知道自己原来是个仿冒的赝品。
-“这个疯子，原来真照着我做了个一模一样的。”
-他带着一脸发现新玩具的表情看着我。
-“不过既然真的回来了，假的也没必要留了。”
-说完，他把我从椅子上拽了下来。
-“你干什么！”
-我急道。
-下一秒，门外传来谢临熟悉的脚步声。
-林昭将我拖进旁边的小储藏室，留下了一道缝
-欢迎点亮【赞和推荐】，转发分享给更多朋友。关注本号，底部菜单查看更多榜单。
+#### 16.《好人仙君今天被骗了吗》
+- 导语：女主是新任妖王，但刚继位就身中剧毒，唯有男主的灵血能解毒。于是女主隐藏身份，伪装成刚开智的小妖碰瓷男主，想利用男主解毒，顺便借刀杀人解决叛徒。在充满谎言的相处中，两人都动了真心，直到女主身份暴露谎言被拆穿，决裂的二人因局势分道扬镳。最终二人坦白心意解开误会，两族也迎来了和平。
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/jT5xbMichMGT4oAlqtud_g
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+
+#### 17.《福星小皇后》
+- 导语：我是京城出了名的草包美人。
+只因国师金口玉言，说我能旺国运，便被一道圣旨送进了宫。
+新婚夜，皇帝冷着脸问我：“你父亲给国师许了多少好处？竟连国运都能儿戏？”
+我老老实实答道：“家里是阿娘管钱，我也不知。”
+皇帝气笑了，当即拂袖而走。
+可成婚第二日，旱了三年的西北降下甘霖。
+动荡的边疆战局，也一路打到了敌国王庭。
+就连一直受阻的新政，也得以顺利推行。
+- 标签：古言
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+
+#### 18.《容乔》
+- 导语：我少时毁容，及笄后，婚事无人问津。
+便偷了阿姐的婚书，赴京冒名嫁给了她的未婚夫谢栖远。
+婚后他待我极好，从不嫌我容貌有缺，反而四处请名医为我治脸。
+婆母偶有微词，他也总是挡在我前头。
+成亲三年，我们琴瑟和鸣，恩爱无猜。
+只是他常在书房对着阿姐的画像出神，偶尔温声安慰我。
+“在我心里，莲香的样貌从未变过。”
+我听得愈久，心里愈慌。
+怕脸好之后，他会发现我不是阿姐。
+恰逢他坠马失忆，阿姐登门揭穿。
+婆
+- 标签：失忆
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+
+#### 19.《穿成男主的恶毒养姐后》
+- 导语：救赎文女主传送失误。
+我这个对照组女配被迫顶上她的位置。
+一边扮演恶毒养姐pua聋哑男主。
+一边用女主的壳子传递温暖，治愈裴砚。
+渐渐地，男主对我这个养姐愈发厌恶。
+对女主却越来越亲近。
+系统夸我：【宿主你太厉害了，男女主马上就要按照剧情在一起了。】
+直到我不小心弄混了两具身体。
+在裴砚情绪低落的时候轻轻抱住他。
+语气温柔：「没关系，我会一直陪在你身边的。」
+男人身体瞬间僵硬。
+原本厌恶的神情也变
+- 标签：穿越
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+
+#### 20.《父皇，我真没想救这江山》
+- 导语：我十三岁那年进宫认亲，才知道自己的亲爹是皇帝。
+而我早在很多年前，就梦见过他的结局。
+七年后，大梁会亡，边关失守，京城兵乱，宫城会被一把大火烧尽。
+所以我给自己定了一个很朴素的目标——
+趁国还没亡，吃好喝好，多攒银子，再弄两条船。
+到时候，跑路。
+可我没想到，进宫第一天，我就发现宫里的衣裳贵得离谱。
+查着查着，查出了贪墨。
+后来嫌驿站送信太慢，又查出了空饷。
+再后来灾荒、边患、谋
+欢迎点亮【赞和推荐】，转发分享给更多朋友。关注本号，底部菜单查看更多榜单。
+- 标签：古言
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
 
 ### 编辑收文
 - 今日未检测到该栏目。
@@ -253,7 +281,7 @@
 
 ## 短篇热榜例文-投稿168｜9月22日 编辑收稿例文榜
 - 公众号发布时间：2026-09-22
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 ### 知乎热门
 - 今日未检测到该栏目。
@@ -275,7 +303,7 @@
 他顿了顿：“你怎么也学她们装病要钱了？”
 可就在前一天，他送了朋友一副
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 2.《金丝雀跑路了》
 - 导语：》
@@ -292,7 +320,7 @@
 「你爸妈在宋夏面前装穷这么久，就不心疼？」
 我哥反问：「那你玩儿她，你心疼了吗？」
 - 标签：豪门
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 3.《今日宜遐想》
 - 导语：》
@@ -311,7 +339,7 @@
 我回过神。
 眼前面
 - 标签：重生、婚姻
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 4.《过期承诺》
 - 导语：竹马是个哑巴，恰巧我胡懂一点手语。
@@ -324,12 +352,12 @@
 “那你喜欢谁，新来的转校生吗？”
 男生看我一眼，很迅速地摇了摇头，然后冲我打手
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 5.《恋爱狂徒》
 - 导语：我在网上刷到一则高赞追求攻略：男生不用追，叫上三个月老公，他自己就习惯了。我信以为真，直到遇见我哥舍友裴延，听说他被人骚扰乱叫老公，我才意识到自己好像是那个狂徒。而线下的相处也让我明白裴延并不喜欢我，所以我干脆自爆分手。但裴延却开始疯狂倒贴，变得步步紧逼、非我不可，而当初骚扰裴延的狂徒其实也另有其人……
 - 标签：婚姻
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 6.《春知晓梦》
 - 导语：京圈太子爷同时加了我和我室友的微信。
@@ -340,22 +368,22 @@
 可见面那天，他却看着我蹙了蹙眉。
 “怎么是你？”
 - 标签：古言、豪门、网恋
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 7.《假千金要抽我八百毫升熊猫血，可我真的是熊猫》
 - 导语：未提供
 - 标签：真假千金
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 8.《雪山之下，他的偏爱不再避嫌》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 9.《我没等到鲸跃，也没等到你》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 10.《我替她排了三小时厕所，他们却没等我三分钟》
 - 导语：街上温度还高，出了景区，天已经黑了。灵溪坐在副驾驶，低头看着手机：“咱们住的酒店附近有条夜市，要不吃了再回？”
@@ -366,27 +394,27 @@
 神言接话：“出来玩就玩尽兴嘛，待在酒店不就白出来了，你说对吧？”
 三
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 11.《公主拔了我的龙角后，才知道我是镇国玉玺》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 12.《分秒必争，独独不争我》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 13.《五减一，才是他们要的圆满》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 14.《中秋夜，妹妹为拍整蛊视频把我的哮喘喷雾换成玩具口哨》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 15.《来世不渡风雪中》
 - 导语：世人皆知，我妾室的身份是跪了三日求来的。入府当晚，曾许诺娶我为妻的九千岁格外粗暴，毫不疼惜地要了一次又一次。天亮后，我全家依旧下了大狱。
@@ -394,7 +422,7 @@
 他垂眸，一根根掰开我攥住他衣角的手指：“给本座生孩子，活一个，换一个。”
 我的家人被囚六年，我生下四个孩子却全都夭折。为了狱中的家人，我只能咬牙苦撑，一次次爬上他的床。
 - 标签：古言
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 16.《借出的爱，逾期不候》
 - 导语：许晚宁第三十七次打来电话，说想“借”我丈夫一天。
@@ -407,7 +435,7 @@
 回家后，我们却在电视的直播里看见了顾淮川。
 他穿着和
 - 标签：婚姻
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 17.《婚礼被风水师小青梅搅黄后，男友悔疯了》
 - 导语：男友的小青梅说自己是环境大师，婚礼当天，我刚下车，她忽然从人群里冲出来往我身上泼了一盆黑狗血。
@@ -415,12 +443,12 @@
 所有人都警惕地往后退，连陆云征都退出三米远。我还没解释，陆母尖叫出声：“我就说她怎么28了还不嫁人，原来是没人要等我儿子接盘！”
 指甲狠狠掐进肉里，我为什么28还没结婚，他们陆家人最清楚。第一年订婚，苏与彤一脚踹开订婚宴
 - 标签：婚姻、小青梅
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 18.《风吹散了第五人》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 19.《芙华簇锦》
 - 导语：我自小就怕不合群。
@@ -439,7 +467,7 @@
 螺子黛也送去了她宅子里。
 夫人们聚会，我
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 #### 20.《恶毒女配她娘来了》
 - 导语：庶妹夫家获罪，将独女崔钰莹托付给我。
@@ -453,7 +481,7 @@
 我故作惊讶：“你母亲只求我给你个容身之所，没说让你进侯府替我女儿当大小姐。”
 欢迎点亮【赞和推荐】，转发分享给更多朋友。关注本号，底部菜单查看更多榜单。
 - 标签：古言
-- 原文链接：https://mp.weixin.qq.com/s/xoremmxuonJz_QKgd1AXJg
+- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
 
 ### 趋势总结
 - 今日未检测到该栏目。

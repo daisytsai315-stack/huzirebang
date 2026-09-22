@@ -15,9 +15,11 @@ import re
 import sys
 import time
 import xml.etree.ElementTree as ET
+from http.cookiejar import CookieJar
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.request import Request, urlopen
+from urllib.parse import quote_plus
+from urllib.request import HTTPCookieProcessor, Request, build_opener, urlopen
 
 
 SECTION_TYPES = ("zhihu_hot", "submission_call", "example_text", "trend_summary")
@@ -65,6 +67,20 @@ def fetch_html(url: str, retries: int = 3, timeout: int = 30) -> str:
             if attempt + 1 < retries:
                 time.sleep(2 ** attempt)
     raise RuntimeError(f"无法读取 {url}: {last_error}")
+
+
+def make_session_opener():
+    return build_opener(HTTPCookieProcessor(CookieJar()))
+
+
+def fetch_with_opener(opener, url: str, timeout: int = 30, referer: str = "") -> str:
+    headers = {"User-Agent": USER_AGENT, "Accept-Language": "zh-CN,zh;q=0.9"}
+    if referer:
+        headers["Referer"] = referer
+    request = Request(url, headers=headers)
+    with opener.open(request, timeout=timeout) as response:
+        charset = response.headers.get_content_charset() or "utf-8"
+        return response.read().decode(charset, errors="replace")
 
 
 def first_group(pattern: str, text: str, flags: int = re.I | re.S) -> str:
@@ -205,6 +221,68 @@ def parse_rss_entries(feed_xml: str, limit: int = 10) -> list[dict]:
     return entries
 
 
+def parse_sogou_candidates(search_html: str, limit: int = 3) -> list[dict]:
+    """Extract public search-result jump links and snippets from Sogou WeChat search."""
+
+    pattern = re.compile(
+        r'<a(?=[^>]*id="sogou_vr_11002601_title_(\d+)")(?=[^>]*href="([^"]+)")[^>]*>(.*?)</a>'
+        r'.*?<p[^>]+class="txt-info"[^>]*>(.*?)</p>',
+        re.I | re.S,
+    )
+    candidates = []
+    for _, href, title_html, summary_html in pattern.findall(search_html):
+        candidates.append({
+            "title": clean_html_fragment(title_html),
+            "summary": clean_html_fragment(summary_html),
+            "jump_url": re.sub(r"\s+", "", html.unescape(href).replace("&amp;", "&")),
+        })
+        if len(candidates) >= limit:
+            break
+    return candidates
+
+
+def resolve_sogou_jump(opener, jump_url: str, search_url: str) -> str:
+    """Resolve Sogou's public JS redirect to the original WeChat article URL."""
+
+    absolute = jump_url if jump_url.startswith("http") else "https://weixin.sogou.com" + jump_url
+    jump_html = fetch_with_opener(opener, absolute, referer=search_url)
+    pieces = re.findall(r"url\s*\+=\s*'([^']*)'", jump_html)
+    target = "".join(pieces).replace("@", "")
+    if target.startswith("https://mp.weixin.qq.com/"):
+        return target
+    raise ValueError("搜狗结果未返回可用的公众号文章地址")
+
+
+def discover_sogou_articles(queries: list[str], max_items_per_query: int = 2, target_date: str = "") -> list[dict]:
+    discovered = []
+    seen = set()
+    target = dt.date.fromisoformat(target_date) if target_date else None
+    for query in queries:
+        opener = make_session_opener()
+        date_query = "{date}" in query
+        if target:
+            query = query.format(
+                date=f"{target.month}月{target.day}日",
+                month=target.month,
+                day=target.day,
+                year=target.year,
+            )
+        search_url = "https://weixin.sogou.com/weixin?type=2&query=" + quote_plus(query)
+        search_html = fetch_with_opener(opener, search_url)
+        candidates = parse_sogou_candidates(search_html, max_items_per_query * 5)
+        if target and date_query:
+            marker = f"{target.month}月{target.day}日"
+            dated = [candidate for candidate in candidates if marker in candidate["title"] or marker in candidate["summary"]]
+            if dated:
+                candidates = dated
+        for candidate in candidates[:max_items_per_query]:
+            url = resolve_sogou_jump(opener, candidate["jump_url"], search_url)
+            if url not in seen:
+                seen.add(url)
+                discovered.append({"url": url, "query": query, "search_title": candidate["title"], "search_summary": candidate["summary"]})
+    return discovered
+
+
 def empty_sections() -> list[dict]:
     return [{"type": section_type, "items": []} for section_type in SECTION_TYPES]
 
@@ -249,7 +327,18 @@ def build_snapshot(sources: list[dict], snapshot_date: str) -> dict:
     errors = []
     for source in sources:
         discovered = []
-        if source.get("feed_url"):
+        if source.get("sogou_queries"):
+            try:
+                discovered = discover_sogou_articles(
+                    source["sogou_queries"],
+                    int(source.get("max_items_per_query", 2)),
+                    snapshot_date,
+                )
+                if not discovered:
+                    errors.append({"source_url": "搜狗微信搜索", "error": "没有发现匹配的公众号文章"})
+            except Exception as exc:
+                errors.append({"source_url": "搜狗微信搜索", "error": str(exc)})
+        elif source.get("feed_url"):
             try:
                 feed = fetch_html(source["feed_url"])
                 discovered = parse_rss_entries(feed, int(source.get("max_items", 10)))

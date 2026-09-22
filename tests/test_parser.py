@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from fetch_wechat import classify_article, parse_rss_entries, parse_source_html, parse_top_items  # noqa: E402
+from fetch_wechat import classify_article, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items  # noqa: E402
 
 
 class ParserTests(unittest.TestCase):
@@ -50,6 +50,16 @@ class ParserTests(unittest.TestCase):
         entries = parse_rss_entries(feed)
         self.assertEqual(entries[0]["title"], "今天的知乎热榜")
         self.assertEqual(entries[0]["url"], "https://mp.weixin.qq.com/s/today")
+
+    def test_sogou_candidates_keep_title_summary_and_jump_url(self):
+        search_html = """
+        <h3><a href="/link?url=abc&amp;type=2" id="sogou_vr_11002601_title_0">9月22日 <em>知乎风</em></a></h3>
+        <p class="txt-info">TOP 1 《测试作品》 简介片段</p>
+        """
+        candidates = parse_sogou_candidates(search_html)
+        self.assertEqual(candidates[0]["title"], "9月22日 知乎风")
+        self.assertEqual(candidates[0]["summary"], "TOP 1 《测试作品》 简介片段")
+        self.assertEqual(candidates[0]["jump_url"], "/link?url=abc&type=2")
 
 
 if __name__ == "__main__":
