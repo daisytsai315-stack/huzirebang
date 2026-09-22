@@ -1,8 +1,59 @@
 # 2026-09-22 短篇市场快照
 
+## 知乎热榜跨日变化
+
+- 比较：2026-09-21 → 2026-09-22
+
+### 一直在榜
+- 虞悠究竟选择谁：最近出现 3 次，当前第 1 名
+- 白月光回港：最近出现 3 次，当前第 2 名
+- 引导型真心：最近出现 3 次，当前第 3 名
+- 韫迟：最近出现 2 次，当前第 4 名
+- 恐游世界偶遇前男友：最近出现 3 次，当前第 6 名
+- 高需求殿下看见弹幕后：最近出现 3 次，当前第 9 名
+- 叩心无应：最近出现 3 次，当前第 10 名
+- 悠悠我心：最近出现 3 次，当前第 12 名
+- 好女人：最近出现 3 次，当前第 13 名
+- 渣了眼盲王爷后，我又被抓回来了：最近出现 2 次，当前第 15 名
+
+### 新上榜 / 异军突起
+- 5.《不是直男吗？怎么还哭着和你病娇哥哥抢我呀》
+- 7.《藕花深处》
+- 8.《我命真好啊》
+- 11.《秦少，不是不喜欢男的吗》
+- 14.《许我春朝》
+- 16.《好人仙君今天被骗了吗》
+- 17.《福星小皇后》
+- 18.《容乔》
+- 19.《穿成男主的恶毒养姐后》
+- 20.《父皇，我真没想救这江山》
+
+### 掉榜
+- 上一期第 2 名：《淮雪》
+- 上一期第 4 名：《开朝》
+- 上一期第 5 名：《归雀来兮》
+- 上一期第 6 名：《恶毒炮灰死后他们却都后悔了》
+- 上一期第 8 名：《比妻管严更可怕的是妻不管》
+- 上一期第 9 名：《重回遇见黄毛老公那天，我不要他了》
+- 上一期第 10 名：《兰因难许》
+- 上一期第 12 名：《匣中玉》
+- 上一期第 16 名：《亡夫回魂》
+- 上一期第 20 名：《木偶戏》
+
+### 排名变化
+- 《韫迟》：15 → 4
+- 《悠悠我心》：18 → 12
+- 《恐游世界偶遇前男友》：11 → 6
+- 《引导型真心》：7 → 3
+- 《高需求殿下看见弹幕后》：13 → 9
+- 《叩心无应》：14 → 10
+- 《好女人》：17 → 13
+- 《渣了眼盲王爷后，我又被抓回来了》：19 → 15
+- 《白月光回港》：3 → 2
+
 ## 短篇热榜例文-投稿168｜9月22日 知乎风短篇小说热榜
 - 公众号发布时间：2026-09-22
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 公众号榜单来源（仅溯源）：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 ### 知乎热门
 #### 1.《虞悠究竟选择谁》
@@ -17,12 +68,14 @@
 【也不知道女主宝宝选谁，反正都不亏。】
 我根据弹幕对男配们的评价。
 - 标签：追妻、弹幕、网恋
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E8%99%9E%E6%82%A0%E7%A9%B6%E7%AB%9F%E9%80%89%E6%8B%A9%E8%B0%81
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 2.《白月光回港》
 - 导语：估计讲述女主回港，看见弹幕，得知自己是炮灰白月光，而男主失忆忘记女主，两人再次重逢男主还是爱上了她。女主和原女主联手打造事业，最后爱情事业双丰收的甜宠文。
 - 标签：弹幕、失忆、白月光
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E7%99%BD%E6%9C%88%E5%85%89%E5%9B%9E%E6%B8%AF
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 3.《引导型真心》
 - 导语：我的自拍照下，忽然有人留言。
@@ -36,7 +89,8 @@
 【男主和女主赌气，说对你一见钟情，为了圆谎才跑来撩拨你的。】
 【等女主发完be
 - 标签：弹幕
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E5%BC%95%E5%AF%BC%E5%9E%8B%E7%9C%9F%E5%BF%83
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 4.《韫迟》
 - 导语：跳槽新公司，上司正好是我的初恋。
@@ -50,7 +104,8 @@
 “真心话，拿走你第一次的那个人，你还爱吗？”
 “大冒险，给你前任打个电话，
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E9%9F%AB%E8%BF%9F
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 5.《不是直男吗？怎么还哭着和你病娇哥哥抢我呀》
 - 导语：网恋男友第一次和我打视频时。
@@ -69,7 +124,8 @@
 「哈哈逗你玩的啦。」
 「小笨蛋这么不经吓，怎么办
 - 标签：网恋
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E4%B8%8D%E6%98%AF%E7%9B%B4%E7%94%B7%E5%90%97%EF%BC%9F%E6%80%8E%E4%B9%88%E8%BF%98%E5%93%AD%E7%9D%80%E5%92%8C%E4%BD%A0%E7%97%85%E5%A8%87%E5%93%A5%E5%93%A5%E6%8A%A2%E6%88%91%E5%91%80
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 6.《恐游世界偶遇前男友》
 - 导语：不辞而别的第三年，我在恐游世界中偶遇前男友。
@@ -85,7 +141,8 @@
 我压低帽檐，淡淡道：
 “羡慕呢。”
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E6%81%90%E6%B8%B8%E4%B8%96%E7%95%8C%E5%81%B6%E9%81%87%E5%89%8D%E7%94%B7%E5%8F%8B
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 7.《藕花深处》
 - 导语：我生来不驯礼教。
@@ -101,7 +158,8 @@
 更厌我霸道，六宫之内，只许他有一个女人。
 夫妻多年，从未给
 - 标签：古言
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E8%97%95%E8%8A%B1%E6%B7%B1%E5%A4%84
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 8.《我命真好啊》
 - 导语：上辈子给夫君白月光当替身。
@@ -119,7 +177,8 @@
 要接我这个失散多年的二小姐回去享福。
 不是，我命咋这么好？
 - 标签：替身、重生、白月光、古言
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E6%88%91%E5%91%BD%E7%9C%9F%E5%A5%BD%E5%95%8A
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 9.《高需求殿下看见弹幕后》
 - 导语：作为女尊国下一任女帝，我不得不克己复礼，禁欲疏离。
@@ -130,7 +189,8 @@
 我那么漂亮可爱的正夫，现如今显得格外憔悴，眼下都有了黑眼圈。
 可我只觉得可爱，正想
 - 标签：弹幕、女尊
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E9%AB%98%E9%9C%80%E6%B1%82%E6%AE%BF%E4%B8%8B%E7%9C%8B%E8%A7%81%E5%BC%B9%E5%B9%95%E5%90%8E
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 10.《叩心无应》
 - 导语：和 BOSS 谈了九年地下恋。
@@ -144,7 +204,8 @@
 我淡笑附和：「期待吃到他们的喜糖。」
 抬眼，却对上封敛舟僵住的神情。
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E5%8F%A9%E5%BF%83%E6%97%A0%E5%BA%94
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 11.《秦少，不是不喜欢男的吗》
 - 导语：到现场时。
@@ -158,7 +219,8 @@
 在他姐嘲讽的目光中，他梗着脖子继续说。
 「我绝对不会告诉你我的微信是名字全拼加三个六
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E7%A7%A6%E5%B0%91%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%B8%8D%E5%96%9C%E6%AC%A2%E7%94%B7%E7%9A%84%E5%90%97
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 12.《悠悠我心》
 - 导语：自入国公府，我谨小慎微，唯恐露怯。
@@ -175,12 +237,14 @@
 我急中失智。
 “他家不是还有个小儿子吗？我嫁给他
 - 标签：真假千金
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E6%82%A0%E6%82%A0%E6%88%91%E5%BF%83
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 13.《好女人》
 - 导语：在女尊世界中，众人都看不起男总裁，只有女主愿意娶男总裁。但男总裁只愿意和女主结婚，心里并不喜欢女主。后来女主展现人格魅力，男总裁爱上了女主，愿意为女主洗手做羹汤，不再当总裁。但女主认为他失去了魅力，进而厌恶了他。
 - 标签：女尊、豪门、婚姻
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E5%A5%BD%E5%A5%B3%E4%BA%BA
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 14.《许我春朝》
 - 导语：我陪楚珣征战天下，登基之时，群臣请谏说我出身低微，当封他的贵女表妹为后。
@@ -191,7 +255,8 @@
 他们怎么会明白，年少最是落魄至极时，楚珣带着满身的伤，跳了七次河。
 每一次，都被阿芙哼哧哼哧地捞起来了。
 - 标签：追妻
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E8%AE%B8%E6%88%91%E6%98%A5%E6%9C%9D
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 15.《渣了眼盲王爷后，我又被抓回来了》
 - 导语：三年前，我穿成了眼盲王爷身边的小医师。
@@ -205,12 +270,14 @@
 我正坐在他院子外面纳闷。
 一张软萌的小脸突然好奇地凑过
 - 标签：穿越、古言
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E6%B8%A3%E4%BA%86%E7%9C%BC%E7%9B%B2%E7%8E%8B%E7%88%B7%E5%90%8E%EF%BC%8C%E6%88%91%E5%8F%88%E8%A2%AB%E6%8A%93%E5%9B%9E%E6%9D%A5%E4%BA%86
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 16.《好人仙君今天被骗了吗》
 - 导语：女主是新任妖王，但刚继位就身中剧毒，唯有男主的灵血能解毒。于是女主隐藏身份，伪装成刚开智的小妖碰瓷男主，想利用男主解毒，顺便借刀杀人解决叛徒。在充满谎言的相处中，两人都动了真心，直到女主身份暴露谎言被拆穿，决裂的二人因局势分道扬镳。最终二人坦白心意解开误会，两族也迎来了和平。
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E5%A5%BD%E4%BA%BA%E4%BB%99%E5%90%9B%E4%BB%8A%E5%A4%A9%E8%A2%AB%E9%AA%97%E4%BA%86%E5%90%97
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 17.《福星小皇后》
 - 导语：我是京城出了名的草包美人。
@@ -222,7 +289,8 @@
 动荡的边疆战局，也一路打到了敌国王庭。
 就连一直受阻的新政，也得以顺利推行。
 - 标签：古言
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E7%A6%8F%E6%98%9F%E5%B0%8F%E7%9A%87%E5%90%8E
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 18.《容乔》
 - 导语：我少时毁容，及笄后，婚事无人问津。
@@ -237,7 +305,8 @@
 恰逢他坠马失忆，阿姐登门揭穿。
 婆
 - 标签：失忆
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E5%AE%B9%E4%B9%94
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 19.《穿成男主的恶毒养姐后》
 - 导语：救赎文女主传送失误。
@@ -253,7 +322,8 @@
 男人身体瞬间僵硬。
 原本厌恶的神情也变
 - 标签：穿越
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E7%A9%BF%E6%88%90%E7%94%B7%E4%B8%BB%E7%9A%84%E6%81%B6%E6%AF%92%E5%85%BB%E5%A7%90%E5%90%8E
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 #### 20.《父皇，我真没想救这江山》
 - 导语：我十三岁那年进宫认亲，才知道自己的亲爹是皇帝。
@@ -268,7 +338,8 @@
 再后来灾荒、边患、谋
 欢迎点亮【赞和推荐】，转发分享给更多朋友。关注本号，底部菜单查看更多榜单。
 - 标签：古言
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044975&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJbC4CG9XHxaGcIk93oC-ztLE8vywXxhfIVbIoX6uuhyRe5L7BR4A7-ZuJPUaXo9-Q&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E7%88%B6%E7%9A%87%EF%BC%8C%E6%88%91%E7%9C%9F%E6%B2%A1%E6%83%B3%E6%95%91%E8%BF%99%E6%B1%9F%E5%B1%B1
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkqI7IEGwwS7mukOH0OZO-sJomIEDb37TiGsvAxB0VyUaL9tbenHBub4*ZDkU*GuUJbBlv67mCInnn9YNWSCWECe&new=1
 
 ### 编辑收文
 - 今日未检测到该栏目。
@@ -281,7 +352,7 @@
 
 ## 短篇热榜例文-投稿168｜9月22日 编辑收稿例文榜
 - 公众号发布时间：2026-09-22
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 公众号榜单来源（仅溯源）：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 ### 知乎热门
 - 今日未检测到该栏目。
@@ -303,7 +374,8 @@
 他顿了顿：“你怎么也学她们装病要钱了？”
 可就在前一天，他送了朋友一副
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E4%B8%87%E5%88%86%E4%B9%8B%E4%B8%80%E7%88%B1
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 2.《金丝雀跑路了》
 - 导语：》
@@ -320,7 +392,8 @@
 「你爸妈在宋夏面前装穷这么久，就不心疼？」
 我哥反问：「那你玩儿她，你心疼了吗？」
 - 标签：豪门
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E9%87%91%E4%B8%9D%E9%9B%80%E8%B7%91%E8%B7%AF%E4%BA%86
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 3.《今日宜遐想》
 - 导语：》
@@ -339,7 +412,8 @@
 我回过神。
 眼前面
 - 标签：重生、婚姻
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E4%BB%8A%E6%97%A5%E5%AE%9C%E9%81%90%E6%83%B3
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 4.《过期承诺》
 - 导语：竹马是个哑巴，恰巧我胡懂一点手语。
@@ -352,12 +426,14 @@
 “那你喜欢谁，新来的转校生吗？”
 男生看我一眼，很迅速地摇了摇头，然后冲我打手
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E8%BF%87%E6%9C%9F%E6%89%BF%E8%AF%BA
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 5.《恋爱狂徒》
 - 导语：我在网上刷到一则高赞追求攻略：男生不用追，叫上三个月老公，他自己就习惯了。我信以为真，直到遇见我哥舍友裴延，听说他被人骚扰乱叫老公，我才意识到自己好像是那个狂徒。而线下的相处也让我明白裴延并不喜欢我，所以我干脆自爆分手。但裴延却开始疯狂倒贴，变得步步紧逼、非我不可，而当初骚扰裴延的狂徒其实也另有其人……
 - 标签：婚姻
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E6%81%8B%E7%88%B1%E7%8B%82%E5%BE%92
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 6.《春知晓梦》
 - 导语：京圈太子爷同时加了我和我室友的微信。
@@ -368,22 +444,26 @@
 可见面那天，他却看着我蹙了蹙眉。
 “怎么是你？”
 - 标签：古言、豪门、网恋
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E6%98%A5%E7%9F%A5%E6%99%93%E6%A2%A6
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 7.《假千金要抽我八百毫升熊猫血，可我真的是熊猫》
 - 导语：未提供
 - 标签：真假千金
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E5%81%87%E5%8D%83%E9%87%91%E8%A6%81%E6%8A%BD%E6%88%91%E5%85%AB%E7%99%BE%E6%AF%AB%E5%8D%87%E7%86%8A%E7%8C%AB%E8%A1%80%EF%BC%8C%E5%8F%AF%E6%88%91%E7%9C%9F%E7%9A%84%E6%98%AF%E7%86%8A%E7%8C%AB
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 8.《雪山之下，他的偏爱不再避嫌》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E9%9B%AA%E5%B1%B1%E4%B9%8B%E4%B8%8B%EF%BC%8C%E4%BB%96%E7%9A%84%E5%81%8F%E7%88%B1%E4%B8%8D%E5%86%8D%E9%81%BF%E5%AB%8C
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 9.《我没等到鲸跃，也没等到你》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E6%88%91%E6%B2%A1%E7%AD%89%E5%88%B0%E9%B2%B8%E8%B7%83%EF%BC%8C%E4%B9%9F%E6%B2%A1%E7%AD%89%E5%88%B0%E4%BD%A0
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 10.《我替她排了三小时厕所，他们却没等我三分钟》
 - 导语：街上温度还高，出了景区，天已经黑了。灵溪坐在副驾驶，低头看着手机：“咱们住的酒店附近有条夜市，要不吃了再回？”
@@ -394,27 +474,32 @@
 神言接话：“出来玩就玩尽兴嘛，待在酒店不就白出来了，你说对吧？”
 三
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E6%88%91%E6%9B%BF%E5%A5%B9%E6%8E%92%E4%BA%86%E4%B8%89%E5%B0%8F%E6%97%B6%E5%8E%95%E6%89%80%EF%BC%8C%E4%BB%96%E4%BB%AC%E5%8D%B4%E6%B2%A1%E7%AD%89%E6%88%91%E4%B8%89%E5%88%86%E9%92%9F
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 11.《公主拔了我的龙角后，才知道我是镇国玉玺》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E5%85%AC%E4%B8%BB%E6%8B%94%E4%BA%86%E6%88%91%E7%9A%84%E9%BE%99%E8%A7%92%E5%90%8E%EF%BC%8C%E6%89%8D%E7%9F%A5%E9%81%93%E6%88%91%E6%98%AF%E9%95%87%E5%9B%BD%E7%8E%89%E7%8E%BA
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 12.《分秒必争，独独不争我》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E5%88%86%E7%A7%92%E5%BF%85%E4%BA%89%EF%BC%8C%E7%8B%AC%E7%8B%AC%E4%B8%8D%E4%BA%89%E6%88%91
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 13.《五减一，才是他们要的圆满》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E4%BA%94%E5%87%8F%E4%B8%80%EF%BC%8C%E6%89%8D%E6%98%AF%E4%BB%96%E4%BB%AC%E8%A6%81%E7%9A%84%E5%9C%86%E6%BB%A1
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 14.《中秋夜，妹妹为拍整蛊视频把我的哮喘喷雾换成玩具口哨》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E4%B8%AD%E7%A7%8B%E5%A4%9C%EF%BC%8C%E5%A6%B9%E5%A6%B9%E4%B8%BA%E6%8B%8D%E6%95%B4%E8%9B%8A%E8%A7%86%E9%A2%91%E6%8A%8A%E6%88%91%E7%9A%84%E5%93%AE%E5%96%98%E5%96%B7%E9%9B%BE%E6%8D%A2%E6%88%90%E7%8E%A9%E5%85%B7%E5%8F%A3%E5%93%A8
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 15.《来世不渡风雪中》
 - 导语：世人皆知，我妾室的身份是跪了三日求来的。入府当晚，曾许诺娶我为妻的九千岁格外粗暴，毫不疼惜地要了一次又一次。天亮后，我全家依旧下了大狱。
@@ -422,7 +507,8 @@
 他垂眸，一根根掰开我攥住他衣角的手指：“给本座生孩子，活一个，换一个。”
 我的家人被囚六年，我生下四个孩子却全都夭折。为了狱中的家人，我只能咬牙苦撑，一次次爬上他的床。
 - 标签：古言
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E6%9D%A5%E4%B8%96%E4%B8%8D%E6%B8%A1%E9%A3%8E%E9%9B%AA%E4%B8%AD
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 16.《借出的爱，逾期不候》
 - 导语：许晚宁第三十七次打来电话，说想“借”我丈夫一天。
@@ -435,7 +521,8 @@
 回家后，我们却在电视的直播里看见了顾淮川。
 他穿着和
 - 标签：婚姻
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E5%80%9F%E5%87%BA%E7%9A%84%E7%88%B1%EF%BC%8C%E9%80%BE%E6%9C%9F%E4%B8%8D%E5%80%99
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 17.《婚礼被风水师小青梅搅黄后，男友悔疯了》
 - 导语：男友的小青梅说自己是环境大师，婚礼当天，我刚下车，她忽然从人群里冲出来往我身上泼了一盆黑狗血。
@@ -443,12 +530,14 @@
 所有人都警惕地往后退，连陆云征都退出三米远。我还没解释，陆母尖叫出声：“我就说她怎么28了还不嫁人，原来是没人要等我儿子接盘！”
 指甲狠狠掐进肉里，我为什么28还没结婚，他们陆家人最清楚。第一年订婚，苏与彤一脚踹开订婚宴
 - 标签：婚姻、小青梅
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E5%A9%9A%E7%A4%BC%E8%A2%AB%E9%A3%8E%E6%B0%B4%E5%B8%88%E5%B0%8F%E9%9D%92%E6%A2%85%E6%90%85%E9%BB%84%E5%90%8E%EF%BC%8C%E7%94%B7%E5%8F%8B%E6%82%94%E7%96%AF%E4%BA%86
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 18.《风吹散了第五人》
 - 导语：未提供
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E9%A3%8E%E5%90%B9%E6%95%A3%E4%BA%86%E7%AC%AC%E4%BA%94%E4%BA%BA
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 19.《芙华簇锦》
 - 导语：我自小就怕不合群。
@@ -467,7 +556,8 @@
 螺子黛也送去了她宅子里。
 夫人们聚会，我
 - 标签：未自动识别
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E8%8A%99%E5%8D%8E%E7%B0%87%E9%94%A6
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 #### 20.《恶毒女配她娘来了》
 - 导语：庶妹夫家获罪，将独女崔钰莹托付给我。
@@ -481,7 +571,8 @@
 我故作惊讶：“你母亲只求我给你个容身之所，没说让你进侯府替我女儿当大小姐。”
 欢迎点亮【赞和推荐】，转发分享给更多朋友。关注本号，底部菜单查看更多榜单。
 - 标签：古言
-- 原文链接：https://mp.weixin.qq.com/s?src=11&timestamp=1790044976&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq4317R3t6yUW9TkQBCxW0jHrOpnf3IFqNav8u7xbhRf5Cy7zkJSMq0UpoP5qls29Q9PXt&new=1
+- 知乎检索入口：https://www.zhihu.com/search?type=content&q=%E6%81%B6%E6%AF%92%E5%A5%B3%E9%85%8D%E5%A5%B9%E5%A8%98%E6%9D%A5%E4%BA%86
+- 榜单来源：https://mp.weixin.qq.com/s?src=11&timestamp=1790046579&ver=6981&signature=cePsLf6Jx4e0U9OJRtS6W5qcQI-4QurJOhfMXTHpHkpnxYHIlXx9yvSLeQhq43174dORJeosrCASwnvqAJp7baVisekWqCoxF0xnz9tbVjduYMCsi8*9juGU*jjDfNqP&new=1
 
 ### 趋势总结
 - 今日未检测到该栏目。

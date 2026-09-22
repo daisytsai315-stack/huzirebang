@@ -21,6 +21,8 @@ class ParserTests(unittest.TestCase):
         self.assertIn("清冷霸总", items[0]["intro"])
         self.assertIn("弹幕", items[0]["tags"])
         self.assertIn("白月光", items[1]["tags"])
+        self.assertIn("www.zhihu.com/search", items[0]["work_search_url"])
+        self.assertEqual(items[0]["work_url"], "")
 
     def test_classification_prioritizes_example_text(self):
         self.assertEqual(classify_article("9月21日 知乎风短篇小说热榜", ""), "zhihu_hot")
