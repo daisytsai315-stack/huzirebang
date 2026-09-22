@@ -1,0 +1,36 @@
+name: Daily WeChat market snapshot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 10 * * *"
+      timezone: "Asia/Shanghai"
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run parser tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Fetch and write snapshot
+        run: python src/fetch_wechat.py --sources sources.json --output data
+
+      - name: Commit changed snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.md data/latest.json data/archive
+          git diff --cached --quiet || git commit -m "chore: update daily WeChat market snapshot"
+          git push
