@@ -483,7 +483,8 @@ def _hot_records(snapshot: dict, section_type: str = "zhihu_hot") -> list[dict]:
             if section.get("type") != section_type or not section.get("items"):
                 continue
             records.append({
-                "snapshot_date": snapshot.get("snapshot_date", ""),
+                # Rank periods follow the original article date, not the crawler run date.
+                "snapshot_date": source.get("published_at") or snapshot.get("snapshot_date", ""),
                 "article_title": source.get("article_title", ""),
                 "article_url": source.get("source_url", ""),
                 "items": [
