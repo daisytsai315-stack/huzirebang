@@ -1,10 +1,49 @@
 [
   {
     "source_name_hint": "短篇热榜例文-投稿168",
+    "platform_hint": "miniprogram",
     "sogou_queries": [
-      "{date} 知乎风短篇小说热榜",
-      "{date} 编辑收稿例文榜"
+      "{date} 小程序短篇小说热榜",
+      "小程序短篇热榜 投稿168",
+      "小程序小说热榜 投稿168",
+      "小程序短篇榜 投稿168"
     ],
-    "max_items_per_query": 1
+    "max_items_per_query": 3,
+    "max_age_days": 3,
+    "title_any": [
+      "小程序",
+      "点众"
+    ]
+  },
+  {
+    "source_name_hint": "短篇热榜例文-投稿168",
+    "platform_hint": "fanqie_short",
+    "sogou_queries": [
+      "{date} 番茄短故事热榜",
+      "番茄短故事热榜 投稿168",
+      "番茄短篇小说热榜 投稿168",
+      "番茄短篇热榜 投稿168"
+    ],
+    "max_items_per_query": 3,
+    "max_age_days": 3,
+    "title_any": [
+      "番茄短故事",
+      "番茄短篇",
+      "番茄短文"
+    ]
+  },
+  {
+    "source_name_hint": "短篇热榜例文-投稿168",
+    "sogou_queries": [
+      "{date} 编辑收稿例文榜",
+      "编辑收稿例文榜 投稿168"
+    ],
+    "max_items_per_query": 2,
+    "max_age_days": 3,
+    "title_any": [
+      "编辑收稿例文榜",
+      "编辑收文",
+      "编辑收稿"
+    ]
   }
 ]
