@@ -286,37 +286,68 @@ def resolve_sogou_jump(opener, jump_url: str, search_url: str) -> str:
     raise ValueError("搜狗结果未返回可用的公众号文章地址")
 
 
-def discover_sogou_articles(queries: list[str], max_items_per_query: int = 2, target_date: str = "") -> list[dict]:
-    discovered = []
-    seen = set()
+def discover_sogou_articles(
+    queries: list[str],
+    max_items_per_query: int = 2,
+    target_date: str = "",
+    title_any: list[str] | None = None,
+) -> list[dict]:
+    """Find recent articles without assuming the first result is the right one."""
+    discovered: list[dict] = []
+    seen: set[str] = set()
+    failures: list[str] = []
     target = dt.date.fromisoformat(target_date) if target_date else None
-    for query in queries:
+    for template in queries:
         opener = make_session_opener()
-        date_query = "{date}" in query
+        query = template
+        date_query = "{date}" in template
         if target:
-            query = query.format(
+            query = template.format(
                 date=f"{target.month}月{target.day}日",
                 month=target.month,
                 day=target.day,
                 year=target.year,
             )
         search_url = "https://weixin.sogou.com/weixin?type=2&query=" + quote_plus(query)
-        search_html = fetch_with_opener(opener, search_url)
-        # A matching article is not always the first Sogou result.  Searching
-        # only five candidates caused a 20th-of-the-month query to fall back to
-        # an older article.  Read a wider window, then reject non-matching dates.
-        candidates = parse_sogou_candidates(search_html, max(max_items_per_query * 20, 20))
-        if target and date_query:
+        try:
+            search_html = fetch_with_opener(opener, search_url)
+            candidates = parse_sogou_candidates(search_html, max(max_items_per_query * 20, 30))
+        except Exception as exc:
+            failures.append(f"{query}: {exc}")
+            continue
+        if date_query and target:
             marker = f"{target.month}月{target.day}日"
-            dated = [candidate for candidate in candidates if marker in candidate["title"] or marker in candidate["summary"]]
-            candidates = dated
-        for candidate in candidates[:max_items_per_query]:
-            url = resolve_sogou_jump(opener, candidate["jump_url"], search_url)
-            if url not in seen:
-                seen.add(url)
-                discovered.append({"url": url, "query": query, "search_title": candidate["title"], "search_summary": candidate["summary"]})
+            candidates = [
+                candidate for candidate in candidates
+                if marker in candidate["title"] or marker in candidate["summary"]
+            ]
+        if title_any:
+            candidates = [
+                candidate for candidate in candidates
+                if any(word in candidate["title"] for word in title_any)
+            ]
+        accepted = 0
+        for candidate in candidates:
+            try:
+                url = resolve_sogou_jump(opener, candidate["jump_url"], search_url)
+            except Exception as exc:
+                failures.append(f"{query} jump: {exc}")
+                continue
+            if url in seen:
+                continue
+            seen.add(url)
+            discovered.append({
+                "url": url,
+                "query": query,
+                "search_title": candidate["title"],
+                "search_summary": candidate["summary"],
+            })
+            accepted += 1
+            if accepted >= max_items_per_query:
+                break
+    if not discovered and failures:
+        raise RuntimeError("公众号发现失败；" + "; ".join(failures[:3]))
     return discovered
-
 
 def empty_sections() -> list[dict]:
     return [{"type": section_type, "items": []} for section_type in SECTION_TYPES]
@@ -326,7 +357,8 @@ def parse_source_html(url: str, page: str, source_name_hint: str = "", platform_
     title = first_group(r'<meta[^>]+property=["\']og:title["\'][^>]+content=["\'](.*?)["\']', page)
     if not title:
         title = first_group(r"var msg_title\s*=\s*'((?:\\.|[^'])*)'", page)
-    source_name = first_group(r"nick_name:\s*'((?:\\.|[^'])*)'", page) or source_name_hint
+    detected_source_name = first_group(r"nick_name:\s*'((?:\\.|[^'])*)'", page)
+    source_name = detected_source_name or source_name_hint
     author = first_group(r'<meta[^>]+property=["\']og:article:author["\'][^>]+content=["\'](.*?)["\']', page)
     create_time = first_group(r"create_time:\s*'([^']+)'", page)
     published_at = create_time[:10] if re.match(r"\d{4}-\d{2}-\d{2}", create_time) else ""
@@ -336,6 +368,8 @@ def parse_source_html(url: str, page: str, source_name_hint: str = "", platform_
     platform = detect_platform(title)
     if platform == "unknown" and platform_hint in ("miniprogram", "fanqie_short", "zhihu"):
         platform = platform_hint
+    if active_type == "trend_summary" and platform in ("miniprogram", "fanqie_short") and "榜" in title:
+        active_type = "miniprogram_hot" if platform == "miniprogram" else "fanqie_short_hot"
     sections = empty_sections()
     items = parse_top_items(fragment, platform)
     section = next(item for item in sections if item["type"] == active_type)
@@ -352,7 +386,9 @@ def parse_source_html(url: str, page: str, source_name_hint: str = "", platform_
 
     return {
         "source_name": source_name,
+        "source_name_verified": bool(detected_source_name),
         "platform": platform,
+        "usage": "commercial_short" if platform in ("miniprogram", "fanqie_short") else "boutique_reference",
         "article_title": title,
         "author": author,
         "published_at": published_at,
@@ -372,6 +408,7 @@ def build_snapshot(sources: list[dict], snapshot_date: str) -> dict:
                     source["sogou_queries"],
                     int(source.get("max_items_per_query", 2)),
                     snapshot_date,
+                    source.get("title_any", []),
                 )
                 if not discovered:
                     errors.append({"source_url": "搜狗微信搜索", "error": "没有发现匹配的公众号文章"})
@@ -412,12 +449,20 @@ def build_snapshot(sources: list[dict], snapshot_date: str) -> dict:
                     if title_any and not any(word in parsed["article_title"] for word in title_any):
                         errors.append({"source_url": url, "error": "公众号文章标题未命中对应栏目"})
                         continue
+                    expected_source_fragment = source.get("source_name_contains", "")
+                    if expected_source_fragment and parsed.get("source_name_verified") and expected_source_fragment not in parsed["source_name"]:
+                        errors.append({"source_url": url, "error": "文章来源公众号与配置不一致"})
+                        continue
                     expected_platform = source.get("platform_hint", "")
                     actual_platform = detect_platform(parsed["article_title"])
                     if expected_platform and actual_platform not in (expected_platform, "unknown"):
                         errors.append({"source_url": url, "error": "榜单平台与搜索来源不一致"})
                         continue
                 if not any(x["source_url"] == url for x in parsed_sources):
+                    active_section = next((section for section in parsed["sections"] if section["items"]), None)
+                    parsed["parse_status"] = "parsed" if active_section else "no_extractable_items"
+                    if not active_section:
+                        errors.append({"source_url": url, "error": "已发现文章，但未解析到可用的作品榜单或明确收稿条目（可能是图片榜）"})
                     parsed_sources.append(parsed)
             except Exception as exc:  # keep one failing source from hiding others
                 errors.append({"source_url": url, "error": str(exc)})
@@ -546,7 +591,7 @@ def render_markdown(snapshot: dict) -> str:
     if snapshot.get("errors"):
         lines.extend(["> 注意：以下来源抓取失败，详见 latest.json 的 errors。", ""])
     changes = snapshot.get("rank_changes", {})
-    if changes.get("latest_date"):
+    if changes.get("latest_date") == snapshot["snapshot_date"]:
         lines.extend(["## 知乎热榜跨日变化", ""])
         if changes.get("previous_date"):
             lines.append(f"- 比较：{changes['previous_date']} → {changes['latest_date']}")
@@ -566,10 +611,12 @@ def render_markdown(snapshot: dict) -> str:
         movements = changes.get("rank_movements", [])
         lines.extend([f"- 《{item['title']}》：{item['previous_rank']} → {item['latest_rank']}" for item in movements] or ["- 暂无"])
         lines.append("")
+    elif changes.get("latest_date"):
+        lines.extend([f"> 知乎旧榜仅作历史参考，最后有效来源日：{changes['latest_date']}。", ""])
 
     for kind, label in (("miniprogram_hot", "小程序短篇"), ("fanqie_short_hot", "番茄短故事")):
         changes = snapshot.get("commercial_rank_changes", {}).get(kind, {})
-        if changes.get("latest_date"):
+        if changes.get("latest_date") == snapshot["snapshot_date"]:
             lines.extend([f"## {label}跨期变动", ""])
             if changes.get("previous_date"):
                 lines.append(f"- 比较：{changes['previous_date']} → {changes['latest_date']}")
@@ -578,11 +625,17 @@ def render_markdown(snapshot: dict) -> str:
             lines.extend([f"- 新上榜：《{v['title']}》" for v in changes.get("new_entries", [])] or ["- 暂无新上榜样本"])
             lines.extend([f"- 连续出现：《{v['title']}》" for v in changes.get("persistent_entries", [])] or ["- 暂无连续样本"])
             lines.append("")
+        elif changes.get("latest_date"):
+            lines.extend([f"> {label}本期无新增可核验榜单；最近有效来源日为 {changes['latest_date']}。", ""])
+        else:
+            lines.extend([f"> {label}尚未取得可解析的新榜单。", ""])
 
     for source in snapshot["sources"]:
         lines.extend([
             f"## {source['source_name'] or '未识别公众号'}｜{source['article_title']}",
             f"- 市场类型：{source.get('platform', 'unknown')}",
+            f"- 用途：{'商业短篇生产候选素材' if source.get('usage') == 'commercial_short' else '精品创作参考/编辑参考'}",
+            f"- 抽取状态：{source.get('parse_status', '未标记')}",
             f"- 公众号发布时间：{source['published_at'] or '未识别'}",
             f"- 公众号榜单来源（仅溯源）：{source['source_url']}",
             "",
