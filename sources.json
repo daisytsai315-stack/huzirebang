@@ -13,7 +13,8 @@
     "title_any": [
       "小程序",
       "点众"
-    ]
+    ],
+    "source_name_contains": "投稿168"
   },
   {
     "source_name_hint": "短篇热榜例文-投稿168",
@@ -30,7 +31,8 @@
       "番茄短故事",
       "番茄短篇",
       "番茄短文"
-    ]
+    ],
+    "source_name_contains": "投稿168"
   },
   {
     "source_name_hint": "短篇热榜例文-投稿168",
@@ -44,6 +46,7 @@
       "编辑收稿例文榜",
       "编辑收文",
       "编辑收稿"
-    ]
+    ],
+    "source_name_contains": "投稿168"
   }
 ]
