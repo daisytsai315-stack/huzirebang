@@ -27,7 +27,8 @@ jobs:
       - name: Fetch and write snapshot
         run: python src/fetch_wechat.py --sources sources.json --output data
 
-      - name: Commit changed snapshots
+      - name: Commit changed snapshots and honest crawl errors
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
