@@ -22,9 +22,11 @@ from urllib.parse import quote_plus
 from urllib.request import HTTPCookieProcessor, Request, build_opener, urlopen
 
 
-SECTION_TYPES = ("zhihu_hot", "submission_call", "example_text", "trend_summary")
+SECTION_TYPES = ("zhihu_hot", "miniprogram_hot", "fanqie_short_hot", "submission_call", "example_text", "trend_summary")
 SECTION_LABELS = {
     "zhihu_hot": "知乎热门",
+    "miniprogram_hot": "小程序短篇榜",
+    "fanqie_short_hot": "番茄短故事榜",
     "submission_call": "编辑收文",
     "example_text": "例文",
     "trend_summary": "趋势总结",
@@ -132,12 +134,29 @@ def extract_paragraphs(fragment: str) -> list[str]:
     return paragraphs
 
 
+def detect_platform(title: str) -> str:
+    """Determine the article's market, not the platform of a linked work."""
+    if any(word in title for word in ("小程序", "点众")):
+        return "miniprogram"
+    if "番茄" in title and any(word in title for word in ("短篇", "短故事", "短文")):
+        return "fanqie_short"
+    if any(word in title for word in ("知乎", "盐言")):
+        return "zhihu"
+    return "unknown"
+
+
 def classify_article(title: str, body: str) -> str:
-    combined = f"{title}\n{body}"
+    combined = f"{title}\\n{body}"
+    # The editorial-example list is not the same as an explicit call for submissions.
     if "例文" in title or "例文榜" in title:
         return "example_text"
     if any(token in title for token in ("收文", "收稿", "说稿")):
         return "submission_call"
+    platform = detect_platform(title)
+    if platform == "miniprogram" and any(token in title for token in ("榜", "热门", "热文", "热榜")):
+        return "miniprogram_hot"
+    if platform == "fanqie_short" and any(token in title for token in ("榜", "热门", "热文", "热榜")):
+        return "fanqie_short_hot"
     if any(token in title for token in ("知乎", "热榜", "热文", "开单")):
         return "zhihu_hot"
     if any(token in title for token in ("趋势", "风向", "总结")):
@@ -145,6 +164,13 @@ def classify_article(title: str, body: str) -> str:
     if "知乎" in combined:
         return "zhihu_hot"
     return "trend_summary"
+
+
+def make_work_search_url(title: str, platform: str) -> str:
+    if platform == "zhihu":
+        return make_zhihu_search_url(title)
+    suffix = {"miniprogram": " 小程序短篇", "fanqie_short": " 番茄短故事"}.get(platform, " 短篇小说")
+    return "https://www.baidu.com/s?wd=" + quote_plus(title + suffix)
 
 
 def infer_tags(title: str, intro: str) -> list[str]:
@@ -158,7 +184,7 @@ def make_zhihu_search_url(title: str) -> str:
     return "https://www.zhihu.com/search?type=content&q=" + quote_plus(title)
 
 
-def parse_top_items(fragment: str) -> list[dict]:
+def parse_top_items(fragment: str, platform: str = "zhihu") -> list[dict]:
     paragraphs = extract_paragraphs(fragment)
     entries: list[dict] = []
     current: dict | None = None
@@ -186,7 +212,7 @@ def parse_top_items(fragment: str) -> list[dict]:
                 "intro": "",
                 "tags": [],
                 "work_url": "",
-                "work_search_url": make_zhihu_search_url(title.strip()),
+                "work_search_url": make_work_search_url(title.strip(), platform),
                 "_intro_parts": [remainder] if remainder else [],
             }
         elif current:
@@ -296,7 +322,7 @@ def empty_sections() -> list[dict]:
     return [{"type": section_type, "items": []} for section_type in SECTION_TYPES]
 
 
-def parse_source_html(url: str, page: str, source_name_hint: str = "") -> dict:
+def parse_source_html(url: str, page: str, source_name_hint: str = "", platform_hint: str = "") -> dict:
     title = first_group(r'<meta[^>]+property=["\']og:title["\'][^>]+content=["\'](.*?)["\']', page)
     if not title:
         title = first_group(r"var msg_title\s*=\s*'((?:\\.|[^'])*)'", page)
@@ -307,8 +333,11 @@ def parse_source_html(url: str, page: str, source_name_hint: str = "") -> dict:
     fragment = extract_article_fragment(page)
     body = "\n".join(extract_paragraphs(fragment))
     active_type = classify_article(title, body)
+    platform = detect_platform(title)
+    if platform == "unknown" and platform_hint in ("miniprogram", "fanqie_short", "zhihu"):
+        platform = platform_hint
     sections = empty_sections()
-    items = parse_top_items(fragment)
+    items = parse_top_items(fragment, platform)
     section = next(item for item in sections if item["type"] == active_type)
     section["items"] = items
 
@@ -323,6 +352,7 @@ def parse_source_html(url: str, page: str, source_name_hint: str = "") -> dict:
 
     return {
         "source_name": source_name,
+        "platform": platform,
         "article_title": title,
         "author": author,
         "published_at": published_at,
@@ -364,17 +394,31 @@ def build_snapshot(sources: list[dict], snapshot_date: str) -> dict:
             url = entry["url"]
             try:
                 page = fetch_html(url)
-                parsed = parse_source_html(url, page, source.get("source_name_hint", ""))
+                parsed = parse_source_html(url, page, source.get("source_name_hint", ""), source.get("platform_hint", ""))
                 # Do not silently publish an older article when a date query
                 # returned a stale search result.  A missing day is a visible
                 # error, not a fake update.
-                if source.get("sogou_queries") and parsed.get("published_at") and parsed["published_at"] != snapshot_date:
-                    errors.append({
-                        "source_url": url,
-                        "error": f"搜索结果日期为 {parsed['published_at']}，不是目标日期 {snapshot_date}",
-                    })
-                    continue
-                parsed_sources.append(parsed)
+                if source.get("sogou_queries"):
+                    published = parsed.get("published_at", "")
+                    max_age_days = int(source.get("max_age_days", 0))
+                    if not published:
+                        errors.append({"source_url": url, "error": "未识别公众号原文发布日期，不能确认为近期新稿"})
+                        continue
+                    age = (dt.date.fromisoformat(snapshot_date) - dt.date.fromisoformat(published)).days
+                    if age < 0 or age > max_age_days:
+                        errors.append({"source_url": url, "error": f"文章日期 {published} 超出 {max_age_days} 天有效窗口"})
+                        continue
+                    title_any = source.get("title_any", [])
+                    if title_any and not any(word in parsed["article_title"] for word in title_any):
+                        errors.append({"source_url": url, "error": "公众号文章标题未命中对应栏目"})
+                        continue
+                    expected_platform = source.get("platform_hint", "")
+                    actual_platform = detect_platform(parsed["article_title"])
+                    if expected_platform and actual_platform not in (expected_platform, "unknown"):
+                        errors.append({"source_url": url, "error": "榜单平台与搜索来源不一致"})
+                        continue
+                if not any(x["source_url"] == url for x in parsed_sources):
+                    parsed_sources.append(parsed)
             except Exception as exc:  # keep one failing source from hiding others
                 errors.append({"source_url": url, "error": str(exc)})
     snapshot = {"snapshot_date": snapshot_date, "sources": parsed_sources}
@@ -387,11 +431,11 @@ def _normalise_title(title: str) -> str:
     return re.sub(r"\s+", "", title).strip("《》")
 
 
-def _hot_records(snapshot: dict) -> list[dict]:
+def _hot_records(snapshot: dict, section_type: str = "zhihu_hot") -> list[dict]:
     records = []
     for source in snapshot.get("sources", []):
         for section in source.get("sections", []):
-            if section.get("type") != "zhihu_hot" or not section.get("items"):
+            if section.get("type") != section_type or not section.get("items"):
                 continue
             records.append({
                 "snapshot_date": snapshot.get("snapshot_date", ""),
@@ -412,7 +456,7 @@ def _hot_records(snapshot: dict) -> list[dict]:
     return records
 
 
-def build_rank_history(snapshot: dict, output_dir: Path) -> list[dict]:
+def build_rank_history(snapshot: dict, output_dir: Path, section_type: str = "zhihu_hot") -> list[dict]:
     """Collect all available hot-list snapshots without changing old archives."""
 
     by_date: dict[str, dict] = {}
@@ -423,9 +467,9 @@ def build_rank_history(snapshot: dict, output_dir: Path) -> list[dict]:
                 archived = json.loads(path.read_text(encoding="utf-8"))
             except (OSError, json.JSONDecodeError):
                 continue
-            for record in _hot_records(archived):
+            for record in _hot_records(archived, section_type):
                 by_date[record["snapshot_date"]] = record
-    for record in _hot_records(snapshot):
+    for record in _hot_records(snapshot, section_type):
         by_date[record["snapshot_date"]] = record
     return [by_date[key] for key in sorted(by_date)]
 
@@ -523,9 +567,22 @@ def render_markdown(snapshot: dict) -> str:
         lines.extend([f"- 《{item['title']}》：{item['previous_rank']} → {item['latest_rank']}" for item in movements] or ["- 暂无"])
         lines.append("")
 
+    for kind, label in (("miniprogram_hot", "小程序短篇"), ("fanqie_short_hot", "番茄短故事")):
+        changes = snapshot.get("commercial_rank_changes", {}).get(kind, {})
+        if changes.get("latest_date"):
+            lines.extend([f"## {label}跨期变动", ""])
+            if changes.get("previous_date"):
+                lines.append(f"- 比较：{changes['previous_date']} → {changes['latest_date']}")
+            else:
+                lines.append("- 首次有效抓取，尚无跨期对照")
+            lines.extend([f"- 新上榜：《{v['title']}》" for v in changes.get("new_entries", [])] or ["- 暂无新上榜样本"])
+            lines.extend([f"- 连续出现：《{v['title']}》" for v in changes.get("persistent_entries", [])] or ["- 暂无连续样本"])
+            lines.append("")
+
     for source in snapshot["sources"]:
         lines.extend([
             f"## {source['source_name'] or '未识别公众号'}｜{source['article_title']}",
+            f"- 市场类型：{source.get('platform', 'unknown')}",
             f"- 公众号发布时间：{source['published_at'] or '未识别'}",
             f"- 公众号榜单来源（仅溯源）：{source['source_url']}",
             "",
@@ -536,14 +593,14 @@ def render_markdown(snapshot: dict) -> str:
                 lines.extend(["- 今日未检测到该栏目。", ""])
                 continue
             for item in section["items"]:
-                if section["type"] in ("zhihu_hot", "example_text"):
+                if section["type"] in ("zhihu_hot", "miniprogram_hot", "fanqie_short_hot", "example_text"):
                     lines.append(f"#### {item.get('rank', '')}.《{item.get('title', '')}》")
                     lines.append(f"- 导语：{item.get('intro', '') or '未提供'}")
                     lines.append(f"- 标签：{'、'.join(item.get('tags', [])) or '未自动识别'}")
                     if item.get("work_url"):
-                        lines.append(f"- 知乎原文：{item['work_url']}")
+                        lines.append(f"- 已核实作品链接：{item['work_url']}")
                     else:
-                        lines.append(f"- 知乎检索入口：{item.get('work_search_url') or make_zhihu_search_url(item.get('title', ''))}")
+                        lines.append(f"- 作品检索入口：{item.get('work_search_url') or make_work_search_url(item.get('title', ''), source.get('platform', 'unknown'))}")
                     lines.append(f"- 榜单来源：{source['source_url']}")
                 else:
                     lines.append(f"#### {item.get('editor', '编辑/工作室')}")
@@ -562,6 +619,10 @@ def write_snapshot(snapshot: dict, output_dir: Path) -> None:
     history = build_rank_history(snapshot, output_dir)
     snapshot["rank_history"] = history
     snapshot["rank_changes"] = build_rank_changes(history)
+    snapshot["commercial_rank_changes"] = {
+        kind: build_rank_changes(build_rank_history(snapshot, output_dir, kind))
+        for kind in ("miniprogram_hot", "fanqie_short_hot")
+    }
     payload = json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n"
     (output_dir / "latest.json").write_text(payload, encoding="utf-8")
     (output_dir / "latest.md").write_text(render_markdown(snapshot), encoding="utf-8")
