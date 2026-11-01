@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from fetch_wechat import classify_article, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items  # noqa: E402
+from fetch_wechat import classify_article, detect_platform, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items  # noqa: E402
 
 
 class ParserTests(unittest.TestCase):
@@ -29,7 +29,7 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(classify_article("9月22日 编辑收稿例文榜", ""), "example_text")
         self.assertEqual(classify_article("编辑收文方向与要求", ""), "submission_call")
 
-    def test_source_has_stable_four_section_schema(self):
+    def test_source_has_stable_six_section_schema(self):
         page = """
         <meta property="og:title" content="9月21日 知乎风短篇小说热榜">
         <meta property="og:article:author" content="荔枝哥">
@@ -40,8 +40,25 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(parsed["article_title"], "9月21日 知乎风短篇小说热榜")
         self.assertEqual(parsed["published_at"], "2026-09-21")
         self.assertEqual([section["type"] for section in parsed["sections"]], [
-            "zhihu_hot", "submission_call", "example_text", "trend_summary"
+            "zhihu_hot", "miniprogram_hot", "fanqie_short_hot", "submission_call", "example_text", "trend_summary"
         ])
+
+    def test_commercial_short_story_classification(self):
+        self.assertEqual(detect_platform("11月1日 小程序短篇热榜"), "miniprogram")
+        self.assertEqual(detect_platform("11月1日 番茄短故事热榜"), "fanqie_short")
+        self.assertEqual(detect_platform("番茄小说畅销榜"), "unknown")
+        self.assertEqual(classify_article("11月1日 小程序短篇热榜", ""), "miniprogram_hot")
+        self.assertEqual(classify_article("11月1日 番茄短故事热榜", ""), "fanqie_short_hot")
+        self.assertEqual(classify_article("11月1日 编辑收稿例文榜", ""), "example_text")
+
+    def test_commercial_titles_do_not_point_to_zhihu(self):
+        source = "<p>TOP 1 《测试商业短篇》</p><p>导语内容</p>"
+        mini = parse_top_items(source, "miniprogram")
+        fanqie = parse_top_items(source, "fanqie_short")
+        self.assertIn("www.baidu.com/s?", mini[0]["work_search_url"])
+        self.assertIn("%E5%B0%8F%E7%A8%8B%E5%BA%8F", mini[0]["work_search_url"])
+        self.assertIn("www.baidu.com/s?", fanqie[0]["work_search_url"])
+        self.assertNotIn("zhihu.com", fanqie[0]["work_search_url"])
 
     def test_rss_entries_are_a_daily_discovery_layer(self):
         feed = """
