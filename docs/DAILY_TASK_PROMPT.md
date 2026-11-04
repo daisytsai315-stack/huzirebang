@@ -1,5 +1,14 @@
 # 投稿168公众号快照：每日读取和创作用途
 
+## 2026-11-04 官网榜单和每日商业选题扩展
+
+额外读取 `data/site_rankings/latest.json` 和 `latest.md`，这是**九州与黑岩官网**的独立市场入口。逐站检查 `status`、榜单标题、作品直链与实际获取日；状态不是 `parsed` 时不得假设有新书或热书。九州优先女频新书/畅销，黑岩优先短篇/可压缩成短篇的强冲突，不把黑岩长篇热榜当小程序过稿证据。
+
+每日做一个短小的**商业选题筛选**，并不是自动每天开新项目：投稿168小程序＋番茄短故事→九州→黑岩→番茄公开作品交叉验证→最多2篇可合法公开阅读的范文→私库 `fiction-livewater-vault/INDEX/CREATIVE_QUERY_ENTRY.md` 及实际原文或精矿→提炼成熟母题、变体、情绪回报与原创行动链→推荐1个首选商业短篇选题（必要时备选1个）。**实际读到全文才声称全文拆解；付费/部分章节就清楚标注范围。** 不在公开仓库归档付费作品或受版权保护的整篇正文。
+
+作者确定方向后，才由ChatGPT接手粗纲、8—12节写作精纲与关键对白（约3—4场），交Gemini分批扩成万字初稿；作者终审修改投稿。商业实验短、平、快、强情绪且最低必要因果；11月目标1篇真实过稿/签约。知乎短篇与长篇仍属独立精品线。
+
+
 读取：
 - https://raw.githubusercontent.com/daisytsai315-stack/huzirebang/main/data/latest.md
 - https://raw.githubusercontent.com/daisytsai315-stack/huzirebang/main/data/latest.json
