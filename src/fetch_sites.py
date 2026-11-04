@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch public novel ranking metadata; never collect copyrighted full text."""
+"""Fetch verified public official-site ranking metadata; 黑岩故事会 is NOT heiyan.com."""
 from __future__ import annotations
 
 import argparse
@@ -16,7 +16,6 @@ from urllib.request import Request, urlopen
 USER_AGENT = "Mozilla/5.0 (compatible; NovelMarketSnapshot/1.0; public metadata only)"
 HEADINGS = {
     "jzzwxs": ["新书榜·女频", "畅销榜·女频", "签约新书", "新书榜·男频", "畅销榜·男频"],
-    "heiyan": ["新书榜", "热门榜", "点击榜", "订阅榜"],
 }
 
 
@@ -73,8 +72,6 @@ def normalise(text: str) -> str:
 
 def is_book_link(site: str, url: str) -> bool:
     path = urlparse(url).path.lower()
-    if site == "heiyan":
-        return bool(re.match(r"^/book/\d+(?:/)?$", path))
     return any(part in path for part in ("/book/", "/novel/", "/story/", "/detail/", "/work/"))
 
 
