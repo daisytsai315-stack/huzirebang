@@ -1,12 +1,12 @@
 {
-  "snapshot_date": "2026-11-06",
+  "snapshot_date": "2026-11-07",
   "scope": "official_site_rankings_metadata_only",
   "sources": [
     {
       "site": "jzzwxs",
       "name": "九州中文网",
       "url": "https://jzzwxs.com/",
-      "checked_at_date": "2026-11-06",
+      "checked_at_date": "2026-11-07",
       "status": "no_extractable_ranked_books",
       "sections": [],
       "error": "页面未找到可核实的作品直链与榜单分组；可能是JS动态页面或网页结构已变化"
