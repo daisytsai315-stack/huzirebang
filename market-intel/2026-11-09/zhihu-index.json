@@ -1,0 +1,248 @@
+{
+  "schema_version": "zhihu-index/v1",
+  "collected_at": "2026-11-09T03:36:07.133058+00:00",
+  "search_platform": "zhihu",
+  "source_list": "xhs-signals.json",
+  "free_excerpt_max_chars": 90,
+  "works": [
+    {
+      "rank": 1,
+      "work_title": "当病娇成为社畜以后",
+      "status": "NOT_FOUND",
+      "reason": "知乎站内搜索没有同名页面；近似结果只作线索，未读取或保存其正文",
+      "source_platform": "zhihu",
+      "url": null,
+      "author": null,
+      "free_excerpt_file": null,
+      "candidates": [
+        {
+          "title": "大一那年，我追到了万人迷校草。因为太喜欢他，病娇人格疯狂顶号",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "zhiG9HQq3w",
+          "search_rank": 1,
+          "votes": 83,
+          "url": "https://zhuanlan.zhihu.com/p/2100896833329444363"
+        },
+        {
+          "title": "有没有让人好看到被窝里打滚的甜文？",
+          "title_match": "related_unconfirmed",
+          "type": "answer",
+          "author": "一发完",
+          "search_rank": 2,
+          "votes": 464,
+          "url": "https://www.zhihu.com/question/609376540/answer/3107032158"
+        },
+        {
+          "title": "敏感病娇黑化人夫社畜你",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "网名跟着头像私奔了",
+          "search_rank": 3,
+          "votes": 211,
+          "url": "https://zhuanlan.zhihu.com/p/2001757638736774294"
+        },
+        {
+          "title": "病娇痴汉后辈x脑洞奇大直女社畜",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "处于流氓动机中",
+          "search_rank": 4,
+          "votes": 27,
+          "url": "https://zhuanlan.zhihu.com/p/642407478"
+        },
+        {
+          "title": "被病娇爱上了该怎么办?",
+          "title_match": "related_unconfirmed",
+          "type": "answer",
+          "author": "许酒酒",
+          "search_rank": 5,
+          "votes": 1,
+          "url": "https://www.zhihu.com/question/348602421/answer/2102896679871685065"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "work_title": "偷听到Crush的心声",
+      "status": "NOT_FOUND",
+      "reason": "知乎站内搜索没有同名页面；近似结果只作线索，未读取或保存其正文",
+      "source_platform": "zhihu",
+      "url": null,
+      "author": null,
+      "free_excerpt_file": null,
+      "candidates": [
+        {
+          "title": "有没有非常酸涩的暗恋文?",
+          "title_match": "related_unconfirmed",
+          "type": "answer",
+          "author": "安安不吃糖",
+          "search_rank": 1,
+          "votes": 22,
+          "url": "https://www.zhihu.com/question/1901382678139352784/answer/2100661868322988576"
+        },
+        {
+          "title": "当我听见crush心声后",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "沐兮",
+          "search_rank": 2,
+          "votes": 9,
+          "url": "https://zhuanlan.zhihu.com/p/18720419910"
+        },
+        {
+          "title": "有没有那种男主暗恋且蓄谋已久的小说？",
+          "title_match": "related_unconfirmed",
+          "type": "answer",
+          "author": "安安不吃糖",
+          "search_rank": 3,
+          "votes": 1381,
+          "url": "https://www.zhihu.com/question/554382506/answer/2099248718499397739"
+        },
+        {
+          "title": "高三那年，我偷亲了暗恋对象江骋野",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "拾花赠你",
+          "search_rank": 4,
+          "votes": 5,
+          "url": "https://zhuanlan.zhihu.com/p/2100953592416953447"
+        },
+        {
+          "title": "有什么有意思的甜文吗?",
+          "title_match": "related_unconfirmed",
+          "type": "answer",
+          "author": "一颗好果子",
+          "search_rank": 5,
+          "votes": 37,
+          "url": "https://www.zhihu.com/question/659191897/answer/2066186100410955012"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "work_title": "假少爷的网恋对象竟是真少爷",
+      "status": "NOT_FOUND",
+      "reason": "知乎站内搜索没有同名页面；近似结果只作线索，未读取或保存其正文",
+      "source_platform": "zhihu",
+      "url": null,
+      "author": null,
+      "free_excerpt_file": null,
+      "candidates": [
+        {
+          "title": "网恋奔现缠绵过的爱人，居然是我顶替了十八年的真少爷",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "知乎用户khBHgZ",
+          "search_rank": 1,
+          "votes": 1,
+          "url": "https://zhuanlan.zhihu.com/p/2054552201708705183"
+        },
+        {
+          "title": "可以推荐好看的双男主小说吗?",
+          "title_match": "related_unconfirmed",
+          "type": "answer",
+          "author": "爱吃甜饼",
+          "search_rank": 2,
+          "votes": 2,
+          "url": "https://www.zhihu.com/question/2375079645/answer/2059594202414059991"
+        },
+        {
+          "title": "有没有甜文推荐啊？",
+          "title_match": "related_unconfirmed",
+          "type": "answer",
+          "author": "柒妖",
+          "search_rank": 3,
+          "votes": 359,
+          "url": "https://www.zhihu.com/question/595011163/answer/2071233799225079263"
+        },
+        {
+          "title": "有没有特别特别特别好看的双男主文?",
+          "title_match": "related_unconfirmed",
+          "type": "answer",
+          "author": "纯欲母螳螂",
+          "search_rank": 4,
+          "votes": 30,
+          "url": "https://www.zhihu.com/question/667945736/answer/2076664543372170401"
+        },
+        {
+          "title": "网恋对象是失散的豪门真少爷",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "冰释前嫌",
+          "search_rank": 5,
+          "votes": 1,
+          "url": "https://zhuanlan.zhihu.com/p/2040920081824211351"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "work_title": "网恋小蛇他不乖",
+      "status": "NOT_FOUND",
+      "reason": "知乎站内搜索没有同名页面；近似结果只作线索，未读取或保存其正文",
+      "source_platform": "zhihu",
+      "url": null,
+      "author": null,
+      "free_excerpt_file": null,
+      "candidates": [
+        {
+          "title": "网恋对象是蛇，我是双性",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "奶茶小可",
+          "search_rank": 1,
+          "votes": 11,
+          "url": "https://zhuanlan.zhihu.com/p/2100631786384639883"
+        },
+        {
+          "title": "我的网恋对象是蛇我叫许砚，天生双性。这个秘密让我从小就不太敢跟人靠得太近，现实里话少，能不出门就不出门。",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "晴空万里",
+          "search_rank": 2,
+          "votes": 4,
+          "url": "https://zhuanlan.zhihu.com/p/2101269214967371062"
+        },
+        {
+          "title": "网恋对象是蛇。我天生身体情况特殊，是双性。晚上跟他打电话玩得有些过火时，他压着嗓子说：“宝宝，你和我都算成双成对，简直是天生一对。”我一时上头，就答应了。",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "日进斗金",
+          "search_rank": 3,
+          "votes": 6,
+          "url": "https://zhuanlan.zhihu.com/p/2102385126218921281"
+        },
+        {
+          "title": "蛇妖网恋掉马后，他把我弟堵在了酒吧",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "向阳风",
+          "search_rank": 4,
+          "votes": 2,
+          "url": "https://zhuanlan.zhihu.com/p/2101689059240425445"
+        },
+        {
+          "title": "网恋了个对象，嫌我长相寡淡，打发我分手。可送来的盒子里，钻出一条黑蛇，一脸桀骜，用尾巴狂扇网恋对象的大嘴巴子。我正震惊时，眼前出现弹幕：【啊这……完蛋！",
+          "title_match": "related_unconfirmed",
+          "type": "article",
+          "author": "奶油星球",
+          "search_rank": 5,
+          "votes": 9,
+          "url": "https://zhuanlan.zhihu.com/p/2054899685643510704"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "work_title": "桃李之色",
+      "status": "LOGIN_REQUIRED",
+      "reason": "知乎站内搜索返回 AUTH_REQUIRED；需要刷新站内会话，未继续发起其他知乎请求。",
+      "source_platform": "zhihu",
+      "url": null,
+      "author": null,
+      "free_excerpt_file": null,
+      "candidates": []
+    }
+  ]
+}
