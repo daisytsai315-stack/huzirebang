@@ -1,0 +1,37 @@
+{
+  "schema_version": "xhs-signals/v1",
+  "signal_date": "2026-11-09",
+  "source": {
+    "platform": "xiaohongshu",
+    "title": "11月9日乎子榜",
+    "author": "魚魚",
+    "published_at": "2026-11-09",
+    "url": "https://www.xiaohongshu.com/search_result/6af119e30000000032023b30",
+    "freshness": "CURRENT",
+    "authority": "community_observer_not_platform_official",
+    "readback_method": "manual visual readback",
+    "source_run_id": "20261109-101212"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "当病娇成为社畜以后"
+    },
+    {
+      "rank": 2,
+      "title": "偷听到Crush的心声"
+    },
+    {
+      "rank": 3,
+      "title": "假少爷的网恋对象竟是真少爷"
+    },
+    {
+      "rank": 4,
+      "title": "网恋小蛇他不乖"
+    },
+    {
+      "rank": 5,
+      "title": "桃李之色"
+    }
+  ]
+}
