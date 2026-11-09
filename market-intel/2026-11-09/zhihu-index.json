@@ -64,117 +64,25 @@
     },
     {
       "rank": 2,
-      "work_title": "偷听到Crush的心声",
-      "status": "NOT_FOUND",
-      "reason": "知乎站内搜索没有同名页面；近似结果只作线索，未读取或保存其正文",
+      "work_title": "偷听到Crush的心声后",
+      "status": "LOGIN_REQUIRED",
+      "reason": "知乎站内会话上一项已返回 AUTH_REQUIRED，需刷新后才能查这个标题；未使用之前错误标题的结果。",
       "source_platform": "zhihu",
       "url": null,
       "author": null,
       "free_excerpt_file": null,
-      "candidates": [
-        {
-          "title": "有没有非常酸涩的暗恋文?",
-          "title_match": "related_unconfirmed",
-          "type": "answer",
-          "author": "安安不吃糖",
-          "search_rank": 1,
-          "votes": 22,
-          "url": "https://www.zhihu.com/question/1901382678139352784/answer/2100661868322988576"
-        },
-        {
-          "title": "当我听见crush心声后",
-          "title_match": "related_unconfirmed",
-          "type": "article",
-          "author": "沐兮",
-          "search_rank": 2,
-          "votes": 9,
-          "url": "https://zhuanlan.zhihu.com/p/18720419910"
-        },
-        {
-          "title": "有没有那种男主暗恋且蓄谋已久的小说？",
-          "title_match": "related_unconfirmed",
-          "type": "answer",
-          "author": "安安不吃糖",
-          "search_rank": 3,
-          "votes": 1381,
-          "url": "https://www.zhihu.com/question/554382506/answer/2099248718499397739"
-        },
-        {
-          "title": "高三那年，我偷亲了暗恋对象江骋野",
-          "title_match": "related_unconfirmed",
-          "type": "article",
-          "author": "拾花赠你",
-          "search_rank": 4,
-          "votes": 5,
-          "url": "https://zhuanlan.zhihu.com/p/2100953592416953447"
-        },
-        {
-          "title": "有什么有意思的甜文吗?",
-          "title_match": "related_unconfirmed",
-          "type": "answer",
-          "author": "一颗好果子",
-          "search_rank": 5,
-          "votes": 37,
-          "url": "https://www.zhihu.com/question/659191897/answer/2066186100410955012"
-        }
-      ]
+      "candidates": []
     },
     {
       "rank": 3,
-      "work_title": "假少爷的网恋对象竟是真少爷",
-      "status": "NOT_FOUND",
-      "reason": "知乎站内搜索没有同名页面；近似结果只作线索，未读取或保存其正文",
+      "work_title": "假少爷的网恋对象是真少爷",
+      "status": "LOGIN_REQUIRED",
+      "reason": "知乎站内会话上一项已返回 AUTH_REQUIRED，需刷新后才能查这个标题；未使用之前错误标题的结果。",
       "source_platform": "zhihu",
       "url": null,
       "author": null,
       "free_excerpt_file": null,
-      "candidates": [
-        {
-          "title": "网恋奔现缠绵过的爱人，居然是我顶替了十八年的真少爷",
-          "title_match": "related_unconfirmed",
-          "type": "article",
-          "author": "知乎用户khBHgZ",
-          "search_rank": 1,
-          "votes": 1,
-          "url": "https://zhuanlan.zhihu.com/p/2054552201708705183"
-        },
-        {
-          "title": "可以推荐好看的双男主小说吗?",
-          "title_match": "related_unconfirmed",
-          "type": "answer",
-          "author": "爱吃甜饼",
-          "search_rank": 2,
-          "votes": 2,
-          "url": "https://www.zhihu.com/question/2375079645/answer/2059594202414059991"
-        },
-        {
-          "title": "有没有甜文推荐啊？",
-          "title_match": "related_unconfirmed",
-          "type": "answer",
-          "author": "柒妖",
-          "search_rank": 3,
-          "votes": 359,
-          "url": "https://www.zhihu.com/question/595011163/answer/2071233799225079263"
-        },
-        {
-          "title": "有没有特别特别特别好看的双男主文?",
-          "title_match": "related_unconfirmed",
-          "type": "answer",
-          "author": "纯欲母螳螂",
-          "search_rank": 4,
-          "votes": 30,
-          "url": "https://www.zhihu.com/question/667945736/answer/2076664543372170401"
-        },
-        {
-          "title": "网恋对象是失散的豪门真少爷",
-          "title_match": "related_unconfirmed",
-          "type": "article",
-          "author": "冰释前嫌",
-          "search_rank": 5,
-          "votes": 1,
-          "url": "https://zhuanlan.zhihu.com/p/2040920081824211351"
-        }
-      ]
+      "candidates": []
     },
     {
       "rank": 4,
