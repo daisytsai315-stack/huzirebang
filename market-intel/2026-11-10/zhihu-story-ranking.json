@@ -1,0 +1,68 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "observed_at": "2026-11-10T16:04:06+08:00",
+  "snapshot_date": "2026-11-10",
+  "ranking_date": null,
+  "source": {
+    "name": "知乎盐选榜单·故事榜",
+    "authority": "official_platform",
+    "platform_covered": "知乎",
+    "page_url": "https://www.zhihu.com/xen/market/salt-ranking-list?tab=story",
+    "api_url": "https://api.zhihu.com/market/tab_list/story",
+    "metric_note": "知乎接口未提供榜单生成日期；snapshot_date 仅为抓取日期，排名可能未在当天更新。"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "镜中玦",
+      "authors": [
+        "羊不雨",
+        "植物模式"
+      ],
+      "zhihu_url": "https://zhihu.com/xen/market/remix/paid_column/1449062430228135936",
+      "product_type": "paid_column",
+      "reading_status": "UNVERIFIED"
+    },
+    {
+      "rank": 2,
+      "title": "娇兽难缠：我的非人男友",
+      "authors": [
+        "樱胡柰朱"
+      ],
+      "zhihu_url": "https://zhihu.com/xen/market/remix/paid_column/1383071438828580864",
+      "product_type": "paid_column",
+      "reading_status": "UNVERIFIED"
+    },
+    {
+      "rank": 3,
+      "title": "食色男女：爱情是件奢侈品",
+      "authors": [
+        "刘小谦"
+      ],
+      "zhihu_url": "https://zhihu.com/xen/market/remix/paid_column/1312434318623281152",
+      "product_type": "paid_column",
+      "reading_status": "UNVERIFIED"
+    },
+    {
+      "rank": 4,
+      "title": "他的情书：牙科诊室重逢的爱情",
+      "authors": [
+        "闲得无聊的仙女"
+      ],
+      "zhihu_url": "https://zhihu.com/xen/market/remix/paid_column/1388898408023785472",
+      "product_type": "paid_column",
+      "reading_status": "UNVERIFIED"
+    },
+    {
+      "rank": 5,
+      "title": "良人在侧：只愿君心似我心",
+      "authors": [
+        "溺海"
+      ],
+      "zhihu_url": "https://zhihu.com/xen/market/remix/paid_column/1359871509503377408",
+      "product_type": "paid_column",
+      "reading_status": "UNVERIFIED"
+    }
+  ]
+}
+
