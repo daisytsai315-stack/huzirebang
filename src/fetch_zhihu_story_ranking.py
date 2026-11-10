@@ -74,11 +74,16 @@ def collect(now: dt.datetime) -> dict:
 
 def save(snapshot: dict, root: Path) -> tuple[Path, str]:
     path = root / snapshot["snapshot_date"] / "zhihu-story-ranking.json"
-    if path.exists():
-        previous = json.loads(path.read_text(encoding="utf-8"))
-        without_time = lambda x: {k: v for k, v in x.items() if k != "observed_at"}
-        if without_time(previous) == without_time(snapshot):
-            return path, "unchanged"
+    prior_paths = [
+        candidate
+        for candidate in root.glob("*/zhihu-story-ranking.json")
+        if candidate.parent.name <= snapshot["snapshot_date"]
+    ]
+    if prior_paths:
+        latest = max(prior_paths, key=lambda candidate: candidate.parent.name)
+        previous = json.loads(latest.read_text(encoding="utf-8"))
+        if previous.get("works") == snapshot["works"]:
+            return latest, "unchanged"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return path, "published"
