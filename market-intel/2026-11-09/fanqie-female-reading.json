@@ -1,0 +1,56 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "data_date": "2026-11-09",
+  "observed_date": "2026-11-10",
+  "source": {
+    "name": "网文情报站",
+    "url": "https://novelcatch.com/rank?gender=f&list=read",
+    "platform_covered": "番茄小说",
+    "ranking": "女频阅读榜",
+    "authority": "third_party_aggregator",
+    "displayed_update_date": "2026-11-09",
+    "metric_note": "在读人数由来源页面展示；未与番茄官方逐项核对"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "游戏入侵：抢男女主机缘会上瘾诶",
+      "author": "猫不秃",
+      "category": "游戏体育",
+      "readers_display": "91.3万",
+      "source_url": "https://novelcatch.com/book/7361653460183288894"
+    },
+    {
+      "rank": 2,
+      "title": "四个孩子非亲生，姐宝男杀疯了",
+      "author": "公子逸",
+      "category": "年代",
+      "readers_display": "91.3万",
+      "source_url": "https://novelcatch.com/book/7676775722773384217"
+    },
+    {
+      "rank": 3,
+      "title": "别嫁他！未来女儿托梦求换爹",
+      "author": "暖囤囤",
+      "category": "豪门总裁",
+      "readers_display": "80.5万",
+      "source_url": "https://novelcatch.com/book/7658500002284588094"
+    },
+    {
+      "rank": 4,
+      "title": "老实员工和魅魔总裁一夜过后",
+      "author": "椒江梁七",
+      "category": "豪门总裁",
+      "readers_display": "69.3万",
+      "source_url": "https://novelcatch.com/book/7660590811435781182"
+    },
+    {
+      "rank": 5,
+      "title": "舔你时你出轨，提离婚你后悔",
+      "author": "赵也行",
+      "category": "豪门总裁",
+      "readers_display": "63.0万",
+      "source_url": "https://novelcatch.com/book/7616938527665703998"
+    }
+  ]
+}
