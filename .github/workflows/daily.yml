@@ -7,6 +7,7 @@ on:
     paths:
       - ".github/workflows/daily.yml"
       - "src/fetch_public_rankings.py"
+      - "src/fetch_zhihu_story_ranking.py"
       - "src/fetch_wechat.py"
       - "src/fetch_sites.py"
   schedule:
@@ -44,6 +45,11 @@ jobs:
         if: always()
         run: python src/fetch_public_rankings.py --output-root market-intel
 
+      - name: Fetch official Zhihu story ranking metadata
+        if: always()
+        continue-on-error: true
+        run: python src/fetch_zhihu_story_ranking.py --output-root market-intel
+
       - name: Commit changed snapshots and honest crawl errors
         if: always()
         run: |
@@ -52,3 +58,4 @@ jobs:
           git add data/latest.md data/latest.json data/archive data/site_rankings market-intel
           git diff --cached --quiet || git commit -m "chore: update daily WeChat market snapshot"
           git push
+
