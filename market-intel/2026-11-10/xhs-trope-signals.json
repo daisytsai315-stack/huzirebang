@@ -1,0 +1,30 @@
+{
+  "schema_version": "xhs-trope-signals/v1",
+  "collection_date": "2026-11-10",
+  "signals": [
+    {
+      "note_id": "6af16266000000002c026031",
+      "source_platform": "xiaohongshu",
+      "source_url": "https://www.xiaohongshu.com/discovery/item/6af16266000000002c026031",
+      "source_url_basis": "user-provided share link; share token omitted from public export",
+      "author": "多乐日记📔",
+      "title": "今天啥也不干了 就研究这句话[呃R]",
+      "posted_at_local": "2026-11-09T14:04:00+08:00",
+      "posted_at_basis": "screenshot says 昨天 14:04; interpreted on 2026-11-10 Asia/Shanghai",
+      "evidence_scope": "USER_SCREENSHOT",
+      "local_screenshot": "E:\\CodexWorkspaces\\网文市场采集流水线\\market-intel\\2026-11-10\\evidence\\xhs-6af16266000000002c026031.png",
+      "public_page_access": "LOGIN_REDIRECT_ANONYMOUS",
+      "public_page_readback": "Anonymous request to the provided share URL redirected to https://www.xiaohongshu.com/login; no live post body or comment list was obtained.",
+      "post_likes": null,
+      "comment_count": 1098,
+      "featured_comment_likes": 7617,
+      "featured_comment_replies": 219,
+      "metric_basis": "numbers visible in the user screenshot; 7617 likes belong to one comment, not the post",
+      "image_hook_summary": "一名女子说丈夫养的年轻女子怀孕，自己却知道丈夫不孕；揭穿这件事会同时暴露自己两个孩子的身世。",
+      "featured_comment_summary": "高赞评论围绕亲子鉴定和继承权提出推测；这些是读者反应，不是帖子已经证实的后续情节。",
+      "trope_tags": ["双重亲子反转", "秘密互锁", "婚姻背叛", "揭穿即自曝"],
+      "market_signal_level": "V0_SCREENSHOT_SIGNAL",
+      "analysis_boundary": "Single screenshot with a high-like comment; whole-post likes and original note body remain unverified. Do not count it as a repeated market trend."
+    }
+  ]
+}
