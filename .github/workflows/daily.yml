@@ -2,6 +2,13 @@ name: Daily market snapshot
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/daily.yml"
+      - "src/fetch_public_rankings.py"
+      - "src/fetch_wechat.py"
+      - "src/fetch_sites.py"
   schedule:
     - cron: "30 17 * * *"
       timezone: "Asia/Shanghai"
