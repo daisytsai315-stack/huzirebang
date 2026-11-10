@@ -39,6 +39,8 @@ GitHub Actions 每天北京时间17:30尝试运行（另支持手动工作流）
 
 新增可核验的公开榜：`market-intel/<榜单数据日期>/fanqie-female-new.json` 保存第三方「番茄小说趋势分析平台」的女频豪门总裁、现言脑洞新书榜前五名。页面必须明确显示数据日期和完整排名才落盘；同日内容未变化时不改写。它是**番茄长篇新书榜**，与公众号的番茄短故事榜分开，第三方在读数也不冒充番茄官方数据。
 
+`market-intel/<抓取日期>/zhihu-story-ranking.json` 保存知乎官方盐选「故事榜」前五名的公开排名元数据。知乎接口未给出榜单生成日期，因此抓取日期不是榜单更新日期；只有排名内容变化才新建快照。作品可能包含长篇，且未核实免费试读时标记为 `UNVERIFIED`，不作为已取得正文或当日新榜的证据。
+
 公开资料仅存**标题、公众号自带的导语/简介、必要标签、来源链接与有限元信息**；不复制收费作品全文。没有验证过的作品直链，`work_url` 留空，`work_search_url` 只作搜索入口，不能据此认定已读正文。数据只用于选题校准，不自动推导过稿概率。
 
 **2026-11-04 核验状态**：公众号 `data/latest.json` 已有2026-11-03小程序榜，正文导语覆盖不完整；官网榜单抓取器的本地单元测试已通过，但尚未完成 GitHub Actions 网络实抓验收。不要把“代码提交”说成“榜单获取成功”。
@@ -51,3 +53,4 @@ python src/fetch_wechat.py --sources sources.json --output data --date 2026-11-0
 ```
 
 执行后看 `data/latest.json` 中 `snapshot_date`、`sources[].published_at`、`sources[].platform`、`parse_status` 和 `errors`。若 `sources` 为空或只含 `no_extractable_items`，说明本轮没有可用于开题的有效例文，不应从旧榜凑样本。
+
