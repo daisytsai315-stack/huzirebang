@@ -1,0 +1,118 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "data_date": "2026-11-10",
+  "observed_at": "2026-11-10T15:30:22+08:00",
+  "source": {
+    "name": "番茄小说趋势分析平台",
+    "authority": "third_party_aggregator",
+    "platform_covered": "番茄小说",
+    "scope": "女频长篇新书榜；不属于番茄短故事榜",
+    "metric_note": "排名和在读数按来源公开页面记录，未与番茄官方逐项核对"
+  },
+  "sections": [
+    {
+      "category": "豪门总裁",
+      "ranking": "女频新书榜",
+      "source_url": "https://www.fanqiehub.com/ranking?platform=%E5%A5%B3%E9%A2%91&board_type=%E6%96%B0%E4%B9%A6%E6%A6%9C&category=%E8%B1%AA%E9%97%A8%E6%80%BB%E8%A3%81",
+      "works": [
+        {
+          "rank": 1,
+          "title": "备用联系人",
+          "author": "绒绒冬眠期",
+          "readers_display": "44.4万",
+          "latest_chapter": "番外 番外完结章",
+          "status": "连载中",
+          "source_book_id": "7666468801357040665"
+        },
+        {
+          "rank": 2,
+          "title": "救命，网恋报复但加错人了怎么办",
+          "author": "鹤别青山",
+          "readers_display": "42.5万",
+          "latest_chapter": "第138章 婚后番外一则",
+          "status": "连载中",
+          "source_book_id": "7654972861815196696"
+        },
+        {
+          "rank": 3,
+          "title": "老婆老婆馋老婆宠老婆夜夜想老婆",
+          "author": "蓝色卷心菜",
+          "readers_display": "32.3万",
+          "latest_chapter": "第88章 是你们先疯的！",
+          "status": "连载中",
+          "source_book_id": "7693846398373989438"
+        },
+        {
+          "rank": 4,
+          "title": "我截胡了个高富帅",
+          "author": "爱吃盐山羊汤的曼丽娜",
+          "readers_display": "31.4万",
+          "latest_chapter": "第125章 不对劲",
+          "status": "连载中",
+          "source_book_id": "7679469947466042430"
+        },
+        {
+          "rank": 5,
+          "title": "穿成强取豪夺哑巴男主的作精女友",
+          "author": "叶不鸿",
+          "readers_display": "22万",
+          "latest_chapter": "第121章 “听听，我知道。”",
+          "status": "连载中",
+          "source_book_id": "7678746037451770905"
+        }
+      ]
+    },
+    {
+      "category": "现言脑洞",
+      "ranking": "女频新书榜",
+      "source_url": "https://www.fanqiehub.com/ranking?platform=%E5%A5%B3%E9%A2%91&board_type=%E6%96%B0%E4%B9%A6%E6%A6%9C&category=%E7%8E%B0%E8%A8%80%E8%84%91%E6%B4%9E",
+      "works": [
+        {
+          "rank": 1,
+          "title": "装纯，每晚都有人发狠想她",
+          "author": "碧优",
+          "readers_display": "23.4万",
+          "latest_chapter": "第64章 哥哥",
+          "status": "连载中",
+          "source_book_id": "7694869945712135193"
+        },
+        {
+          "rank": 2,
+          "title": "招惹的哨兵怎么都是疯批反派",
+          "author": "脆脆小堡",
+          "readers_display": "14.5万",
+          "latest_chapter": "第128章 秘密",
+          "status": "连载中",
+          "source_book_id": "7684152494443727934"
+        },
+        {
+          "rank": 3,
+          "title": "笑我华夏无神？我族神明诸天禁诵",
+          "author": "馒头味包子",
+          "readers_display": "12.9万",
+          "latest_chapter": "第69章 98：99",
+          "status": "连载中",
+          "source_book_id": "7694322557184379929"
+        },
+        {
+          "rank": 4,
+          "title": "C级向导？全星际哨兵都不够她治",
+          "author": "可爱滴妹妹",
+          "readers_display": "12.4万",
+          "latest_chapter": "番外 现代姜妩番外：这个也要查？",
+          "status": "连载中",
+          "source_book_id": "7660811678094724120"
+        },
+        {
+          "rank": 5,
+          "title": "我，女配亲妈，修仙万年穿回来了",
+          "author": "妃弄墨",
+          "readers_display": "10.2万",
+          "latest_chapter": "第91章 三爷认小乔做义女",
+          "status": "连载中",
+          "source_book_id": "7657396455199476798"
+        }
+      ]
+    }
+  ]
+}

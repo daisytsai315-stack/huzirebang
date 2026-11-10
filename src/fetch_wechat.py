@@ -695,9 +695,15 @@ def main() -> int:
     args = parser.parse_args()
     sources = json.loads(args.sources.read_text(encoding="utf-8"))
     snapshot = build_snapshot(sources, args.date)
-    write_snapshot(snapshot, args.output)
-    print(json.dumps({"snapshot_date": args.date, "sources": len(snapshot["sources"]), "errors": len(snapshot.get("errors", []))}, ensure_ascii=False))
-    return 0 if snapshot["sources"] else 1
+    usable = [
+        source for source in snapshot["sources"]
+        if source.get("parse_status") == "parsed"
+        and any(section.get("items") for section in source.get("sections", []))
+    ]
+    if usable:
+        write_snapshot(snapshot, args.output)
+    print(json.dumps({"snapshot_date": args.date, "sources": len(snapshot["sources"]), "usable_sources": len(usable), "errors": len(snapshot.get("errors", []))}, ensure_ascii=False))
+    return 0 if usable else 1
 
 
 if __name__ == "__main__":

@@ -146,6 +146,9 @@ def main():
     p.add_argument("--date", default=dt.date.today().isoformat())
     args = p.parse_args()
     result = run(json.loads(args.sources.read_text(encoding="utf-8")), args.date)
+    if not any(section.get("items") for source in result["sources"] for section in source["sections"]):
+        print(json.dumps({"date": args.date, "statuses": {x["site"]: x["status"] for x in result["sources"]}, "published": False}, ensure_ascii=False))
+        return
     args.output.mkdir(parents=True, exist_ok=True)
     (args.output / "archive").mkdir(exist_ok=True)
     body = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
