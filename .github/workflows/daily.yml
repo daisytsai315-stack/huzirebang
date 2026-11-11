@@ -7,6 +7,7 @@ on:
     paths:
       - ".github/workflows/daily.yml"
       - "src/fetch_public_rankings.py"
+      - "src/fetch_fanqie_short.py"
       - "src/fetch_zhihu_story_ranking.py"
       - "src/fetch_wechat.py"
       - "src/fetch_sites.py"
@@ -44,6 +45,11 @@ jobs:
       - name: Fetch dated public female new-book rankings
         if: always()
         run: python src/fetch_public_rankings.py --output-root market-intel
+
+      - name: Fetch dated Fanqie short-story ranking
+        if: always()
+        continue-on-error: true
+        run: python src/fetch_fanqie_short.py
 
       - name: Fetch official Zhihu story ranking metadata
         if: always()
