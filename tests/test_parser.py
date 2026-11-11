@@ -1,13 +1,27 @@
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from fetch_wechat import classify_article, detect_platform, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items  # noqa: E402
+from fetch_wechat import classify_article, detect_platform, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items, publish_short_rankings  # noqa: E402
 
 
 class ParserTests(unittest.TestCase):
+    def test_market_export_uses_article_date_and_skips_duplicate(self):
+        snapshot = {"sources": [{
+            "parse_status": "parsed", "source_name_verified": True,
+            "published_at": "2026-11-11", "source_name": "投稿168",
+            "article_title": "11月11日 小程序榜", "source_url": "https://mp.weixin.qq.com/s/test",
+            "sections": [{"type": "miniprogram_hot", "items": [{"rank": 1, "title": "作品甲"}]}],
+        }]}
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.assertEqual(len(publish_short_rankings(snapshot, root)), 1)
+            self.assertEqual(publish_short_rankings(snapshot, root), [])
+            self.assertTrue((root / "2026-11-11" / "miniprogram-hot.json").exists())
+
     def test_top_items_keep_title_intro_and_tags(self):
         fragment = """
         <p>TOP 1 《重回遇见黄毛老公那天，我不要他了》</p>
@@ -83,3 +97,4 @@ class ParserTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
