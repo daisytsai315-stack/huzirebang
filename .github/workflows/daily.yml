@@ -11,8 +11,8 @@ on:
       - "src/fetch_wechat.py"
       - "src/fetch_sites.py"
   schedule:
-    - cron: "30 17 * * *"
-      timezone: "Asia/Shanghai"
+    # 09:30 UTC = 17:30 Asia/Shanghai (UTC+8, no daylight saving time).
+    - cron: "30 9 * * *"
 
 permissions:
   contents: write
