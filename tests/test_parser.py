@@ -1,14 +1,24 @@
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from fetch_wechat import classify_article, detect_platform, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items, publish_short_rankings  # noqa: E402
+from fetch_wechat import classify_article, detect_platform, discover_sogou_articles, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items, publish_short_rankings  # noqa: E402
 
 
 class ParserTests(unittest.TestCase):
+    def test_dated_search_retries_empty_first_result(self):
+        result = '<h3><a href="/link?url=abc" id="sogou_vr_11002601_title_0">11月11日 小程序短篇榜</a></h3><p class="txt-info">TOP 1 《测试作品》</p>'
+        with patch("fetch_wechat.fetch_with_opener", side_effect=["<html></html>", result]) as fetch, \
+                patch("fetch_wechat.resolve_sogou_jump", return_value="https://mp.weixin.qq.com/s/today"), \
+                patch("fetch_wechat.time.sleep"):
+            found = discover_sogou_articles(["{date} 小程序短篇榜"], 1, "2026-11-11", ["小程序"])
+        self.assertEqual(len(found), 1)
+        self.assertEqual(fetch.call_count, 2)
+
     def test_market_export_uses_article_date_and_skips_duplicate(self):
         snapshot = {"sources": [{
             "parse_status": "parsed", "source_name_verified": True,
