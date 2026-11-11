@@ -687,10 +687,54 @@ def write_snapshot(snapshot: dict, output_dir: Path) -> None:
     archive_path.write_text(payload, encoding="utf-8")
 
 
+def publish_short_rankings(snapshot: dict, output_root: Path) -> list[str]:
+    """Publish verified public short-story ranking metadata by article date."""
+    published = []
+    names = {"miniprogram_hot": "miniprogram-hot.json", "fanqie_short_hot": "fanqie-short-hot.json"}
+    for source in snapshot["sources"]:
+        if source.get("parse_status") != "parsed" or not source.get("source_name_verified"):
+            continue
+        article_date = source.get("published_at")
+        try:
+            dt.date.fromisoformat(article_date)
+        except (TypeError, ValueError):
+            continue
+        for section in source.get("sections", []):
+            kind = section.get("type")
+            items = section.get("items", [])
+            if kind not in names or not items:
+                continue
+            if [item.get("rank") for item in items] != list(range(1, len(items) + 1)):
+                continue
+            path = output_root / article_date / names[kind]
+            record = {
+                "schema_version": "ranking-snapshot/v1",
+                "data_date": article_date,
+                "source": {
+                    "name": source["source_name"],
+                    "article_title": source["article_title"],
+                    "author": source.get("author", ""),
+                    "url": source["source_url"],
+                    "platform": "miniprogram_short" if kind == "miniprogram_hot" else "fanqie_short",
+                    "scope": "公众号文章公开列出的作品与导语；作品链接未核实",
+                },
+                "works": items,
+            }
+            if path.exists():
+                previous = json.loads(path.read_text(encoding="utf-8"))
+                if previous.get("works") == items:
+                    continue
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            published.append(str(path))
+    return published
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--sources", type=Path, default=Path("sources.json"))
     parser.add_argument("--output", type=Path, default=Path("data"))
+    parser.add_argument("--market-output", type=Path)
     parser.add_argument("--date", default=dt.date.today().isoformat())
     args = parser.parse_args()
     sources = json.loads(args.sources.read_text(encoding="utf-8"))
@@ -702,9 +746,12 @@ def main() -> int:
     ]
     if usable:
         write_snapshot(snapshot, args.output)
+        if args.market_output:
+            publish_short_rankings(snapshot, args.market_output)
     print(json.dumps({"snapshot_date": args.date, "sources": len(snapshot["sources"]), "usable_sources": len(usable), "errors": len(snapshot.get("errors", []))}, ensure_ascii=False))
     return 0 if usable else 1
 
 
 if __name__ == "__main__":
     sys.exit(main())
+
