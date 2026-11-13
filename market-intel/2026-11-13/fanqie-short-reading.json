@@ -1,0 +1,66 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "data_date": "2026-11-12",
+  "observed_date": "2026-11-13",
+  "observed_at": "2026-11-13T16:45:29+08:00",
+  "source": {
+    "name": "网文情报站·番茄短篇排行",
+    "url": "https://novelcatch.com/short",
+    "authority": "third_party_aggregator",
+    "platform_covered": "番茄短故事",
+    "ranking": "近期在读 · 7天 · 按在读排序",
+    "metric_note": "榜单页面标注数据更新日为2026-11-12；本文件于2026-11-13核验并归档。仅保存公开榜单元数据，不含作品正文。"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "宿敌偷我糖果分全班，我秒拨120！全班炸了",
+      "author": "柠檬树下柠檬果香",
+      "category": "女生生活",
+      "readers_10k": "37.0",
+      "words_10k": "1.3",
+      "seven_day_delta_10k": "+19.0",
+      "source_work_url": "https://novelcatch.com/short/7702267808255675454"
+    },
+    {
+      "rank": 2,
+      "title": "太子爷的第九次相亲",
+      "author": "颜清阁主",
+      "category": "现言甜宠",
+      "readers_10k": "29.1",
+      "words_10k": "1.1",
+      "seven_day_delta_10k": "+7.6",
+      "source_work_url": "https://novelcatch.com/short/7700968516177890328"
+    },
+    {
+      "rank": 3,
+      "title": "孕期老公赌气搬去女兄弟家？两个月后他回家瞬间傻眼",
+      "author": "财神爷家的心尖爱",
+      "category": "婚姻家庭",
+      "readers_10k": "25.6",
+      "words_10k": "1.2",
+      "seven_day_delta_10k": "+13.4",
+      "source_work_url": "https://novelcatch.com/short/7703410427987889214"
+    },
+    {
+      "rank": 4,
+      "title": "我妈明牌偏心，但我超爱她",
+      "author": "炖蛋黄",
+      "category": "女生生活",
+      "readers_10k": "23.0",
+      "words_10k": "1.7",
+      "seven_day_delta_10k": "+13.3",
+      "source_work_url": "https://novelcatch.com/short/7703730672074116120"
+    },
+    {
+      "rank": 5,
+      "title": "揭发了我妈的秘密后",
+      "author": "小疯子与乌鸦",
+      "category": "婚姻家庭",
+      "readers_10k": "22.9",
+      "words_10k": "0.7",
+      "seven_day_delta_10k": "+3.2",
+      "source_work_url": "https://novelcatch.com/short/7454817194136830526"
+    }
+  ]
+}
