@@ -12,8 +12,8 @@ on:
       - "src/fetch_wechat.py"
       - "src/fetch_sites.py"
   schedule:
-    # 09:30 UTC = 17:30 Asia/Shanghai (UTC+8, no daylight saving time).
-    - cron: "30 9 * * *"
+    # Twice daily: 09:30 and 17:30 Asia/Shanghai (01:30 and 09:30 UTC).
+    - cron: "30 1,9 * * *"
 
 permissions:
   contents: write
@@ -64,4 +64,3 @@ jobs:
           git add data/latest.md data/latest.json data/archive data/site_rankings market-intel
           git diff --cached --quiet || git commit -m "chore: update daily WeChat market snapshot"
           git push
-
