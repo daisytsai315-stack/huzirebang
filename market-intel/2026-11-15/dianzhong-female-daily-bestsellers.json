@@ -1,0 +1,85 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "observed_date": "2026-11-15",
+  "ranking_date": null,
+  "source": {
+    "name": "点众阅读官网·女生小说畅销日榜",
+    "url": "https://www.ishugui.com/ranking/2-2-1",
+    "authority": "official_platform",
+    "platform_covered": "点众阅读",
+    "ranking": "女生小说·畅销榜·日榜",
+    "metric_note": "官网页面未标注榜单生成日期；仅存公开排名元数据，不抓取作品正文。"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "白月光还没嘚瑟完，金丝雀一个闪身步飞升了",
+      "category": "精品短篇",
+      "heat_display": "165万热度",
+      "work_url": "https://www.ishugui.com/book/11010579828"
+    },
+    {
+      "rank": 2,
+      "title": "他失忆时说爱我，清醒后嫌我难缠",
+      "category": "精品短篇",
+      "heat_display": "138万热度",
+      "work_url": "https://www.ishugui.com/book/11010576117"
+    },
+    {
+      "rank": 3,
+      "title": "我替他守了九年边关，他却在朔州儿女双全",
+      "category": "精品短篇",
+      "heat_display": "137万热度",
+      "work_url": "https://www.ishugui.com/book/11010582328"
+    },
+    {
+      "rank": 4,
+      "title": "明月不独照我，我自会寻热烈阳光",
+      "category": "精品短篇",
+      "heat_display": "137万热度",
+      "work_url": "https://www.ishugui.com/book/11010580919"
+    },
+    {
+      "rank": 5,
+      "title": "我娘是昭阳长公主",
+      "category": "精品短篇",
+      "heat_display": "136万热度",
+      "work_url": "https://www.ishugui.com/book/11010561554"
+    },
+    {
+      "rank": 6,
+      "title": "旧念销尽赴归途",
+      "category": "精品短篇",
+      "heat_display": "136万热度",
+      "work_url": "https://www.ishugui.com/book/11010572888"
+    },
+    {
+      "rank": 7,
+      "title": "故国春来迟，不见旧时人",
+      "category": "精品短篇",
+      "heat_display": "134万热度",
+      "work_url": "https://www.ishugui.com/book/11010580432"
+    },
+    {
+      "rank": 8,
+      "title": "我停止透析后，港城太子爷疯了",
+      "category": "精品短篇",
+      "heat_display": "132万热度",
+      "work_url": "https://www.ishugui.com/book/11010580446"
+    },
+    {
+      "rank": 9,
+      "title": "他许我妾位，我却凤冠另嫁",
+      "category": "精品短篇",
+      "heat_display": "130万热度",
+      "work_url": "https://www.ishugui.com/book/11010574973"
+    },
+    {
+      "rank": 10,
+      "title": "两任夫君替我择好归宿，我却死在第三顶花轿里",
+      "category": "精品短篇",
+      "heat_display": "126万热度",
+      "work_url": "https://www.ishugui.com/book/11010578201"
+    }
+  ]
+}
