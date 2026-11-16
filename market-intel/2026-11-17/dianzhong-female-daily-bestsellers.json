@@ -1,0 +1,85 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "observed_date": "2026-11-17",
+  "ranking_date": null,
+  "source": {
+    "name": "点众阅读官网·女生小说畅销日榜",
+    "url": "https://www.ishugui.com/ranking/2-2-1",
+    "authority": "official_platform",
+    "platform_covered": "点众阅读",
+    "ranking": "女生小说·畅销榜·日榜",
+    "metric_note": "官网页面未标注榜单生成日期；仅存公开排名元数据，不抓取作品正文。"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "一盏灯等夜归人",
+      "category": "精品短篇",
+      "heat_display": "166万热度",
+      "work_url": "https://www.ishugui.com/book/11010476999"
+    },
+    {
+      "rank": 2,
+      "title": "一念风止，一晌贪欢",
+      "category": "精品短篇",
+      "heat_display": "157万热度",
+      "work_url": "https://www.ishugui.com/book/11010471943"
+    },
+    {
+      "rank": 3,
+      "title": "他失忆时说爱我，清醒后嫌我难缠",
+      "category": "精品短篇",
+      "heat_display": "155万热度",
+      "work_url": "https://www.ishugui.com/book/11010576117"
+    },
+    {
+      "rank": 4,
+      "title": "白月光还没嘚瑟完，金丝雀一个闪身步飞升了",
+      "category": "精品短篇",
+      "heat_display": "149万热度",
+      "work_url": "https://www.ishugui.com/book/11010579828"
+    },
+    {
+      "rank": 5,
+      "title": "旧念销尽赴归途",
+      "category": "精品短篇",
+      "heat_display": "141万热度",
+      "work_url": "https://www.ishugui.com/book/11010572888"
+    },
+    {
+      "rank": 6,
+      "title": "爹用最后一次恩典救了庶妹的马，我死在了她出嫁那天",
+      "category": "精品短篇",
+      "heat_display": "136万热度",
+      "work_url": "https://www.ishugui.com/book/11010574365"
+    },
+    {
+      "rank": 7,
+      "title": "那天他说再见，我听成了永别",
+      "category": "精品短篇",
+      "heat_display": "136万热度",
+      "work_url": "https://www.ishugui.com/book/11010580430"
+    },
+    {
+      "rank": 8,
+      "title": "替总裁男友白干五年后，我送他的公司破产了",
+      "category": "精品短篇",
+      "heat_display": "135万热度",
+      "work_url": "https://www.ishugui.com/book/11010531191"
+    },
+    {
+      "rank": 9,
+      "title": "我停止透析后，港城太子爷疯了",
+      "category": "精品短篇",
+      "heat_display": "135万热度",
+      "work_url": "https://www.ishugui.com/book/11010580446"
+    },
+    {
+      "rank": 10,
+      "title": "言出法随公主是学人精后，玻璃心太子妃崩溃了",
+      "category": "精品短篇",
+      "heat_display": "133万热度",
+      "work_url": "https://www.ishugui.com/book/11010569687"
+    }
+  ]
+}
