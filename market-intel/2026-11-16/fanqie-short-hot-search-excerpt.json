@@ -1,0 +1,26 @@
+{
+  "schema_version": "ranking-excerpt/v1",
+  "data_date": "2026-11-16",
+  "complete_ranking": false,
+  "source": {
+    "name": "短篇热榜例文-投稿168",
+    "article_title": "11月16日 番茄风短篇小说热榜",
+    "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794970677&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfshlNUgsgYgKYjkjMxUPwlAQc9M6f0DkqInpJLTlP3aDIGO2eCRU4W2DDnc9k6eXrKJ94FiAMQjYzw3HY0QfBn&new=1",
+    "search_url": "https://weixin.sogou.com/weixin?type=2&query=%E7%95%AA%E8%8C%84%E7%9F%AD%E6%95%85%E4%BA%8B%E7%83%AD%E6%A6%9C",
+    "platform": "fanqie_short",
+    "scope": "仅搜狗微信搜索公开摘要中可见的榜单条目；非完整榜单"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "男扮女装网恋奔现,钓到的竟然是死对头",
+      "author": "",
+      "intro": "(双男主)我男扮女装在网上钓了个网恋对象.又一次被断掉生活费后,我哭唧...",
+      "tags": [
+        "网恋"
+      ],
+      "work_url": "",
+      "work_search_url": "https://www.baidu.com/s?wd=%E7%94%B7%E6%89%AE%E5%A5%B3%E8%A3%85%E7%BD%91%E6%81%8B%E5%A5%94%E7%8E%B0%2C%E9%92%93%E5%88%B0%E7%9A%84%E7%AB%9F%E7%84%B6%E6%98%AF%E6%AD%BB%E5%AF%B9%E5%A4%B4+%E7%95%AA%E8%8C%84%E7%9F%AD%E6%95%85%E4%BA%8B"
+    }
+  ]
+}

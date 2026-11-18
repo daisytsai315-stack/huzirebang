@@ -1,0 +1,27 @@
+{
+  "schema_version": "ranking-excerpt/v1",
+  "data_date": "2026-11-15",
+  "complete_ranking": false,
+  "source": {
+    "name": "短篇热榜例文-投稿168",
+    "article_title": "11月15日 番茄风短篇小说热榜",
+    "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794970677&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfo7cuVfFdvvErbKKJPl2QhmJ8otoGW97mC3g1jSdTv1xRZfexAfEYJWjno2Kea80Esogx1otTwcYs2IZ7UB621&new=1",
+    "search_url": "https://weixin.sogou.com/weixin?type=2&query=%E7%95%AA%E8%8C%84%E7%9F%AD%E6%95%85%E4%BA%8B%E7%83%AD%E6%A6%9C",
+    "platform": "fanqie_short",
+    "scope": "仅搜狗微信搜索公开摘要中可见的榜单条目；非完整榜单"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "婚礼被毁怎么办,我还有爸妈严选",
+      "author": "",
+      "intro": "我是一个谨慎的女人. 结婚当天,男友的白月光回国了. 他跑了. 还好,我提前准备...",
+      "tags": [
+        "白月光",
+        "婚姻"
+      ],
+      "work_url": "",
+      "work_search_url": "https://www.baidu.com/s?wd=%E5%A9%9A%E7%A4%BC%E8%A2%AB%E6%AF%81%E6%80%8E%E4%B9%88%E5%8A%9E%2C%E6%88%91%E8%BF%98%E6%9C%89%E7%88%B8%E5%A6%88%E4%B8%A5%E9%80%89+%E7%95%AA%E8%8C%84%E7%9F%AD%E6%95%85%E4%BA%8B"
+    }
+  ]
+}

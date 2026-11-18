@@ -1,0 +1,24 @@
+{
+  "schema_version": "ranking-excerpt/v1",
+  "data_date": "2026-11-18",
+  "complete_ranking": false,
+  "source": {
+    "name": "短篇热榜例文-投稿168",
+    "article_title": "11月18日 小程序风短篇小说热榜",
+    "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794970666&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZco0s-MkwfR6byl2PzJ9OepAAi1u7ZvjCJbshTi5OtUezlHxLGWN9Uh7A6Er5mn1hOmBgSlM38L0eaypcLpxkTx&new=1",
+    "search_url": "https://weixin.sogou.com/weixin?type=2&query=%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A3%8E%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E7%83%AD%E6%A6%9C",
+    "platform": "miniprogram_short",
+    "scope": "仅搜狗微信搜索公开摘要中可见的榜单条目；非完整榜单"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "算清了爱,也算清了你",
+      "author": "",
+      "intro": "第1章我有给感情记账的习惯.谁对我好,我记一笔收入.谁让我难过,我记一笔支出.一旦入不敷...",
+      "tags": [],
+      "work_url": "",
+      "work_search_url": "https://www.baidu.com/s?wd=%E7%AE%97%E6%B8%85%E4%BA%86%E7%88%B1%2C%E4%B9%9F%E7%AE%97%E6%B8%85%E4%BA%86%E4%BD%A0+%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9F%AD%E7%AF%87"
+    }
+  ]
+}
