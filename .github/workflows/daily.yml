@@ -48,7 +48,6 @@ jobs:
 
       - name: Fetch dated Fanqie short-story ranking
         if: always()
-        continue-on-error: true
         run: python src/fetch_fanqie_short.py
 
       - name: Fetch public Dianzhong female daily bestseller ranking
