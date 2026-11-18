@@ -10,7 +10,7 @@ import time
 from http.client import RemoteDisconnected
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.error import URLError
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
@@ -101,18 +101,28 @@ def parse(page: str, now: dt.datetime) -> dict:
     }
 
 
+def fetch_public_page(retries: int = 5, timeout: int = 20) -> str:
+    """Fetch the public ranking with bounded backoff for transient failures."""
+    request = Request(URL, headers={"User-Agent": "Mozilla/5.0"})
+    last_error = None
+    for attempt in range(retries):
+        try:
+            with urlopen(request, timeout=timeout) as response:
+                return response.read(2_000_000).decode("utf-8", errors="replace")
+        except HTTPError as exc:
+            if exc.code not in (408, 425, 429, 500, 502, 503, 504):
+                raise
+            last_error = exc
+        except (RemoteDisconnected, URLError, TimeoutError, ConnectionResetError) as exc:
+            last_error = exc
+        if attempt + 1 < retries:
+            time.sleep(2 ** attempt)
+    raise RuntimeError(f"公开番茄短故事榜抓取失败，已重试 {retries} 次：{last_error}") from last_error
+
+
 def main():
     now = dt.datetime.now(dt.timezone(dt.timedelta(hours=8)))
-    request = Request(URL, headers={"User-Agent": "Mozilla/5.0"})
-    for attempt in range(3):
-        try:
-            with urlopen(request, timeout=20) as response:
-                page = response.read(2_000_000).decode("utf-8", errors="replace")
-            break
-        except (RemoteDisconnected, URLError, TimeoutError, ConnectionResetError):
-            if attempt == 2:
-                raise
-            time.sleep(2 ** attempt)
+    page = fetch_public_page()
     snapshot = parse(page, now)
     path = Path("market-intel") / snapshot["data_date"] / "fanqie-short-reading.json"
     if path.exists():
