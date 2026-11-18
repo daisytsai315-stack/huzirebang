@@ -4,20 +4,36 @@
   "usable_sources": 3,
   "errors": [
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794970666&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZco0s-MkwfR6byl2PzJ9OepAAi1u7ZvjCJbshTi5OtUezlHxLGWN9Uh7A6Er5mn1hOmBgSlM38L0eaypcLpxkTx&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971806&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZc0RwCa5po5MMu41xBzFiCvzVtuO69TDzv39cPsTaTpdIXtxvqqNpH2thk0tK-UVngM0T12kUCRahhcfE-LUS0p&new=1",
+      "error": "公众号原文返回微信公开访问验证页；未尝试绕过"
+    },
+    {
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971816&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZco0s-MkwfR6byl2PzJ9Oepu2QjKP9j49pMkXCL-ipVEwhTfQByfPcAyKvSowUNxzOJRfGKYa9mOwA*dXpNDRPQ&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794970677&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfshlNUgsgYgKYjkjMxUPwlAQc9M6f0DkqInpJLTlP3aDIGO2eCRU4W2DDnc9k6eXrKJ94FiAMQjYzw3HY0QfBn&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971821&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZeRYhDyWFKK2FaauN-zeZzA3czY0aQ-0hYJ2TXvYTERJqNEtPSHp0uvGoC5BYW3M1tih*b6HohfXxhD-z8om49m&new=1",
+      "error": "公众号原文返回微信公开访问验证页；未尝试绕过"
+    },
+    {
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971825&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfFfSYA6hC05ELyptLt*67TPSXgfngwqy3NlgiQJRRHc9vHvzXycorYY*Ova4HfybnNWrYAwWu49uUA5C03bJPJ&new=1",
+      "error": "公众号原文返回微信公开访问验证页；未尝试绕过"
+    },
+    {
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971839&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfshlNUgsgYgKYjkjMxUPwlX9hZTZzxYzRG7zAA6olvabGrBQaIH2coBN0Kbeag*iL6fyxd3k1G204smZXLgWH8&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794970677&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfo7cuVfFdvvErbKKJPl2QhmJ8otoGW97mC3g1jSdTv1xRZfexAfEYJWjno2Kea80Esogx1otTwcYs2IZ7UB621&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971839&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfo7cuVfFdvvErbKKJPl2QhXuaaEBptEMmCoZqg8TmYxPjlq5IUThjmnVVDCjK6infDB5Mi854AM9MvkV-Pdyu0&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
+    },
+    {
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971860&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZdkBmd4Gfqg3nf3jnMb*07ch6K8meioHvIwLJcUYdH2igWroKQPsKilJzpv*EQc5BfW9zLfxp*T1rF9eYi1dHlu&new=1",
+      "error": "公众号原文返回微信公开访问验证页；未尝试绕过"
     },
     {
       "source_url": "搜狗微信搜索",
-      "error": "公众号发现失败；未发现符合栏目的文章；查询计数=[{\"query\": \"11月18日 编辑收稿例文榜\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0, \"page_shape\": {\"characters\": 10449, \"h3_headings\": 0, \"txt_info_blocks\": 0, \"sogou_jump_links\": 0, \"access_challenge_marker\": false}}, {\"attempt\": 2, \"parsed_candidates\": 0, \"title_matches\": 0, \"page_shape\": {\"characters\": 10449, \"h3_headings\": 0, \"txt_info_blocks\": 0, \"sogou_jump_links\": 0, \"access_challenge_marker\": false}}]}, {\"query\": \"编辑收稿例文榜 投稿168\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0, \"page_shape\": {\"characters\": 10432, \"h3_headings\": 0, \"txt_info_blocks\": 0, \"sogou_jump_links\": 0, \"access_challenge_marker\": false}}]}]"
+      "error": "公众号发现失败；未发现符合栏目的文章；查询计数=[{\"query\": \"11月18日 编辑收稿例文榜\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0, \"page_shape\": {\"characters\": 10448, \"h3_headings\": 0, \"txt_info_blocks\": 0, \"sogou_jump_links\": 0, \"access_challenge_marker\": false}}, {\"attempt\": 2, \"parsed_candidates\": 0, \"title_matches\": 0, \"page_shape\": {\"characters\": 10448, \"h3_headings\": 0, \"txt_info_blocks\": 0, \"sogou_jump_links\": 0, \"access_challenge_marker\": false}}]}, {\"query\": \"11月17日 编辑收稿例文榜\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 8, \"title_matches\": 0, \"page_shape\": null}, {\"attempt\": 2, \"parsed_candidates\": 8, \"title_matches\": 0, \"page_shape\": null}]}, {\"query\": \"11月16日 编辑收稿例文榜\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 9, \"title_matches\": 0, \"page_shape\": null}, {\"attempt\": 2, \"parsed_candidates\": 9, \"title_matches\": 0, \"page_shape\": null}]}, {\"query\": \"11月15日 编辑收稿例文榜\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 9, \"title_matches\": 0, \"page_shape\": null}, {\"attempt\": 2, \"parsed_candidates\": 9, \"title_matches\": 0, \"page_shape\": null}]}, {\"query\": \"编辑收稿例文榜 投稿168\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0, \"page_shape\": {\"characters\": 10431, \"h3_headings\": 0, \"txt_info_blocks\": 0, \"sogou_jump_links\": 0, \"access_challenge_marker\": false}}]}]"
     }
   ]
 }
