@@ -271,24 +271,23 @@ def parse_sogou_candidates(search_html: str, limit: int = 3) -> list[dict]:
         if len(candidates) >= limit:
             return candidates
 
-    # Sogou has served the same public result cards without the historical
-    # sogou_vr_... id. Fall back to heading links, scoped to one card at a time.
-    for heading in re.finditer(r"<h3\b[^>]*>(.*?)</h3>", search_html, re.I | re.S):
-        anchor = re.search(r"<a\b([^>]*)>(.*?)</a>", heading.group(1), re.I | re.S)
-        if not anchor:
-            continue
+    # Also accept public result-card links when Sogou omits its legacy result ID.
+    # Candidate title filtering and original article-date checks still apply later.
+    for anchor in re.finditer(r"<a\b([^>]*)>(.*?)</a>", search_html, re.I | re.S):
         href = first_group(r"""\bhref\s*=\s*["']([^"']+)["']""", anchor.group(1))
-        if not href or "sogou.com" not in href and not href.startswith("/"):
+        if not href or ("/link?url=" not in href and "weixin.sogou.com/link" not in href):
+            continue
+        jump_url = re.sub(r"\s+", "", html.unescape(href).replace("&amp;", "&"))
+        if any(item["jump_url"] == jump_url for item in candidates):
             continue
         title = clean_html_fragment(anchor.group(2))
         if not title:
             continue
-        card_end = re.search(r"<h3\b", search_html[heading.end():], re.I)
-        card = search_html[heading.end():heading.end() + card_end.start()] if card_end else search_html[heading.end():]
-        summary = first_group(r"""<p\b[^>]*class\s*=\s*["'][^"']*txt-info[^"']*["'][^>]*>(.*?)</p>""", card)
-        jump_url = re.sub(r"\s+", "", html.unescape(href).replace("&amp;", "&"))
-        if any(item["jump_url"] == jump_url for item in candidates):
-            continue
+        tail = search_html[anchor.end():anchor.end() + 2500]
+        summary = first_group(
+            r"""<p\b[^>]*class\s*=\s*["'][^"']*txt-info[^"']*["'][^>]*>(.*?)</p>""",
+            tail,
+        )
         candidates.append({"title": title, "summary": clean_html_fragment(summary), "jump_url": jump_url})
         if len(candidates) >= limit:
             break
@@ -337,6 +336,13 @@ def discover_sogou_articles(
                 search_html = fetch_with_opener(opener, search_url)
                 candidates = parse_sogou_candidates(search_html, max(max_items_per_query * 20, 30))
                 parsed_count = len(candidates)
+                page_shape = {
+                    "characters": len(search_html),
+                    "h3_headings": len(re.findall(r"<h3\b", search_html, re.I)),
+                    "txt_info_blocks": len(re.findall(r"txt-info", search_html, re.I)),
+                    "sogou_jump_links": len(re.findall(r"/link\?url=", search_html, re.I)),
+                    "access_challenge_marker": any(marker in search_html.lower() for marker in ("验证码", "访问过于频繁", "请求异常", "安全验证", "captcha")),
+                }
             except Exception as exc:
                 attempt_diagnostics.append({"attempt": attempt + 1, "error": str(exc)})
                 if attempt == (1 if date_query else 0):
@@ -353,6 +359,7 @@ def discover_sogou_articles(
                 "attempt": attempt + 1,
                 "parsed_candidates": parsed_count,
                 "title_matches": len(candidates),
+                "page_shape": page_shape if parsed_count == 0 else None,
             })
             if candidates:
                 break
