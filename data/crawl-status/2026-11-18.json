@@ -1,34 +1,38 @@
 {
   "snapshot_date": "2026-11-18",
-  "sources": 7,
-  "usable_sources": 7,
+  "sources": 8,
+  "usable_sources": 8,
   "errors": [
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794992141&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZdWp8zebZqIlTdcU4puBanwoS-GeutJYMgKdW54XXykIXrxmJ3SEr36Uff4Vml7SIvK9shkDu6z1kaqmCGirTJa&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1795025929&ver=7096&signature=pwl8pdBYkKjnVbzcN3FQ5U1bxNsp-F1ioaS-vfnjjTTl2ubxYCQn9rmWyD729I0NIctObJvvbP92BvKIJsX5duPBOut3ZcpyZe-pNApj92HZuVVxsjyAYLJ1Z-XEhSKN&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794992161&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZcXR8niueQzQIuAwx6Ho*AODxRyi6yg3r6fRf4i8*PWuP5AQVYj40c1HS3ykE3AZEAD5zhWqvzvbzxViiOWat12&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1795025931&ver=7096&signature=pwl8pdBYkKjnVbzcN3FQ5U1bxNsp-F1ioaS-vfnjjTRrcj35aTDXP5v*D3UfKhx5EUgFKynmEszSrPx5DDvYBw-77LHO4VfD*em67ORt4eFRc2bGPet-56JUj57Agy8Y&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794992167&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfOhqZrw9hbvIWmbI1JGoj2KFLN7Nt*AtrKDpSMROsD5zvoEJ*V25Xa7KtGplMd9VA79qIavI-vVziwinEg8n7n&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1795025938&ver=7096&signature=pwl8pdBYkKjnVbzcN3FQ5U1bxNsp-F1ioaS-vfnjjTTMdEnfDTJ7QE13vu25vvqbC-A*Dny-pVOoLnFr08O6cG6cB5PoSxMfabWUId3pqrX1DOHwbPErXJsKa9Beno88&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794992179&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfwkyk5rZn-momawP2ccjlqytchMcfnjPiMYDSCId9USrSa9ZQMohSzVkh1AZT5uWq0yQrG5UilmZscWRx-VPS4&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1795025950&ver=7096&signature=pwl8pdBYkKjnVbzcN3FQ5U1bxNsp-F1ioaS-vfnjjTQEshVX4alzr-EAKa9BiLwOM4*vtTBzXBzbhlAMGJo*wvL8dr9rN-iVJWSZPEcjLjOYFRfyM9pHieKlirxyryKX&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794992179&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZeK80FL0prk44RYVTpF645Hqv0Gf2ls4OO6eegINTMPJR-N8Bpvpiv0xeC7KdIEFKl3XgO-VAmFplyMXyfxwonG&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1795025963&ver=7096&signature=pwl8pdBYkKjnVbzcN3FQ5U1bxNsp-F1ioaS-vfnjjTQMLcojJgwrXA1eO-1Ex59f9O*4F-HORBFsv5p6ogYN7qzkLfbDYfMj-ftvA7Y6LNHtxjhQCheshhyRdt*tlQ4f&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794992179&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZdC-dHk3TDicpZq3a7iUpJD8HejCzu8u0uko3hblacpFbPFSKfKevmn08f9ribY9zpJvLkjAtpBSbxVtBQ4t3ex&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1795025963&ver=7096&signature=pwl8pdBYkKjnVbzcN3FQ5U1bxNsp-F1ioaS-vfnjjTR8XB6reFn0o75wHut*wZdqk4Z47zbh6I3expb3y7iaxWRim3haPlscuX8j8YTRq4-8t49P4nowPh-6oRxw6ZVe&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794992187&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfTAoZz-Flm3twr8FAJoJbmDYIP5axcgeVME7*Ayi5WHZmQ967IIGqD6HHxfnZLl0PyjHjbwWPXiJqwBjqgJ*7F&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1795025963&ver=7096&signature=pwl8pdBYkKjnVbzcN3FQ5U1bxNsp-F1ioaS-vfnjjTTR9dRrMbMDz8WGOqUIk-1F8RNm9hApx7qyI0uXP1fcRpafT1IDYTOMWDMw1U*QU-ZsTML0dDsmSk2lPYlf2VHc&new=1",
+      "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
+    },
+    {
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1795025974&ver=7096&signature=pwl8pdBYkKjnVbzcN3FQ5U1bxNsp-F1ioaS-vfnjjTRxrJfd5ivZ1GPT6cCaDEMzVIu6*WFAwgIC*-PqzMtzCZLKkdULq3CS*lPTgVIyfGhtuPgeHhZb4M-cPkGiu6xD&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
