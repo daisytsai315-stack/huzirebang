@@ -3,6 +3,8 @@
     "source_name_hint": "短篇热榜例文-投稿168",
     "platform_hint": "miniprogram",
     "sogou_queries": [
+      "{date} 小程序风短篇小说热榜",
+      "小程序风短篇小说热榜",
       "{date} 小程序短篇小说热榜",
       "小程序短篇热榜 投稿168",
       "小程序小说热榜 投稿168",
@@ -20,6 +22,9 @@
     "source_name_hint": "短篇热榜例文-投稿168",
     "platform_hint": "fanqie_short",
     "sogou_queries": [
+      "番茄短故事热榜",
+      "{date} 番茄风短篇小说热榜",
+      "番茄风短篇小说热榜",
       "{date} 番茄短故事热榜",
       "番茄短故事热榜 投稿168",
       "番茄短篇小说热榜 投稿168",
@@ -28,6 +33,7 @@
     "max_items_per_query": 3,
     "max_age_days": 3,
     "title_any": [
+      "番茄风短篇",
       "番茄短故事",
       "番茄短篇",
       "番茄短文"

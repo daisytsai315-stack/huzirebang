@@ -31,10 +31,8 @@ SECTION_LABELS = {
     "example_text": "例文",
     "trend_summary": "趋势总结",
 }
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36"
-)
+USER_AGENT = "huzirebang/1.0 (+https://github.com/daisytsai315-stack/huzirebang)"
+PUBLIC_HTML_ACCEPT = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
 TAG_RULES = {
     "追妻": ("追妻", "追回", "后悔"),
     "替身": ("替身", "替代"),
@@ -53,17 +51,21 @@ TAG_RULES = {
 }
 
 
-def fetch_html(url: str, retries: int = 3, timeout: int = 30) -> str:
-    """Fetch a public article with bounded retries."""
+def fetch_html_with_final_url(url: str, retries: int = 3, timeout: int = 30) -> tuple[str, str]:
+    """Fetch a public page and retain its final URL for access-status checks."""
 
-    request = Request(url, headers={"User-Agent": USER_AGENT, "Accept-Language": "zh-CN,zh;q=0.9"})
+    request = Request(url, headers={
+        "User-Agent": USER_AGENT,
+        "Accept": PUBLIC_HTML_ACCEPT,
+        "Accept-Language": "zh-CN,zh;q=0.9",
+    })
     last_error: Exception | None = None
     for attempt in range(retries):
         try:
             with urlopen(request, timeout=timeout) as response:
                 raw = response.read()
                 charset = response.headers.get_content_charset() or "utf-8"
-                return raw.decode(charset, errors="replace")
+                return raw.decode(charset, errors="replace"), response.geturl()
         except (HTTPError, URLError, TimeoutError) as exc:
             last_error = exc
             if attempt + 1 < retries:
@@ -71,12 +73,21 @@ def fetch_html(url: str, retries: int = 3, timeout: int = 30) -> str:
     raise RuntimeError(f"无法读取 {url}: {last_error}")
 
 
+def fetch_html(url: str, retries: int = 3, timeout: int = 30) -> str:
+    """Fetch a public page with bounded retries."""
+    return fetch_html_with_final_url(url, retries=retries, timeout=timeout)[0]
+
+
 def make_session_opener():
     return build_opener(HTTPCookieProcessor(CookieJar()))
 
 
 def fetch_with_opener(opener, url: str, timeout: int = 30, referer: str = "") -> str:
-    headers = {"User-Agent": USER_AGENT, "Accept-Language": "zh-CN,zh;q=0.9"}
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": PUBLIC_HTML_ACCEPT,
+        "Accept-Language": "zh-CN,zh;q=0.9",
+    }
     if referer:
         headers["Referer"] = referer
     request = Request(url, headers=headers)
@@ -254,6 +265,31 @@ def parse_rss_entries(feed_xml: str, limit: int = 10) -> list[dict]:
     return entries
 
 
+def _sogou_card_metadata(search_html: str, position: int, end: int) -> dict:
+    """Read publisher and public result timestamp from a Sogou result card."""
+    card_start = search_html.rfind("<li", 0, position)
+    if card_start < 0:
+        card_start = position
+    card = search_html[card_start:end]
+    source_name = first_group(
+        r'<span\b[^>]*class=["\'][^"\']*all-time-y2[^"\']*["\'][^>]*>(.*?)</span>',
+        card,
+    )
+    timestamp = first_group(r"timeConvert\s*\(\s*['\"](\d+)['\"]\s*\)", card)
+    published_at = ""
+    if timestamp:
+        try:
+            shanghai = dt.timezone(dt.timedelta(hours=8))
+            published_at = dt.datetime.fromtimestamp(int(timestamp), shanghai).date().isoformat()
+        except (OverflowError, OSError, ValueError):
+            timestamp = ""
+    return {
+        "source_name": source_name,
+        "search_timestamp": timestamp,
+        "search_published_at": published_at,
+    }
+
+
 def parse_sogou_candidates(search_html: str, limit: int = 3) -> list[dict]:
     """Extract public Sogou WeChat result links across known result markup."""
     pattern = re.compile(
@@ -262,12 +298,18 @@ def parse_sogou_candidates(search_html: str, limit: int = 3) -> list[dict]:
         re.I | re.S,
     )
     candidates = []
-    for _, href, title_html, summary_html in pattern.findall(search_html):
-        candidates.append({
+    for match in pattern.finditer(search_html):
+        _, href, title_html, summary_html = match.groups()
+        item_end = search_html.find("</li>", match.end())
+        if item_end < 0:
+            item_end = min(len(search_html), match.end() + 3000)
+        candidate = {
             "title": clean_html_fragment(title_html),
             "summary": clean_html_fragment(summary_html),
             "jump_url": re.sub(r"\s+", "", html.unescape(href).replace("&amp;", "&")),
-        })
+        }
+        candidate.update(_sogou_card_metadata(search_html, match.start(), item_end))
+        candidates.append(candidate)
         if len(candidates) >= limit:
             return candidates
 
@@ -288,7 +330,12 @@ def parse_sogou_candidates(search_html: str, limit: int = 3) -> list[dict]:
             r"""<p\b[^>]*class\s*=\s*["'][^"']*txt-info[^"']*["'][^>]*>(.*?)</p>""",
             tail,
         )
-        candidates.append({"title": title, "summary": clean_html_fragment(summary), "jump_url": jump_url})
+        item_end = search_html.find("</li>", anchor.start())
+        if item_end < 0:
+            item_end = min(len(search_html), anchor.end() + 3000)
+        candidate = {"title": title, "summary": clean_html_fragment(summary), "jump_url": jump_url}
+        candidate.update(_sogou_card_metadata(search_html, anchor.start(), item_end))
+        candidates.append(candidate)
         if len(candidates) >= limit:
             break
     return candidates
@@ -305,11 +352,40 @@ def resolve_sogou_jump(opener, jump_url: str, search_url: str) -> str:
     raise ValueError("搜狗结果未返回可用的公众号文章地址")
 
 
+def _candidate_is_recent(candidate: dict, target: dt.date | None, max_age_days: int) -> bool:
+    if target is None or max_age_days <= 0:
+        return True
+    published_text = candidate.get("search_published_at", "")
+    try:
+        published = dt.date.fromisoformat(published_text)
+    except (TypeError, ValueError):
+        return False
+    age = (target - published).days
+    if age < 0 or age > max_age_days:
+        return False
+    title_date = re.search(r"(?<!\d)(\d{1,2})月(\d{1,2})日", candidate.get("title", ""))
+    if title_date:
+        month, day = map(int, title_date.groups())
+        try:
+            dated_title = dt.date(published.year, month, day)
+        except ValueError:
+            return False
+        if (dated_title - published).days > 180:
+            dated_title = dt.date(published.year - 1, month, day)
+        elif (published - dated_title).days > 180:
+            dated_title = dt.date(published.year + 1, month, day)
+        if dated_title != published:
+            return False
+    return True
+
+
 def discover_sogou_articles(
     queries: list[str],
     max_items_per_query: int = 2,
     target_date: str = "",
     title_any: list[str] | None = None,
+    source_name_contains: str = "",
+    max_age_days: int = 0,
 ) -> list[dict]:
     """Find recent articles without assuming the first result is the right one."""
     discovered: list[dict] = []
@@ -348,13 +424,30 @@ def discover_sogou_articles(
                 if attempt == (1 if date_query else 0):
                     failures.append(f"{query}: {exc}")
                 continue
-            # Search result date text varies; verify recency using the
-            # original article publication date below instead.
             if title_any:
                 candidates = [
                     candidate for candidate in candidates
                     if any(word in candidate["title"] for word in title_any)
                 ]
+            if source_name_contains:
+                candidates = [
+                    candidate for candidate in candidates
+                    if source_name_contains in candidate.get("source_name", "")
+                ]
+            if target and max_age_days:
+                candidates = [
+                    candidate for candidate in candidates
+                    if _candidate_is_recent(candidate, target, max_age_days)
+                ]
+            # Search relevance can place older posts ahead of today's post.
+            # Apply the per-query cap only after sorting by the public result time.
+            candidates.sort(
+                key=lambda candidate: (
+                    candidate.get("search_published_at", ""),
+                    candidate.get("search_timestamp", ""),
+                ),
+                reverse=True,
+            )
             attempt_diagnostics.append({
                 "attempt": attempt + 1,
                 "parsed_candidates": parsed_count,
@@ -368,19 +461,33 @@ def discover_sogou_articles(
         query_diagnostics.append({"query": query, "attempts": attempt_diagnostics})
         accepted = 0
         for candidate in candidates:
+            absolute_jump_url = candidate["jump_url"]
+            if not absolute_jump_url.startswith("http"):
+                absolute_jump_url = "https://weixin.sogou.com" + absolute_jump_url
             try:
-                url = resolve_sogou_jump(opener, candidate["jump_url"], search_url)
+                article_url = resolve_sogou_jump(opener, candidate["jump_url"], search_url)
             except Exception as exc:
                 failures.append(f"{query} jump: {exc}")
+                article_url = ""
+            identity = "|".join((
+                candidate.get("source_name", ""),
+                candidate.get("title", ""),
+                candidate.get("search_published_at", ""),
+            ))
+            if identity in seen:
                 continue
-            if url in seen:
-                continue
-            seen.add(url)
+            seen.add(identity)
             discovered.append({
-                "url": url,
+                "url": article_url or absolute_jump_url,
+                "article_url": article_url,
+                "search_jump_url": absolute_jump_url,
+                "search_url": search_url,
                 "query": query,
                 "search_title": candidate["title"],
                 "search_summary": candidate["summary"],
+                "search_source_name": candidate.get("source_name", ""),
+                "search_timestamp": candidate.get("search_timestamp", ""),
+                "search_published_at": candidate.get("search_published_at", ""),
             })
             accepted += 1
             if accepted >= max_items_per_query:
@@ -390,6 +497,67 @@ def discover_sogou_articles(
         details += "；查询计数=" + json.dumps(query_diagnostics, ensure_ascii=False)
         raise RuntimeError("公众号发现失败；" + details)
     return discovered
+
+
+def build_public_search_excerpt(entry: dict, source: dict, snapshot_date: str, access_error: str) -> dict | None:
+    """Keep only verifiable material visible in the public Sogou result snippet."""
+    source_name = entry.get("search_source_name", "")
+    expected_source = source.get("source_name_contains", "")
+    if not source_name or (expected_source and expected_source not in source_name):
+        return None
+
+    article_title = entry.get("search_title", "")
+    title_any = source.get("title_any", [])
+    if title_any and not any(word in article_title for word in title_any):
+        return None
+
+    try:
+        published = dt.date.fromisoformat(entry.get("search_published_at", ""))
+        snapshot_day = dt.date.fromisoformat(snapshot_date)
+    except (TypeError, ValueError):
+        return None
+    max_age_days = int(source.get("max_age_days", 0))
+    age = (snapshot_day - published).days
+    if age < 0 or age > max_age_days:
+        return None
+    candidate = {"title": article_title, "search_published_at": published.isoformat()}
+    if not _candidate_is_recent(candidate, snapshot_day, max_age_days):
+        return None
+
+    expected_platform = source.get("platform_hint", "")
+    article_platform = detect_platform(article_title)
+    if expected_platform and article_platform not in (expected_platform, "unknown"):
+        return None
+    platform = article_platform if article_platform != "unknown" else expected_platform
+    items = parse_top_items(entry.get("search_summary", ""), platform)
+    if not items:
+        return None
+
+    section_type = {
+        "miniprogram": "miniprogram_hot",
+        "fanqie_short": "fanqie_short_hot",
+    }.get(platform)
+    if not section_type:
+        return None
+    sections = empty_sections()
+    next(section for section in sections if section["type"] == section_type)["items"] = items
+    return {
+        "source_name": source_name,
+        "source_name_verified": True,
+        "platform": platform,
+        "usage": "commercial_short",
+        "article_title": article_title,
+        "author": "",
+        "published_at": published.isoformat(),
+        "published_at_basis": "搜狗公开结果时间，并与文章标题中的月日核对",
+        "source_url": entry.get("article_url") or entry.get("url", ""),
+        "source_search_url": entry.get("search_url", ""),
+        "capture_scope": "仅搜狗微信搜索公开摘要中可见的榜单条目；非完整榜单",
+        "completeness": "partial",
+        "access_error": access_error,
+        "sections": sections,
+        "parse_status": "public_search_excerpt",
+    }
 
 def empty_sections() -> list[dict]:
     return [{"type": section_type, "items": []} for section_type in SECTION_TYPES]
@@ -451,6 +619,8 @@ def build_snapshot(sources: list[dict], snapshot_date: str) -> dict:
                     int(source.get("max_items_per_query", 2)),
                     snapshot_date,
                     source.get("title_any", []),
+                    source.get("source_name_contains", ""),
+                    int(source.get("max_age_days", 0)),
                 )
                 if not discovered:
                     errors.append({"source_url": "搜狗微信搜索", "error": "没有发现匹配的公众号文章"})
@@ -472,7 +642,12 @@ def build_snapshot(sources: list[dict], snapshot_date: str) -> dict:
         for entry in discovered:
             url = entry["url"]
             try:
-                page = fetch_html(url)
+                if source.get("sogou_queries"):
+                    page, final_url = fetch_html_with_final_url(url)
+                    if "wappoc_appmsgcaptcha" in final_url.lower():
+                        raise RuntimeError("公众号原文返回微信公开访问验证页；未尝试绕过")
+                else:
+                    page = fetch_html(url)
                 parsed = parse_source_html(url, page, source.get("source_name_hint", ""), source.get("platform_hint", ""))
                 # Do not silently publish an older article when a date query
                 # returned a stale search result.  A missing day is a visible
@@ -507,7 +682,18 @@ def build_snapshot(sources: list[dict], snapshot_date: str) -> dict:
                         errors.append({"source_url": url, "error": "已发现文章，但未解析到可用的作品榜单或明确收稿条目（可能是图片榜）"})
                     parsed_sources.append(parsed)
             except Exception as exc:  # keep one failing source from hiding others
-                errors.append({"source_url": url, "error": str(exc)})
+                excerpt = None
+                if source.get("sogou_queries"):
+                    excerpt = build_public_search_excerpt(entry, source, snapshot_date, str(exc))
+                if excerpt:
+                    if not any(x["source_url"] == excerpt["source_url"] for x in parsed_sources):
+                        parsed_sources.append(excerpt)
+                    errors.append({
+                        "source_url": excerpt["source_url"],
+                        "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证",
+                    })
+                else:
+                    errors.append({"source_url": url, "error": str(exc)})
     snapshot = {"snapshot_date": snapshot_date, "sources": parsed_sources}
     if errors:
         snapshot["errors"] = errors
@@ -521,6 +707,8 @@ def _normalise_title(title: str) -> str:
 def _hot_records(snapshot: dict, section_type: str = "zhihu_hot") -> list[dict]:
     records = []
     for source in snapshot.get("sources", []):
+        if source.get("parse_status") == "public_search_excerpt":
+            continue
         for section in source.get("sections", []):
             if section.get("type") != section_type or not section.get("items"):
                 continue
@@ -632,7 +820,11 @@ def build_rank_changes(history: list[dict]) -> dict:
 def render_markdown(snapshot: dict) -> str:
     lines = [f"# {snapshot['snapshot_date']} 短篇市场快照", ""]
     if snapshot.get("errors"):
-        lines.extend(["> 注意：以下来源抓取失败，详见 latest.json 的 errors。", ""])
+        has_excerpt = any(source.get("parse_status") == "public_search_excerpt" for source in snapshot.get("sources", []))
+        if has_excerpt:
+            lines.extend(["> 部分公众号原文受到访问验证限制；只保留搜狗公开摘要中可见的样本，并明确标为非完整榜单。详见 latest.json 的 errors。", ""])
+        else:
+            lines.extend(["> 注意：以下来源抓取失败，详见 latest.json 的 errors。", ""])
     changes = snapshot.get("rank_changes", {})
     if changes.get("latest_date") == snapshot["snapshot_date"]:
         lines.extend(["## 知乎热榜跨日变化", ""])
@@ -659,6 +851,12 @@ def render_markdown(snapshot: dict) -> str:
 
     for kind, label in (("miniprogram_hot", "小程序短篇"), ("fanqie_short_hot", "番茄短故事")):
         changes = snapshot.get("commercial_rank_changes", {}).get(kind, {})
+        excerpts = [
+            (source, section) for source in snapshot.get("sources", [])
+            if source.get("parse_status") == "public_search_excerpt"
+            for section in source.get("sections", [])
+            if section.get("type") == kind and section.get("items")
+        ]
         if changes.get("latest_date") == snapshot["snapshot_date"]:
             lines.extend([f"## {label}跨期变动", ""])
             if changes.get("previous_date"):
@@ -668,23 +866,36 @@ def render_markdown(snapshot: dict) -> str:
             lines.extend([f"- 新上榜：《{v['title']}》" for v in changes.get("new_entries", [])] or ["- 暂无新上榜样本"])
             lines.extend([f"- 连续出现：《{v['title']}》" for v in changes.get("persistent_entries", [])] or ["- 暂无连续样本"])
             lines.append("")
+        elif excerpts:
+            sample_count = sum(len(section["items"]) for _, section in excerpts)
+            last_full_date = changes.get("latest_date")
+            detail = f"> 本期已取得搜狗公开摘要中的{label}样本 {sample_count} 条；这是非完整榜单摘录，未用于排名变化计算。"
+            detail += f"完整榜单最后有效来源日：{last_full_date}。" if last_full_date else "目前还没有可比较的完整榜单。"
+            lines.extend([detail, ""])
         elif changes.get("latest_date"):
             lines.extend([f"> {label}本期无新增可核验榜单；最近有效来源日为 {changes['latest_date']}。", ""])
         else:
             lines.extend([f"> {label}尚未取得可解析的新榜单。", ""])
 
     for source in snapshot["sources"]:
+        partial = source.get("parse_status") == "public_search_excerpt"
+        published_label = "搜狗公开结果标注时间" if partial else "公众号发布时间"
         lines.extend([
             f"## {source['source_name'] or '未识别公众号'}｜{source['article_title']}",
             f"- 市场类型：{source.get('platform', 'unknown')}",
             f"- 用途：{'商业短篇生产候选素材' if source.get('usage') == 'commercial_short' else '精品创作参考/编辑参考'}",
-            f"- 抽取状态：{source.get('parse_status', '未标记')}",
-            f"- 公众号发布时间：{source['published_at'] or '未识别'}",
-            f"- 公众号榜单来源（仅溯源）：{source['source_url']}",
+            f"- 抽取状态：{'搜狗公开摘要摘录（非完整榜单）' if partial else source.get('parse_status', '未标记')}",
+            f"- {published_label}：{source['published_at'] or '未识别'}",
+            f"- 榜单来源（仅溯源）：{source['source_url']}",
             "",
         ])
+        if partial:
+            lines.extend([f"- 证据范围：{source.get('capture_scope', '仅公开摘要可见内容')}", ""])
         for section in source["sections"]:
-            lines.append(f"### {SECTION_LABELS[section['type']]}")
+            section_label = SECTION_LABELS[section["type"]]
+            if partial:
+                section_label += "（公开摘要摘录，非完整榜单）"
+            lines.append(f"### {section_label}")
             if not section["items"]:
                 lines.extend(["- 今日未检测到该栏目。", ""])
                 continue
@@ -730,11 +941,11 @@ def write_snapshot(snapshot: dict, output_dir: Path) -> None:
 
 
 def publish_short_rankings(snapshot: dict, output_root: Path) -> list[str]:
-    """Publish verified public short-story ranking metadata by article date."""
+    """Publish full rankings and separately labelled public search excerpts."""
     published = []
     names = {"miniprogram_hot": "miniprogram-hot.json", "fanqie_short_hot": "fanqie-short-hot.json"}
     for source in snapshot["sources"]:
-        if source.get("parse_status") != "parsed" or not source.get("source_name_verified"):
+        if not source.get("source_name_verified"):
             continue
         article_date = source.get("published_at")
         try:
@@ -745,6 +956,33 @@ def publish_short_rankings(snapshot: dict, output_root: Path) -> list[str]:
             kind = section.get("type")
             items = section.get("items", [])
             if kind not in names or not items:
+                continue
+            if source.get("parse_status") == "public_search_excerpt":
+                excerpt_name = names[kind].replace(".json", "-search-excerpt.json")
+                path = output_root / article_date / excerpt_name
+                record = {
+                    "schema_version": "ranking-excerpt/v1",
+                    "data_date": article_date,
+                    "complete_ranking": False,
+                    "source": {
+                        "name": source["source_name"],
+                        "article_title": source["article_title"],
+                        "url": source["source_url"],
+                        "search_url": source.get("source_search_url", ""),
+                        "platform": "miniprogram_short" if kind == "miniprogram_hot" else "fanqie_short",
+                        "scope": source.get("capture_scope", "公开搜索摘要摘录；非完整榜单"),
+                    },
+                    "works": items,
+                }
+                if path.exists():
+                    previous = json.loads(path.read_text(encoding="utf-8"))
+                    if previous == record:
+                        continue
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                published.append(str(path))
+                continue
+            if source.get("parse_status") != "parsed":
                 continue
             if [item.get("rank") for item in items] != list(range(1, len(items) + 1)):
                 continue
@@ -783,7 +1021,7 @@ def main() -> int:
     snapshot = build_snapshot(sources, args.date)
     usable = [
         source for source in snapshot["sources"]
-        if source.get("parse_status") == "parsed"
+        if source.get("parse_status") in ("parsed", "public_search_excerpt")
         and any(section.get("items") for section in source.get("sections", []))
     ]
     status = {

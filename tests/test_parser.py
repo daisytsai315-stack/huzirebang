@@ -6,10 +6,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from fetch_wechat import classify_article, detect_platform, discover_sogou_articles, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items, publish_short_rankings  # noqa: E402
+from fetch_wechat import USER_AGENT, build_rank_history, build_snapshot, classify_article, detect_platform, discover_sogou_articles, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items, publish_short_rankings, render_markdown  # noqa: E402
 
 
 class ParserTests(unittest.TestCase):
+    def test_public_fetch_uses_transparent_crawler_identity(self):
+        self.assertTrue(USER_AGENT.startswith("huzirebang/1.0 "))
+        self.assertNotIn("Mozilla/", USER_AGENT)
+
     def test_dated_search_retries_empty_first_result(self):
         result = '<h3><a href="/link?url=abc" id="sogou_vr_11002601_title_0">11月11日 小程序短篇榜</a></h3><p class="txt-info">TOP 1 《测试作品》</p>'
         with patch("fetch_wechat.fetch_with_opener", side_effect=["<html></html>", result]) as fetch, \
@@ -130,6 +134,89 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(candidates[0]["title"], "9月22日 知乎风")
         self.assertEqual(candidates[0]["summary"], "TOP 1 《测试作品》 简介片段")
         self.assertEqual(candidates[0]["jump_url"], "/link?url=abc&type=2")
+
+    def test_sogou_candidates_include_publisher_and_search_timestamp(self):
+        search_html = """
+        <li><h3><a href="/link?url=abc" id="sogou_vr_11002601_title_0">11月18日 小程序风短篇小说热榜</a></h3>
+        <p class="txt-info">TOP 1 《测试作品》 真实摘要片段...</p>
+        <div class="s-p"><span class="all-time-y2">短篇热榜例文-投稿168</span>
+        <script>document.write(timeConvert('1794965572'))</script></div></li>
+        """
+        candidate = parse_sogou_candidates(search_html)[0]
+        self.assertEqual(candidate["source_name"], "短篇热榜例文-投稿168")
+        self.assertEqual(candidate["search_published_at"], "2026-11-18")
+
+    def test_discovery_keeps_only_recent_results_from_the_configured_account(self):
+        result = """
+        <li><h3><a href="/link?url=older" id="sogou_vr_11002601_title_0">11月16日 番茄风短篇小说热榜</a></h3>
+        <p class="txt-info">TOP 1 《较早作品》</p>
+        <div class="s-p"><span class="all-time-y2">短篇热榜例文-投稿168</span><script>timeConvert('1794792766')</script></div></li>
+        <li><h3><a href="/link?url=old" id="sogou_vr_11002601_title_1">11月15日 番茄风短篇小说热榜</a></h3>
+        <p class="txt-info">TOP 1 《旧作品》</p>
+        <div class="s-p"><span class="all-time-y2">短篇热榜例文-投稿168</span><script>timeConvert('1794706359')</script></div></li>
+        <li><h3><a href="/link?url=foreign" id="sogou_vr_11002601_title_2">11月18日 番茄风短篇小说热榜</a></h3>
+        <p class="txt-info">TOP 1 《误匹配作品》</p>
+        <div class="s-p"><span class="all-time-y2">其他公众号</span><script>timeConvert('1794965572')</script></div></li>
+        <li><h3><a href="/link?url=current" id="sogou_vr_11002601_title_3">11月18日 番茄风短篇小说热榜</a></h3>
+        <p class="txt-info">TOP 1 《今日作品》 今日摘要</p>
+        <div class="s-p"><span class="all-time-y2">短篇热榜例文-投稿168</span><script>timeConvert('1794965572')</script></div></li>
+        """
+        with patch("fetch_wechat.fetch_with_opener", return_value=result), \
+                patch("fetch_wechat.resolve_sogou_jump", return_value="https://mp.weixin.qq.com/s/current"):
+            found = discover_sogou_articles(
+                ["番茄风短篇小说热榜"], 1, "2026-11-18", ["番茄风短篇"], "投稿168", 3
+            )
+        self.assertEqual(len(found), 1)
+        self.assertEqual(found[0]["search_title"], "11月18日 番茄风短篇小说热榜")
+        self.assertEqual(found[0]["search_source_name"], "短篇热榜例文-投稿168")
+        self.assertEqual(found[0]["search_published_at"], "2026-11-18")
+
+    def test_public_search_excerpt_survives_wechat_access_challenge(self):
+        source = {
+            "source_name_hint": "短篇热榜例文-投稿168",
+            "platform_hint": "miniprogram",
+            "sogou_queries": ["{date} 小程序风短篇小说热榜"],
+            "max_age_days": 3,
+            "title_any": ["小程序"],
+            "source_name_contains": "投稿168",
+        }
+        entry = {
+            "url": "https://mp.weixin.qq.com/s/public-article",
+            "search_url": "https://weixin.sogou.com/weixin?type=2&query=public",
+            "search_title": "11月18日 小程序风短篇小说热榜",
+            "search_summary": "TOP 1 《真实短篇作品》 这是搜狗公开摘要里的真实导语片段...",
+            "search_source_name": "短篇热榜例文-投稿168",
+            "search_published_at": "2026-11-18",
+        }
+        challenge_page = "<html><body>public WeChat access challenge</body></html>"
+        blocked_url = "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?target_url=public"
+        with patch("fetch_wechat.discover_sogou_articles", return_value=[entry]), \
+                patch("fetch_wechat.fetch_html_with_final_url", return_value=(challenge_page, blocked_url)):
+            snapshot = build_snapshot([source], "2026-11-18")
+
+        item_source = snapshot["sources"][0]
+        self.assertEqual(item_source["parse_status"], "public_search_excerpt")
+        self.assertTrue(item_source["source_name_verified"])
+        self.assertEqual(item_source["published_at"], "2026-11-18")
+        self.assertEqual(item_source["sections"][1]["items"][0]["title"], "真实短篇作品")
+        self.assertIn("非完整榜单", render_markdown(snapshot))
+
+    def test_excerpt_is_exported_separately_from_complete_ranking(self):
+        snapshot = {"sources": [{
+            "parse_status": "public_search_excerpt", "source_name_verified": True,
+            "published_at": "2026-11-18", "source_name": "短篇热榜例文-投稿168",
+            "article_title": "11月18日 小程序风短篇小说热榜",
+            "source_url": "https://mp.weixin.qq.com/s/public-article",
+            "search_url": "https://weixin.sogou.com/weixin?type=2&query=public",
+            "sections": [{"type": "miniprogram_hot", "items": [{"rank": 1, "title": "作品甲"}]}],
+        }]}
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            paths = publish_short_rankings(snapshot, root)
+            self.assertEqual(len(paths), 1)
+            self.assertTrue((root / "2026-11-18" / "miniprogram-hot-search-excerpt.json").exists())
+            self.assertFalse((root / "2026-11-18" / "miniprogram-hot.json").exists())
+            self.assertEqual(build_rank_history(snapshot, root, "miniprogram_hot"), [])
 
 
 if __name__ == "__main__":
