@@ -318,12 +318,8 @@ def discover_sogou_articles(
                 if attempt == (1 if date_query else 0):
                     failures.append(f"{query}: {exc}")
                 continue
-            if date_query and target:
-                marker = f"{target.month}月{target.day}日"
-                candidates = [
-                    candidate for candidate in candidates
-                    if marker in candidate["title"] or marker in candidate["summary"]
-                ]
+            # Search result date text is inconsistent. Recency is checked against
+            # the original article publication date below, not this snippet.
             if title_any:
                 candidates = [
                     candidate for candidate in candidates
@@ -751,11 +747,22 @@ def main() -> int:
         if source.get("parse_status") == "parsed"
         and any(section.get("items") for section in source.get("sections", []))
     ]
+    status = {
+        "snapshot_date": args.date,
+        "sources": len(snapshot["sources"]),
+        "usable_sources": len(usable),
+        "errors": snapshot.get("errors", []),
+    }
+    status_dir = args.output / "crawl-status"
+    status_dir.mkdir(parents=True, exist_ok=True)
+    (status_dir / f"{args.date}.json").write_text(
+        json.dumps(status, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     if usable:
         write_snapshot(snapshot, args.output)
         if args.market_output:
             publish_short_rankings(snapshot, args.market_output)
-    print(json.dumps({"snapshot_date": args.date, "sources": len(snapshot["sources"]), "usable_sources": len(usable), "errors": len(snapshot.get("errors", []))}, ensure_ascii=False))
+    print(json.dumps(status, ensure_ascii=False))
     return 0 if usable else 1
 
 
