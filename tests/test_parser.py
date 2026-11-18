@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from fetch_wechat import USER_AGENT, build_rank_history, build_snapshot, classify_article, detect_platform, discover_sogou_articles, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items, publish_short_rankings, render_markdown  # noqa: E402
+from fetch_wechat import USER_AGENT, build_public_search_excerpt, build_rank_history, build_snapshot, classify_article, detect_platform, discover_sogou_articles, parse_rss_entries, parse_sogou_candidates, parse_source_html, parse_top_items, publish_short_rankings, render_markdown  # noqa: E402
 
 
 class ParserTests(unittest.TestCase):
@@ -226,6 +226,28 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(item_source["published_at"], "2026-11-18")
         self.assertEqual(item_source["sections"][1]["items"][0]["title"], "真实短篇作品")
         self.assertIn("非完整榜单", render_markdown(snapshot))
+
+    def test_public_excerpt_keeps_title_when_sogou_omits_top_label_without_guessing_rank(self):
+        source = {
+            "source_name_contains": "投稿168",
+            "platform_hint": "fanqie_short",
+            "max_age_days": 3,
+            "title_any": ["番茄风短篇"],
+        }
+        entry = {
+            "search_source_name": "短篇热榜例文-投稿168",
+            "search_title": "11月17日 番茄风短篇小说热榜",
+            "search_published_at": "2026-11-17",
+            "search_summary": "11 《让我当男二，抱歉，恕不奉陪！》 我和沈家千金沈语媛是联姻。举行婚礼时…",
+            "source_url": "https://mp.weixin.qq.com/s/public-article",
+        }
+        excerpt = build_public_search_excerpt(entry, source, "2026-11-18", "公众号原文公开访问受限")
+        self.assertIsNotNone(excerpt)
+        item = excerpt["sections"][2]["items"][0]
+        self.assertIsNone(item["rank"])
+        self.assertEqual(item["title"], "让我当男二，抱歉，恕不奉陪！")
+        self.assertIn("我和沈家千金", item["intro"])
+        self.assertIn("排名未显示", render_markdown({"snapshot_date": "2026-11-18", "sources": [excerpt]}))
 
     def test_excerpt_is_exported_separately_from_complete_ranking(self):
         snapshot = {"sources": [{

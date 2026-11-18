@@ -236,6 +236,28 @@ def parse_top_items(fragment: str, platform: str = "zhihu") -> list[dict]:
     return entries
 
 
+def parse_public_search_items(summary: str, platform: str) -> list[dict]:
+    """Read a work visible in Sogou's snippet without inventing its rank."""
+    items = parse_top_items(summary, platform)
+    if items:
+        return items
+    text = clean_html_fragment(summary)
+    match = re.search(r"《([^《》]{2,})》", text)
+    if not match:
+        return []
+    title = match.group(1).strip()
+    intro = text[match.end():].strip(" \t\r\n:：-—")
+    return [{
+        "rank": None,
+        "title": title,
+        "author": "",
+        "intro": intro,
+        "tags": infer_tags(title, intro),
+        "work_url": "",
+        "work_search_url": make_work_search_url(title, platform),
+    }]
+
+
 def parse_rss_entries(feed_xml: str, limit: int = 10) -> list[dict]:
     """Read a standard RSS/Atom feed used as the daily article discovery layer."""
 
@@ -545,7 +567,7 @@ def build_public_search_excerpt(entry: dict, source: dict, snapshot_date: str, a
     if expected_platform and article_platform not in (expected_platform, "unknown"):
         return None
     platform = article_platform if article_platform != "unknown" else expected_platform
-    items = parse_top_items(entry.get("search_summary", ""), platform)
+    items = parse_public_search_items(entry.get("search_summary", ""), platform)
     if not items:
         return None
 
@@ -917,7 +939,9 @@ def render_markdown(snapshot: dict) -> str:
                 continue
             for item in section["items"]:
                 if section["type"] in ("zhihu_hot", "miniprogram_hot", "fanqie_short_hot", "example_text"):
-                    lines.append(f"#### {item.get('rank', '')}.《{item.get('title', '')}》")
+                    rank = item.get("rank")
+                    rank_label = f"{rank}." if rank else "排名未显示："
+                    lines.append(f"#### {rank_label}《{item.get('title', '')}》")
                     lines.append(f"- 导语：{item.get('intro', '') or '未提供'}")
                     lines.append(f"- 标签：{'、'.join(item.get('tags', [])) or '未自动识别'}")
                     if item.get("work_url"):
