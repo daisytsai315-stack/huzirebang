@@ -101,6 +101,16 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(entries[0]["title"], "今天的知乎热榜")
         self.assertEqual(entries[0]["url"], "https://mp.weixin.qq.com/s/today")
 
+    def test_sogou_candidates_support_heading_link_without_legacy_id(self):
+        search_html = """
+        <div class="vrwrap"><h3><a target="_blank" href="/link?url=abc&amp;type=2">11月18日 小程序短篇榜</a></h3>
+        <p class="txt-info">TOP 1 《测试作品》</p></div>
+        """
+        candidates = parse_sogou_candidates(search_html)
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0]["title"], "11月18日 小程序短篇榜")
+        self.assertEqual(candidates[0]["jump_url"], "/link?url=abc&type=2")
+
     def test_sogou_candidates_keep_title_summary_and_jump_url(self):
         search_html = """
         <h3><a href="/link?url=abc&amp;type=2" id="sogou_vr_11002601_title_0">9月22日 <em>知乎风</em></a></h3>
