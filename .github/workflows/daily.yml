@@ -35,6 +35,7 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Fetch and write snapshot
+        continue-on-error: true
         run: python src/fetch_wechat.py --sources sources.json --output data --market-output market-intel
 
       - name: Fetch official novel site ranking metadata
