@@ -255,11 +255,10 @@ def parse_rss_entries(feed_xml: str, limit: int = 10) -> list[dict]:
 
 
 def parse_sogou_candidates(search_html: str, limit: int = 3) -> list[dict]:
-    """Extract public search-result jump links and snippets from Sogou WeChat search."""
-
+    """Extract public Sogou WeChat result links across known result markup."""
     pattern = re.compile(
-        r'<a(?=[^>]*id="sogou_vr_11002601_title_(\d+)")(?=[^>]*href="([^"]+)")[^>]*>(.*?)</a>'
-        r'.*?<p[^>]+class="txt-info"[^>]*>(.*?)</p>',
+        r'<a(?=[^>]*id=["\']sogou_vr_11002601_title_(\d+)["\'])(?=[^>]*href=["\']([^"\']+)["\'])[^>]*>(.*?)</a>'
+        r'.*?<p[^>]+class=["\'][^"\']*txt-info[^"\']*["\'][^>]*>(.*?)</p>',
         re.I | re.S,
     )
     candidates = []
@@ -270,9 +269,30 @@ def parse_sogou_candidates(search_html: str, limit: int = 3) -> list[dict]:
             "jump_url": re.sub(r"\s+", "", html.unescape(href).replace("&amp;", "&")),
         })
         if len(candidates) >= limit:
+            return candidates
+
+    # Sogou has served the same public result cards without the historical
+    # sogou_vr_... id. Fall back to heading links, scoped to one card at a time.
+    for heading in re.finditer(r"<h3\b[^>]*>(.*?)</h3>", search_html, re.I | re.S):
+        anchor = re.search(r"<a\b([^>]*)>(.*?)</a>", heading.group(1), re.I | re.S)
+        if not anchor:
+            continue
+        href = first_group(r"""\bhref\s*=\s*["']([^"']+)["']""", anchor.group(1))
+        if not href or "sogou.com" not in href and not href.startswith("/"):
+            continue
+        title = clean_html_fragment(anchor.group(2))
+        if not title:
+            continue
+        card_end = re.search(r"<h3\b", search_html[heading.end():], re.I)
+        card = search_html[heading.end():heading.end() + card_end.start()] if card_end else search_html[heading.end():]
+        summary = first_group(r"""<p\b[^>]*class\s*=\s*["'][^"']*txt-info[^"']*["'][^>]*>(.*?)</p>""", card)
+        jump_url = re.sub(r"\s+", "", html.unescape(href).replace("&amp;", "&"))
+        if any(item["jump_url"] == jump_url for item in candidates):
+            continue
+        candidates.append({"title": title, "summary": clean_html_fragment(summary), "jump_url": jump_url})
+        if len(candidates) >= limit:
             break
     return candidates
-
 
 def resolve_sogou_jump(opener, jump_url: str, search_url: str) -> str:
     """Resolve Sogou's public JS redirect to the original WeChat article URL."""
