@@ -1,0 +1,19 @@
+{
+  "snapshot_date": "2026-11-18",
+  "sources": 0,
+  "usable_sources": 0,
+  "errors": [
+    {
+      "source_url": "搜狗微信搜索",
+      "error": "公众号发现失败；未发现符合栏目的文章；查询计数=[{\"query\": \"11月18日 小程序短篇小说热榜\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0}, {\"attempt\": 2, \"parsed_candidates\": 0, \"title_matches\": 0}]}, {\"query\": \"小程序短篇热榜 投稿168\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0}]}, {\"query\": \"小程序小说热榜 投稿168\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0}]}, {\"query\": \"小程序短篇榜 投稿168\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0}]}]"
+    },
+    {
+      "source_url": "搜狗微信搜索",
+      "error": "公众号发现失败；未发现符合栏目的文章；查询计数=[{\"query\": \"11月18日 番茄短故事热榜\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0}, {\"attempt\": 2, \"parsed_candidates\": 0, \"title_matches\": 0}]}, {\"query\": \"番茄短故事热榜 投稿168\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0}]}, {\"query\": \"番茄短篇小说热榜 投稿168\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0}]}, {\"query\": \"番茄短篇热榜 投稿168\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0}]}]"
+    },
+    {
+      "source_url": "搜狗微信搜索",
+      "error": "公众号发现失败；未发现符合栏目的文章；查询计数=[{\"query\": \"11月18日 编辑收稿例文榜\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0}, {\"attempt\": 2, \"parsed_candidates\": 0, \"title_matches\": 0}]}, {\"query\": \"编辑收稿例文榜 投稿168\", \"attempts\": [{\"attempt\": 1, \"parsed_candidates\": 0, \"title_matches\": 0}]}]"
+    }
+  ]
+}
