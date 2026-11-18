@@ -19,6 +19,13 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(len(found), 1)
         self.assertEqual(fetch.call_count, 2)
 
+    def test_dated_search_keeps_candidate_without_exact_date_text(self):
+        result = '<h3><a href="/link?url=abc" id="sogou_vr_11002601_title_0">小程序短篇精选榜</a></h3><p class="txt-info">TOP 1 《测试作品》</p>'
+        with patch("fetch_wechat.fetch_with_opener", return_value=result):
+            with patch("fetch_wechat.resolve_sogou_jump", return_value="https://mp.weixin.qq.com/s/today"):
+                found = discover_sogou_articles(["{date} 小程序短篇榜"], 1, "2026-11-17", ["小程序"])
+        self.assertEqual(len(found), 1)
+
     def test_market_export_uses_article_date_and_skips_duplicate(self):
         snapshot = {"sources": [{
             "parse_status": "parsed", "source_name_verified": True,

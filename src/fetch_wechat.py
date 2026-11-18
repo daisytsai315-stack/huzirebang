@@ -296,6 +296,7 @@ def discover_sogou_articles(
     discovered: list[dict] = []
     seen: set[str] = set()
     failures: list[str] = []
+    query_diagnostics: list[dict] = []
     target = dt.date.fromisoformat(target_date) if target_date else None
     for template in queries:
         query = template
@@ -309,30 +310,35 @@ def discover_sogou_articles(
             )
         search_url = "https://weixin.sogou.com/weixin?type=2&query=" + quote_plus(query)
         candidates = []
+        attempt_diagnostics = []
         for attempt in range(2 if date_query else 1):
             opener = make_session_opener()
             try:
                 search_html = fetch_with_opener(opener, search_url)
                 candidates = parse_sogou_candidates(search_html, max(max_items_per_query * 20, 30))
+                parsed_count = len(candidates)
             except Exception as exc:
+                attempt_diagnostics.append({"attempt": attempt + 1, "error": str(exc)})
                 if attempt == (1 if date_query else 0):
                     failures.append(f"{query}: {exc}")
                 continue
-            if date_query and target:
-                marker = f"{target.month}月{target.day}日"
-                candidates = [
-                    candidate for candidate in candidates
-                    if marker in candidate["title"] or marker in candidate["summary"]
-                ]
+            # Search result date text varies; verify recency using the
+            # original article publication date below instead.
             if title_any:
                 candidates = [
                     candidate for candidate in candidates
                     if any(word in candidate["title"] for word in title_any)
                 ]
+            attempt_diagnostics.append({
+                "attempt": attempt + 1,
+                "parsed_candidates": parsed_count,
+                "title_matches": len(candidates),
+            })
             if candidates:
                 break
             if date_query and attempt == 0:
                 time.sleep(1)
+        query_diagnostics.append({"query": query, "attempts": attempt_diagnostics})
         accepted = 0
         for candidate in candidates:
             try:
@@ -352,8 +358,10 @@ def discover_sogou_articles(
             accepted += 1
             if accepted >= max_items_per_query:
                 break
-    if not discovered and failures:
-        raise RuntimeError("公众号发现失败；" + "; ".join(failures[:3]))
+    if not discovered:
+        details = "; ".join(failures[:3]) if failures else "未发现符合栏目的文章"
+        details += "；查询计数=" + json.dumps(query_diagnostics, ensure_ascii=False)
+        raise RuntimeError("公众号发现失败；" + details)
     return discovered
 
 def empty_sections() -> list[dict]:
@@ -751,11 +759,22 @@ def main() -> int:
         if source.get("parse_status") == "parsed"
         and any(section.get("items") for section in source.get("sections", []))
     ]
+    status = {
+        "snapshot_date": args.date,
+        "sources": len(snapshot["sources"]),
+        "usable_sources": len(usable),
+        "errors": snapshot.get("errors", []),
+    }
+    status_dir = args.output / "crawl-status"
+    status_dir.mkdir(parents=True, exist_ok=True)
+    (status_dir / f"{args.date}.json").write_text(
+        json.dumps(status, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     if usable:
         write_snapshot(snapshot, args.output)
         if args.market_output:
             publish_short_rankings(snapshot, args.market_output)
-    print(json.dumps({"snapshot_date": args.date, "sources": len(snapshot["sources"]), "usable_sources": len(usable), "errors": len(snapshot.get("errors", []))}, ensure_ascii=False))
+    print(json.dumps(status, ensure_ascii=False))
     return 0 if usable else 1
 
 
