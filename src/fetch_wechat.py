@@ -322,8 +322,8 @@ def discover_sogou_articles(
                 if attempt == (1 if date_query else 0):
                     failures.append(f"{query}: {exc}")
                 continue
-            # Search result date text is inconsistent. Recency is checked against
-            # the original article publication date below, not this snippet.
+            # Search result date text varies; verify recency using the
+            # original article publication date below instead.
             if title_any:
                 candidates = [
                     candidate for candidate in candidates
