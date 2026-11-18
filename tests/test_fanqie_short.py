@@ -22,6 +22,26 @@ class FanqieShortTests(unittest.TestCase):
         self.assertEqual(len(snapshot["works"]), 5)
         self.assertEqual(snapshot["works"][0]["source_work_url"], "https://novelcatch.com/short/1")
 
+    def test_public_fetch_retries_transient_disconnect(self):
+        from http.client import RemoteDisconnected
+        from unittest.mock import patch
+        import fetch_fanqie_short
+
+        class Response:
+            headers = {}
+            def __enter__(self):
+                return self
+            def __exit__(self, *args):
+                return False
+            def read(self, limit):
+                return b"public ranking"
+
+        with patch("fetch_fanqie_short.urlopen", side_effect=[RemoteDisconnected("temporary"), Response()]) as open_page:
+            with patch("fetch_fanqie_short.time.sleep") as sleep:
+                self.assertEqual(fetch_fanqie_short.fetch_public_page(), "public ranking")
+        self.assertEqual(open_page.call_count, 2)
+        sleep.assert_called_once_with(1)
+
     def test_stale_date_rejected(self):
         now = dt.datetime(2026, 11, 11, tzinfo=dt.timezone(dt.timedelta(hours=8)))
         with self.assertRaises(ValueError):
