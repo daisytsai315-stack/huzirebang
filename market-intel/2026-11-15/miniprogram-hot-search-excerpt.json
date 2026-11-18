@@ -1,0 +1,24 @@
+{
+  "schema_version": "ranking-excerpt/v1",
+  "data_date": "2026-11-15",
+  "complete_ranking": false,
+  "source": {
+    "name": "短篇热榜例文-投稿168",
+    "article_title": "11月15日 小程序风短篇小说热榜",
+    "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794972208&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZc0RwCa5po5MMu41xBzFiCvtUGRc405okXsK7XErko*mMuCfvgo9cl729NpOlixDEwb8XYC-cWhF4fTiBS7nxtA&new=1",
+    "search_url": "https://weixin.sogou.com/weixin?type=2&query=11%E6%9C%8817%E6%97%A5+%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A3%8E%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E7%83%AD%E6%A6%9C",
+    "platform": "miniprogram_short",
+    "scope": "仅搜狗微信搜索公开摘要中可见的榜单条目；非完整榜单"
+  },
+  "works": [
+    {
+      "rank": null,
+      "title": "保研同学递来的饮料,夺走我的考研",
+      "author": "",
+      "intro": "TOP 12 《婆婆带孕妇住我家待产?我转身接来一人全家崩溃》 婆婆把一个挺着大肚子的...",
+      "tags": [],
+      "work_url": "",
+      "work_search_url": "https://www.baidu.com/s?wd=%E4%BF%9D%E7%A0%94%E5%90%8C%E5%AD%A6%E9%80%92%E6%9D%A5%E7%9A%84%E9%A5%AE%E6%96%99%2C%E5%A4%BA%E8%B5%B0%E6%88%91%E7%9A%84%E8%80%83%E7%A0%94+%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9F%AD%E7%AF%87"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "ranking-excerpt/v1",
+  "data_date": "2026-11-16",
+  "complete_ranking": false,
+  "source": {
+    "name": "短篇热榜例文-投稿168",
+    "article_title": "11月16日 小程序风短篇小说热榜",
+    "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794972210&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfFfSYA6hC05ELyptLt*67Tiv027Ogzs7nxithH3BERc-QFMeMwrw-DM2iSHoBhRYj3gBt2pT17uz4xVEeWN5*w&new=1",
+    "search_url": "https://weixin.sogou.com/weixin?type=2&query=11%E6%9C%8816%E6%97%A5+%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A3%8E%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E7%83%AD%E6%A6%9C",
+    "platform": "miniprogram_short",
+    "scope": "仅搜狗微信搜索公开摘要中可见的榜单条目；非完整榜单"
+  },
+  "works": [
+    {
+      "rank": null,
+      "title": "此后山野万里,我款款独行",
+      "author": "",
+      "intro": "TOP 11 《当顾峥再一次一和我说要带梁听母女去治病且一走就要三年后星河万里》 TOP 12 《替妻...",
+      "tags": [],
+      "work_url": "",
+      "work_search_url": "https://www.baidu.com/s?wd=%E6%AD%A4%E5%90%8E%E5%B1%B1%E9%87%8E%E4%B8%87%E9%87%8C%2C%E6%88%91%E6%AC%BE%E6%AC%BE%E7%8B%AC%E8%A1%8C+%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9F%AD%E7%AF%87"
+    }
+  ]
+}

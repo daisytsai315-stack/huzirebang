@@ -1,0 +1,26 @@
+{
+  "schema_version": "ranking-excerpt/v1",
+  "data_date": "2026-11-17",
+  "complete_ranking": false,
+  "source": {
+    "name": "短篇热榜例文-投稿168",
+    "article_title": "11月17日 小程序风短篇小说热榜",
+    "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794972223&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZeRYhDyWFKK2FaauN-zeZzApOPA06co2XcpuJZkV8R9qd3O5O7xcMQbO62feaRvzCGZ4iM2xpj4lf2uplKCr0lG&new=1",
+    "search_url": "https://weixin.sogou.com/weixin?type=2&query=11%E6%9C%8817%E6%97%A5+%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4%E7%83%AD%E6%A6%9C",
+    "platform": "miniprogram_short",
+    "scope": "仅搜狗微信搜索公开摘要中可见的榜单条目；非完整榜单"
+  },
+  "works": [
+    {
+      "rank": null,
+      "title": "结婚七年,第一次收到纪念日礼物后我选择离婚",
+      "author": "",
+      "intro": "返回第一章结婚七周年,陆承舟破天荒送了我一份纪念日礼物...",
+      "tags": [
+        "婚姻"
+      ],
+      "work_url": "",
+      "work_search_url": "https://www.baidu.com/s?wd=%E7%BB%93%E5%A9%9A%E4%B8%83%E5%B9%B4%2C%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%94%B6%E5%88%B0%E7%BA%AA%E5%BF%B5%E6%97%A5%E7%A4%BC%E7%89%A9%E5%90%8E%E6%88%91%E9%80%89%E6%8B%A9%E7%A6%BB%E5%A9%9A+%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9F%AD%E7%AF%87"
+    }
+  ]
+}

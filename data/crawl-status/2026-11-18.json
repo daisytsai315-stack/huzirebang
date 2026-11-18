@@ -1,35 +1,35 @@
 {
   "snapshot_date": "2026-11-18",
-  "sources": 3,
-  "usable_sources": 3,
+  "sources": 7,
+  "usable_sources": 7,
   "errors": [
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971806&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZc0RwCa5po5MMu41xBzFiCvzVtuO69TDzv39cPsTaTpdIXtxvqqNpH2thk0tK-UVngM0T12kUCRahhcfE-LUS0p&new=1",
-      "error": "公众号原文返回微信公开访问验证页；未尝试绕过"
-    },
-    {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971816&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZco0s-MkwfR6byl2PzJ9Oepu2QjKP9j49pMkXCL-ipVEwhTfQByfPcAyKvSowUNxzOJRfGKYa9mOwA*dXpNDRPQ&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794972208&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZc0RwCa5po5MMu41xBzFiCvtUGRc405okXsK7XErko*mMuCfvgo9cl729NpOlixDEwb8XYC-cWhF4fTiBS7nxtA&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971821&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZeRYhDyWFKK2FaauN-zeZzA3czY0aQ-0hYJ2TXvYTERJqNEtPSHp0uvGoC5BYW3M1tih*b6HohfXxhD-z8om49m&new=1",
-      "error": "公众号原文返回微信公开访问验证页；未尝试绕过"
-    },
-    {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971825&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfFfSYA6hC05ELyptLt*67TPSXgfngwqy3NlgiQJRRHc9vHvzXycorYY*Ova4HfybnNWrYAwWu49uUA5C03bJPJ&new=1",
-      "error": "公众号原文返回微信公开访问验证页；未尝试绕过"
-    },
-    {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971839&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfshlNUgsgYgKYjkjMxUPwlX9hZTZzxYzRG7zAA6olvabGrBQaIH2coBN0Kbeag*iL6fyxd3k1G204smZXLgWH8&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794972210&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZco0s-MkwfR6byl2PzJ9Oepecd8Pg5bH4UwmvKwTk8BI1QXCprpScs--hR2sw7F7VhLcPaGWHWWo3xwSFtNp8Sm&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971839&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfo7cuVfFdvvErbKKJPl2QhXuaaEBptEMmCoZqg8TmYxPjlq5IUThjmnVVDCjK6infDB5Mi854AM9MvkV-Pdyu0&new=1",
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794972210&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfFfSYA6hC05ELyptLt*67Tiv027Ogzs7nxithH3BERc-QFMeMwrw-DM2iSHoBhRYj3gBt2pT17uz4xVEeWN5*w&new=1",
       "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
-      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794971860&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZdkBmd4Gfqg3nf3jnMb*07ch6K8meioHvIwLJcUYdH2igWroKQPsKilJzpv*EQc5BfW9zLfxp*T1rF9eYi1dHlu&new=1",
-      "error": "公众号原文返回微信公开访问验证页；未尝试绕过"
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794972223&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZeRYhDyWFKK2FaauN-zeZzApOPA06co2XcpuJZkV8R9qd3O5O7xcMQbO62feaRvzCGZ4iM2xpj4lf2uplKCr0lG&new=1",
+      "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
+    },
+    {
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794972243&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfshlNUgsgYgKYjkjMxUPwlh6OTat86Xx-JiI6iAJnnwpsiWy3QQb22t6BHMmOls-HAI4-X2a8me5FOTPKhnmqw&new=1",
+      "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
+    },
+    {
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794972243&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZfo7cuVfFdvvErbKKJPl2Qh7URX2MgWsCjEx7JZR6nXs8cTFeHBC-gIJQKH3lQdH5KggxNng3AQmyJVZN9o57lp&new=1",
+      "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
+    },
+    {
+      "source_url": "https://mp.weixin.qq.com/s?src=11&timestamp=1794972261&ver=7095&signature=IXDpC5gwVzm7N2oYKVxRGBox3XBlS66GdM0SK5iIXZdkBmd4Gfqg3nf3jnMb*07c-4RCDK5VvhZwLRwy2LPn-pAHjuag*-2Gtofi4KL3LDTq4fXljDPIJ6WY-P9rNsvh&new=1",
+      "error": "原文未能公开读取；已保留搜狗公开摘要摘录（非完整榜单），未尝试绕过访问验证"
     },
     {
       "source_url": "搜狗微信搜索",
