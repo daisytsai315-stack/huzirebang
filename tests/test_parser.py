@@ -23,6 +23,32 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(len(found), 1)
         self.assertEqual(fetch.call_count, 2)
 
+    def test_dated_search_checks_previous_days_before_dropping_recent_sources(self):
+        result = """
+        <li><h3><a href="/link?url=yesterday" id="sogou_vr_11002601_title_0">11月17日 番茄风短篇小说热榜</a></h3>
+        <p class="txt-info">TOP 1 《前一天真实作品》 公开导语</p>
+        <div class="s-p"><span class="all-time-y2">短篇热榜例文-投稿168</span>
+        <script>timeConvert('1794879168')</script></div></li>
+        """
+
+        def search_page(_opener, search_url):
+            from urllib.parse import parse_qs, urlparse
+            query = parse_qs(urlparse(search_url).query).get("query", [""])[0]
+            return result if "11月17日" in query else "<html></html>"
+
+        with patch("fetch_wechat.fetch_with_opener", side_effect=search_page) as fetch, \
+                patch("fetch_wechat.resolve_sogou_jump", return_value="https://mp.weixin.qq.com/s/yesterday"), \
+                patch("fetch_wechat.time.sleep"):
+            found = discover_sogou_articles(
+                ["{date} 番茄短故事热榜"], 1, "2026-11-18",
+                ["番茄风短篇"], "投稿168", 3,
+            )
+
+        self.assertEqual(len(found), 1)
+        self.assertEqual(found[0]["query"], "11月17日 番茄短故事热榜")
+        self.assertEqual(found[0]["search_published_at"], "2026-11-17")
+        self.assertGreater(fetch.call_count, 2)
+
     def test_dated_search_keeps_candidate_without_exact_date_text(self):
         result = '<h3><a href="/link?url=abc" id="sogou_vr_11002601_title_0">小程序短篇精选榜</a></h3><p class="txt-info">TOP 1 《测试作品》</p>'
         with patch("fetch_wechat.fetch_with_opener", return_value=result):

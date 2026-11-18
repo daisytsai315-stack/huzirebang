@@ -379,6 +379,31 @@ def _candidate_is_recent(candidate: dict, target: dt.date | None, max_age_days: 
     return True
 
 
+def _expand_sogou_queries(
+    queries: list[str], target: dt.date | None, max_age_days: int
+) -> list[tuple[str, dt.date | None, bool]]:
+    """Search explicit dates in the accepted freshness window, newest first."""
+    expanded = []
+    for template in queries:
+        is_date_query = "{date}" in template
+        if not is_date_query or target is None:
+            expanded.append((template, None, is_date_query))
+            continue
+        for age_days in range(max(0, max_age_days) + 1):
+            query_date = target - dt.timedelta(days=age_days)
+            expanded.append((
+                template.format(
+                    date=f"{query_date.month}月{query_date.day}日",
+                    month=query_date.month,
+                    day=query_date.day,
+                    year=query_date.year,
+                ),
+                query_date,
+                True,
+            ))
+    return expanded
+
+
 def discover_sogou_articles(
     queries: list[str],
     max_items_per_query: int = 2,
@@ -393,16 +418,7 @@ def discover_sogou_articles(
     failures: list[str] = []
     query_diagnostics: list[dict] = []
     target = dt.date.fromisoformat(target_date) if target_date else None
-    for template in queries:
-        query = template
-        date_query = "{date}" in template
-        if target:
-            query = template.format(
-                date=f"{target.month}月{target.day}日",
-                month=target.month,
-                day=target.day,
-                year=target.year,
-            )
+    for query, query_date, date_query in _expand_sogou_queries(queries, target, max_age_days):
         search_url = "https://weixin.sogou.com/weixin?type=2&query=" + quote_plus(query)
         candidates = []
         attempt_diagnostics = []
