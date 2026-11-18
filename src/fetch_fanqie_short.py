@@ -103,7 +103,14 @@ def parse(page: str, now: dt.datetime) -> dict:
 
 def fetch_public_page(retries: int = 5, timeout: int = 20) -> str:
     """Fetch the public ranking with bounded backoff for transient failures."""
-    request = Request(URL, headers={"User-Agent": "Mozilla/5.0"})
+    request = Request(URL, headers={
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+    })
     last_error = None
     for attempt in range(retries):
         try:
@@ -120,19 +127,44 @@ def fetch_public_page(retries: int = 5, timeout: int = 20) -> str:
     raise RuntimeError(f"公开番茄短故事榜抓取失败，已重试 {retries} 次：{last_error}") from last_error
 
 
+def write_crawl_status(now: dt.datetime, status: str, error: str = "") -> Path:
+    path = Path("market-intel") / "crawl-status" / f"{now.date().isoformat()}-fanqie-short.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({
+        "observed_at": now.isoformat(),
+        "source_url": URL,
+        "ranking": "番茄短故事",
+        "status": status,
+        "error": error,
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return path
+
+
 def main():
     now = dt.datetime.now(dt.timezone(dt.timedelta(hours=8)))
-    page = fetch_public_page()
-    snapshot = parse(page, now)
+    try:
+        page = fetch_public_page()
+    except Exception as exc:
+        status_path = write_crawl_status(now, "fetch_error", str(exc))
+        print(json.dumps({"status": "fetch_error", "error": str(exc), "path": str(status_path)}, ensure_ascii=False))
+        raise
+    try:
+        snapshot = parse(page, now)
+    except Exception as exc:
+        status_path = write_crawl_status(now, "parse_error", str(exc))
+        print(json.dumps({"status": "parse_error", "error": str(exc), "path": str(status_path)}, ensure_ascii=False))
+        raise
     path = Path("market-intel") / snapshot["data_date"] / "fanqie-short-reading.json"
     if path.exists():
         previous = json.loads(path.read_text(encoding="utf-8"))
         if previous.get("works") == snapshot["works"]:
-            print(json.dumps({"status": "unchanged", "path": str(path)}))
+            status_path = write_crawl_status(now, "unchanged")
+            print(json.dumps({"status": "unchanged", "path": str(path), "crawl_status": str(status_path)}))
             return
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"status": "published", "path": str(path)}))
+    status_path = write_crawl_status(now, "published")
+    print(json.dumps({"status": "published", "path": str(path), "crawl_status": str(status_path)}))
 
 
 if __name__ == "__main__":
