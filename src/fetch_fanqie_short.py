@@ -104,10 +104,7 @@ def parse(page: str, now: dt.datetime) -> dict:
 def fetch_public_page(retries: int = 5, timeout: int = 20) -> str:
     """Fetch the public ranking with bounded backoff for transient failures."""
     request = Request(URL, headers={
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36"
-        ),
+        "User-Agent": "huzirebang/1.0 (+https://github.com/daisytsai315-stack/huzirebang)",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "zh-CN,zh;q=0.9",
     })
