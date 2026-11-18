@@ -40,6 +40,7 @@ class FanqieShortTests(unittest.TestCase):
             with patch("fetch_fanqie_short.time.sleep") as sleep:
                 self.assertEqual(fetch_fanqie_short.fetch_public_page(), "public ranking")
         self.assertEqual(open_page.call_count, 2)
+        self.assertTrue(open_page.call_args_list[0].args[0].get_header("User-agent").startswith("Mozilla/5.0"))
         sleep.assert_called_once_with(1)
 
     def test_stale_date_rejected(self):
