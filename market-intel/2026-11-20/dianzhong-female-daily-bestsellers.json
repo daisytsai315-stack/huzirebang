@@ -1,0 +1,85 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "observed_date": "2026-11-20",
+  "ranking_date": null,
+  "source": {
+    "name": "点众阅读官网·女生小说畅销日榜",
+    "url": "https://www.ishugui.com/ranking/2-2-1",
+    "authority": "official_platform",
+    "platform_covered": "点众阅读",
+    "ranking": "女生小说·畅销榜·日榜",
+    "metric_note": "官网页面未标注榜单生成日期；仅存公开排名元数据，不抓取作品正文。"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "未婚夫纵容他的女兄弟闹喜，却不知我和他爸妈都死了",
+      "category": "精品短篇",
+      "heat_display": "164万热度",
+      "work_url": "https://www.ishugui.com/book/11010582685"
+    },
+    {
+      "rank": 2,
+      "title": "日出很美，只是我看不到了",
+      "category": "精品短篇",
+      "heat_display": "161万热度",
+      "work_url": "https://www.ishugui.com/book/11010575918"
+    },
+    {
+      "rank": 3,
+      "title": "一念风止，一晌贪欢",
+      "category": "精品短篇",
+      "heat_display": "153万热度",
+      "work_url": "https://www.ishugui.com/book/11010471943"
+    },
+    {
+      "rank": 4,
+      "title": "白月光朱砂痣千算万算，没算到金丝姐妹花会飞",
+      "category": "精品短篇",
+      "heat_display": "147万热度",
+      "work_url": "https://www.ishugui.com/book/11010582875"
+    },
+    {
+      "rank": 5,
+      "title": "他失忆时说爱我，清醒后嫌我难缠",
+      "category": "精品短篇",
+      "heat_display": "145万热度",
+      "work_url": "https://www.ishugui.com/book/11010576117"
+    },
+    {
+      "rank": 6,
+      "title": "心头血浇的海棠，萧瑟在凤仪时",
+      "category": "精品短篇",
+      "heat_display": "139万热度",
+      "work_url": "https://www.ishugui.com/book/11010571993"
+    },
+    {
+      "rank": 7,
+      "title": "送我回恶人村学乖后，太子爷悔疯了",
+      "category": "精品短篇",
+      "heat_display": "137万热度",
+      "work_url": "https://www.ishugui.com/book/11010581605"
+    },
+    {
+      "rank": 8,
+      "title": "结婚当天，未婚夫追姐姐到民政局，我祝他们白头偕老",
+      "category": "精品短篇",
+      "heat_display": "136万热度",
+      "work_url": "https://www.ishugui.com/book/11010581421"
+    },
+    {
+      "rank": 9,
+      "title": "白月光还没嘚瑟完，金丝雀一个闪身步飞升了",
+      "category": "精品短篇",
+      "heat_display": "135万热度",
+      "work_url": "https://www.ishugui.com/book/11010579828"
+    },
+    {
+      "rank": 10,
+      "title": "一缕红尘，十年旧梦",
+      "category": "精品短篇",
+      "heat_display": "132万热度",
+      "work_url": "https://www.ishugui.com/book/11010583604"
+    }
+  ]
+}
