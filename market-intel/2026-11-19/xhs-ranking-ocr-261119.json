@@ -1,0 +1,44 @@
+{
+  "schema_version": "xhs-ranking-ocr/v1",
+  "collection_date": "2026-11-19",
+  "source": {
+    "source_platform": "xiaohongshu",
+    "account": "绿酱(过稿就改名)",
+    "account_user_id": "6a6e7f370000000013003000",
+    "note_id": "6afe6214000000002c00f8e2",
+    "note_title": "🐯新书榜261119",
+    "note_posted_date_basis": "note title suffix 261119 interpreted as 2026-11-19 Asia/Shanghai; unverified against platform timestamp",
+    "source_url": "https://www.xiaohongshu.com/explore/6afe6214000000002c00f8e2",
+    "source_url_basis": "derived from note_id; xsec_token omitted from public export",
+    "post_likes": 21,
+    "post_likes_basis": "value shown on the user profile note card at collection time"
+  },
+  "evidence_scope": "COVER_IMAGE_OCR",
+  "capture_method": {
+    "page_access": "AUTHENTICATED_BROWSER_SESSION",
+    "readback": "User profile loaded in a logged-in browser; cover image URL extracted from DOM and downloaded.",
+    "ocr_method": "MULTIMODAL_VISION_READBACK",
+    "ocr_preprocessing": "cover upscaled 3x with ffmpeg lanczos before vision read",
+    "ocr_uncertainty_note": "Book/author names transcribed from a low-resolution embedded table; a few glyphs may be misread. See items[].ocr_confidence and ocr_notes."
+  },
+  "parsing": {
+    "ranking_scope": "single screenshot of one daily ranking table; not the full platform ranking",
+    "columns": ["rank", "posted_date", "tags", "title", "author", "likes", "danping", "comment_status"],
+    "column_semantics_note": "likes/danping/comment_status are cover-image labels; '喜欢' and '弹评' are numeric counts as printed, '评论现状' is a qualitative tag.",
+    "tags_normalization": "original comma separators rendered as '/' in CSV for readability; original uses Chinese comma",
+    "parse_status": "OCR_TRANSCRIBED_UNVERIFIED_GLYPHS"
+  },
+  "items": [
+    {"rank": 1, "posted_date": "11.16", "tags": ["脑洞", "甜宠", "古言"], "title": "我女扮男装继承家业", "author": "七玉馥", "likes": "1.3万", "danping": "546", "comment_status": "搞笑好评居多", "ocr_confidence": "medium", "ocr_notes": "作者名末字或为'馥'/'键'，图像模糊难定"},
+    {"rank": 2, "posted_date": "11.16", "tags": ["真假千金", "古言"], "title": "我死后，他们怎么都不偏心了？", "author": "肆年", "likes": "1696", "danping": "46", "comment_status": "差评居多", "ocr_confidence": "medium", "ocr_notes": "书名末句字形模糊"},
+    {"rank": 3, "posted_date": "11.16", "tags": ["豪门霸总", "甜宠", "现言"], "title": "金丝雀出门打工后", "author": "凌羽", "likes": "7973", "danping": "469", "comment_status": "好评居多", "ocr_confidence": "high", "ocr_notes": ""},
+    {"rank": 4, "posted_date": "10.28", "tags": ["权谋", "古言"], "title": "赋明月", "author": "留侯门客", "likes": "1.2万", "danping": "187", "comment_status": "好评多", "ocr_confidence": "medium", "ocr_notes": "书名首字或为'赋'/'腻'"},
+    {"rank": 5, "posted_date": "11.16", "tags": ["青梅竹马", "古言"], "title": "贺春好", "author": "尚森", "likes": "7001", "danping": "234", "comment_status": "好评多", "ocr_confidence": "medium", "ocr_notes": ""},
+    {"rank": 6, "posted_date": "11.16", "tags": ["双男主", "玄幻奇幻"], "title": "我为龙族仙尊诞下一子", "author": "青旗沽酒", "likes": "6864", "danping": "596", "comment_status": "好评多", "ocr_confidence": "high", "ocr_notes": ""},
+    {"rank": 7, "posted_date": "11.16", "tags": ["白月光", "古言"], "title": "桃李嫁东风", "author": "留侯门客", "likes": "814", "danping": "22", "comment_status": "差评多", "ocr_confidence": "high", "ocr_notes": ""},
+    {"rank": 8, "posted_date": "11.16", "tags": ["权谋", "古言"], "title": "沈蘅", "author": "芒果加辣", "likes": "3489", "danping": "62", "comment_status": "好坏参半", "ocr_confidence": "medium", "ocr_notes": "书名或为'沈蘅'/'沈南'"},
+    {"rank": 9, "posted_date": "11.14", "tags": ["双男主", "网恋", "现言"], "title": "掉马后毒舌真少爷跪着叫我老婆", "author": "天高海阔", "likes": "2938", "danping": "370", "comment_status": "好坏参半", "ocr_confidence": "high", "ocr_notes": ""},
+    {"rank": 10, "posted_date": "11.15", "tags": ["现实情感", "现言"], "title": "吾妻", "author": "大家一起奔小康", "likes": "869", "danping": "102", "comment_status": "差评居多", "ocr_confidence": "high", "ocr_notes": ""}
+  ],
+  "analysis_boundary": "Single-cover OCR of a third-party public ranking screenshot. Book/author names and counts are best-effort transcription, not verified against the original platform. Qualitative comment_status is the screenshot author's label, not measured data. Do not treat as official ranking or as read book text. No full text of any work is stored."
+}
