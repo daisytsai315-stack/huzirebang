@@ -34,8 +34,10 @@ jobs:
       - name: Run parser tests
         run: python -m unittest discover -s tests -v
 
-      - name: Fetch and write snapshot
-        run: python src/fetch_wechat.py --sources sources.json --output data --market-output market-intel
+      # Paused 2026-11-19: 投稿168公众号短篇抓取暂时停止（正文覆盖不足）。
+      # 保留历史快照、sources.json 和抓取脚本，方便以后恢复。
+      # - name: Fetch and write snapshot
+      #   run: python src/fetch_wechat.py --sources sources.json --output data --market-output market-intel
 
       - name: Fetch official novel site ranking metadata
         if: always()
