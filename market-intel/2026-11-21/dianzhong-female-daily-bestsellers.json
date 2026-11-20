@@ -1,0 +1,85 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "observed_date": "2026-11-21",
+  "ranking_date": null,
+  "source": {
+    "name": "点众阅读官网·女生小说畅销日榜",
+    "url": "https://www.ishugui.com/ranking/2-2-1",
+    "authority": "official_platform",
+    "platform_covered": "点众阅读",
+    "ranking": "女生小说·畅销榜·日榜",
+    "metric_note": "官网页面未标注榜单生成日期；仅存公开排名元数据，不抓取作品正文。"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "一念风止，一晌贪欢",
+      "category": "精品短篇",
+      "heat_display": "155万热度",
+      "work_url": "https://www.ishugui.com/book/11010471943"
+    },
+    {
+      "rank": 2,
+      "title": "白月光还没嘚瑟完，金丝雀一个闪身步飞升了",
+      "category": "精品短篇",
+      "heat_display": "151万热度",
+      "work_url": "https://www.ishugui.com/book/11010579828"
+    },
+    {
+      "rank": 3,
+      "title": "一盏灯等夜归人",
+      "category": "精品短篇",
+      "heat_display": "150万热度",
+      "work_url": "https://www.ishugui.com/book/11010476999"
+    },
+    {
+      "rank": 4,
+      "title": "未婚夫纵容他的女兄弟闹喜，却不知我和他爸妈都死了",
+      "category": "精品短篇",
+      "heat_display": "146万热度",
+      "work_url": "https://www.ishugui.com/book/11010582685"
+    },
+    {
+      "rank": 5,
+      "title": "他失忆时说爱我，清醒后嫌我难缠",
+      "category": "精品短篇",
+      "heat_display": "143万热度",
+      "work_url": "https://www.ishugui.com/book/11010576117"
+    },
+    {
+      "rank": 6,
+      "title": "答辩现场，男友的嘴欠女兄弟说全班论文都是AI写的",
+      "category": "精品短篇",
+      "heat_display": "141万热度",
+      "work_url": "https://www.ishugui.com/book/11010578334"
+    },
+    {
+      "rank": 7,
+      "title": "心头血浇的海棠，萧瑟在凤仪时",
+      "category": "精品短篇",
+      "heat_display": "138万热度",
+      "work_url": "https://www.ishugui.com/book/11010571993"
+    },
+    {
+      "rank": 8,
+      "title": "念念不归，岁岁无期",
+      "category": "精品短篇",
+      "heat_display": "131万热度",
+      "work_url": "https://www.ishugui.com/book/11010581522"
+    },
+    {
+      "rank": 9,
+      "title": "一缕红尘，十年旧梦",
+      "category": "精品短篇",
+      "heat_display": "130万热度",
+      "work_url": "https://www.ishugui.com/book/11010583604"
+    },
+    {
+      "rank": 10,
+      "title": "五人团中没有我的位置，我选择忘掉所有人",
+      "category": "精品短篇",
+      "heat_display": "128万热度",
+      "work_url": "https://www.ishugui.com/book/11010583074"
+    }
+  ]
+}
