@@ -1,0 +1,44 @@
+{
+  "schema_version": "xhs-ranking-ocr/v1",
+  "collection_date": "2026-11-23",
+  "source": {
+    "source_platform": "xiaohongshu",
+    "account": "绿酱(过稿就改名)",
+    "account_user_id": "6a6e7f370000000013003000",
+    "note_id": "6b023cf5000000001802ed9f",
+    "note_title": "🐯新书榜261122",
+    "note_posted_date_basis": "note title suffix 261122 interpreted as 2026-11-22 Asia/Shanghai; unverified against platform timestamp",
+    "source_url": "https://www.xiaohongshu.com/explore/6b023cf5000000001802ed9f",
+    "source_url_basis": "derived from note_id; xsec_token omitted from public export",
+    "post_likes": 23,
+    "post_likes_basis": "value shown on the user profile note card at collection time"
+  },
+  "evidence_scope": "COVER_IMAGE_OCR",
+  "capture_method": {
+    "page_access": "AUTHENTICATED_BROWSER_SESSION",
+    "readback": "User profile loaded in a logged-in browser; card metadata extracted from DOM (section.note-item); cover image URL downloaded with Referer header via curl after urllib was reset by local proxy.",
+    "ocr_method": "MULTIMODAL_VISION_READBACK",
+    "ocr_preprocessing": "cover upscaled 3x with ffmpeg lanczos (640x296 -> 1920x888), then cropped into overlapping left/right and per-row slices at 2x-3x for glyph disambiguation",
+    "ocr_uncertainty_note": "Book/author names transcribed from a low-resolution embedded table. Several glyphs remain ambiguous and are flagged medium/low with per-item ocr_notes; no glyph was resolved by guessing."
+  },
+  "parsing": {
+    "ranking_scope": "single screenshot of one daily ranking table; not the full platform ranking",
+    "columns": ["rank", "posted_date", "tags", "title", "author", "likes", "danping", "comment_status"],
+    "column_semantics_note": "likes/danping/comment_status are cover-image labels; '喜欢' and '弹评' are numeric counts as printed, '评论现状' is a qualitative tag.",
+    "tags_normalization": "original comma/、 separators rendered as '/' in CSV for readability",
+    "parse_status": "OCR_TRANSCRIBED_UNVERIFIED_GLYPHS"
+  },
+  "items": [
+    {"rank": 1, "posted_date": "11.17", "tags": ["追妻校园", "现言"], "title": "枇杷盈盈", "author": "从前慢", "likes": "6480", "danping": "1085", "comment_status": "差评居多", "ocr_confidence": "medium", "ocr_notes": "书名四字首二字疑似'枇杷'，亦可能为'梳杷'；第二字木旁清晰，首字木旁与'枇'/'梳'难定"},
+    {"rank": 2, "posted_date": "11.18", "tags": ["现实情感", "大女主"], "title": "撬走男同事的老婆后他疯了", "author": "土豆不土", "likes": "1.6万", "danping": "876", "comment_status": "好评多", "ocr_confidence": "high", "ocr_notes": "书名含逗号，首字'撬'清晰；末段'他疯了'确认"},
+    {"rank": 3, "posted_date": "11.17", "tags": ["脑洞", "现言"], "title": "换攻略对象后", "author": "荔凉子", "likes": "2万", "danping": "728", "comment_status": "好评多", "ocr_confidence": "medium", "ocr_notes": "作者第二字'凉'清晰；首字草字头，或为'荔'/'苈'，取常见'荔'"},
+    {"rank": 4, "posted_date": "11.18", "tags": ["双男主", "脑洞"], "title": "假少爷但素小猫", "author": "昭岸", "likes": "1万", "danping": "772", "comment_status": "好评多", "ocr_confidence": "medium", "ocr_notes": "作者首字'昭'/'貂'难定，取'昭岸'；书名'但素小猫'中'素'字清晰"},
+    {"rank": 5, "posted_date": "11.17", "tags": ["大女主", "追妻"], "title": "我的名字", "author": "有风", "likes": "1135", "danping": "106", "comment_status": "好评多", "ocr_confidence": "high", "ocr_notes": ""},
+    {"rank": 6, "posted_date": "11.17", "tags": ["双女主", "现言"], "title": "嘴硬网恋女友背地里偷听我录音八百遍", "author": "叁竹", "likes": "2040", "danping": "210", "comment_status": "好评多性转", "ocr_confidence": "medium", "ocr_notes": "作者'叁竹'清晰；评论现状'好评多性转'字形清楚但语义异常（'性转'或为'性转而'截断），按所见转录不改写"},
+    {"rank": 7, "posted_date": "11.17", "tags": ["校园", "现言"], "title": "阮星", "author": "这河狸吗", "likes": "9538", "danping": "404", "comment_status": "好评多", "ocr_confidence": "medium", "ocr_notes": "书名'阮星'首字或为'阮'/'既'，取'阮'；作者名'这河狸吗'清晰"},
+    {"rank": 8, "posted_date": "11.18", "tags": ["白月光", "现言"], "title": "酸杏脯", "author": "白毛的猫", "likes": "844", "danping": "76", "comment_status": "差评居多", "ocr_confidence": "medium", "ocr_notes": "书名'酸杏脯'三字清晰；'脯'或为'浦'，取'脯'"},
+    {"rank": 9, "posted_date": "11.17", "tags": ["情感背叛", "现言"], "title": "高墙", "author": "考拉哈哈哈", "likes": "1608", "danping": "51", "comment_status": "好评多", "ocr_confidence": "high", "ocr_notes": ""},
+    {"rank": 10, "posted_date": "11.17", "tags": ["双男主", "霸总现言"], "title": "遗忘一颗糖", "author": "瓜吱吱", "likes": "720", "danping": "127", "comment_status": "好评多", "ocr_confidence": "medium", "ocr_notes": "作者'瓜吱吱'叠字清晰；书名首字或为'遗'/'遣'，取'遗'"}
+  ],
+  "analysis_boundary": "Single-cover OCR of a third-party public ranking screenshot. Book/author names and counts are best-effort transcription from an embedded low-resolution table, not verified against the original platform; several glyphs flagged medium remain ambiguous. Qualitative comment_status is the screenshot author's label, not measured data. Do not treat as official ranking or as read book text. No full text of any work is stored."
+}
