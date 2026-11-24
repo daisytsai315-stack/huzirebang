@@ -1,0 +1,193 @@
+{
+  "schema_version": "xhs-ranking-ocr/v1",
+  "collection_date": "2026-11-24",
+  "source": {
+    "source_platform": "xiaohongshu",
+    "account": "绿酱(过稿就改名)",
+    "account_user_id": "6a6e7f370000000013003000",
+    "note_id": "6b03a0f3000000002b028b6f",
+    "note_title": "🐯新书榜261123",
+    "note_posted_date_basis": "note title suffix 261123 interpreted as 2026-11-23 Asia/Shanghai; unverified against platform timestamp",
+    "source_url": "https://www.xiaohongshu.com/explore/6b03a0f3000000002b028b6f",
+    "source_url_basis": "derived from note_id; xsec_token omitted from public export",
+    "post_likes": 9,
+    "post_likes_basis": "value shown on the user profile note card at collection time"
+  },
+  "evidence_scope": "COVER_IMAGE_OCR",
+  "capture_method": {
+    "page_access": "AUTHENTICATED_BROWSER_SESSION",
+    "readback": "User profile loaded in a logged-in browser (huashu-chrome CDP bridge; transient NO_EXTENSION warning cleared on retry); card metadata extracted from DOM (section.note-item); cover image downloaded with Referer header via curl after urllib reset in prior runs.",
+    "ocr_method": "MULTIMODAL_VISION_READBACK",
+    "ocr_preprocessing": "cover upscaled 3x with ffmpeg lanczos (640x295 -> 1920x885), then cropped into left/right halves and per-row/column slices at 2x-9x for glyph disambiguation",
+    "ocr_uncertainty_note": "Book/author names transcribed from a low-resolution embedded table. Ambiguous glyphs (author 木森火焱(第4字火叠结构), title 枇杷盈盈(首二字木旁)) flagged medium with per-item ocr_notes; no glyph resolved by guessing. Two semantically odd qualitative labels ('好评多性转','好多坏少') transcribed verbatim."
+  },
+  "parsing": {
+    "ranking_scope": "single screenshot of one daily ranking table; not the full platform ranking",
+    "columns": [
+      "rank",
+      "posted_date",
+      "tags",
+      "title",
+      "author",
+      "likes",
+      "danping",
+      "comment_status"
+    ],
+    "column_semantics_note": "likes/danping/comment_status are cover-image labels; '喜欢' and '弹评' are numeric counts as printed, '评论现状' is a qualitative tag.",
+    "tags_normalization": "original '.' separators rendered as '/' in CSV for readability",
+    "parse_status": "OCR_TRANSCRIBED_UNVERIFIED_GLYPHS"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "posted_date": "11.18",
+      "tags": [
+        "现实情感",
+        "大女主"
+      ],
+      "title": "撬走男同事的老婆后，他疯了",
+      "author": "土豆不土",
+      "likes": "2万",
+      "danping": "1133",
+      "comment_status": "好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "首字'撬'、末段'他疯了'均经放大确认；书名含逗号，按图照录"
+    },
+    {
+      "rank": 2,
+      "posted_date": "11.19",
+      "tags": [
+        "脑洞",
+        "现言"
+      ],
+      "title": "社畜也有春天",
+      "author": "木森火焱(chua)",
+      "likes": "2654",
+      "danping": "139",
+      "comment_status": "好评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "作者名'木森火焱(chua)'，第2字'森'经9倍放大确认；第4字为'火'叠加结构(焱/燚难定)，括号注音(chua)清晰，取'焱'存疑；likes数字末位清晰"
+    },
+    {
+      "rank": 3,
+      "posted_date": "11.18",
+      "tags": [
+        "双男主",
+        "脑洞"
+      ],
+      "title": "小狐狸不再孤独啦",
+      "author": "灵禾",
+      "likes": "3408",
+      "danping": "421",
+      "comment_status": "好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "书名'小狐狸不再孤独啦'放大确认；作者'灵禾'清晰"
+    },
+    {
+      "rank": 4,
+      "posted_date": "11.17",
+      "tags": [
+        "追妻校园",
+        "现言"
+      ],
+      "title": "枇杷盈盈",
+      "author": "从前慢",
+      "likes": "6790",
+      "danping": "1146",
+      "comment_status": "差评居多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名首二字为木旁，7倍放大后取'枇杷盈盈'；此前曾误读为'槐花盈盈'，最终按木旁字结构判'枇杷'，仍存疑；作者'从前慢'清晰"
+    },
+    {
+      "rank": 5,
+      "posted_date": "11.17",
+      "tags": [
+        "双女主",
+        "现言"
+      ],
+      "title": "嘴硬网恋女友背地里偷听我录音八百遍",
+      "author": "叁竹",
+      "likes": "2315",
+      "danping": "255",
+      "comment_status": "好评多性转",
+      "ocr_confidence": "medium",
+      "ocr_notes": "作者'叁竹'清晰；评论现状'好评多性转'字形清楚但语义异常('性转'或为截断)，按所见转录不改写"
+    },
+    {
+      "rank": 6,
+      "posted_date": "11.19",
+      "tags": [
+        "豪门霸总",
+        "现言"
+      ],
+      "title": "你是昨日心动",
+      "author": "小熊打盹",
+      "likes": "1148",
+      "danping": "13",
+      "comment_status": "好多坏少",
+      "ocr_confidence": "medium",
+      "ocr_notes": "作者'小熊打盹'末字'盹'清晰；评论现状'好多坏少'字形清楚但语义异常，按所见转录不改写"
+    },
+    {
+      "rank": 7,
+      "posted_date": "11.19",
+      "tags": [
+        "现实情感",
+        "悬疑"
+      ],
+      "title": "第八种谋杀",
+      "author": "酉(you)月堂",
+      "likes": "1919",
+      "danping": "23",
+      "comment_status": "好评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "作者首字'酉'放大确认，括号注音(you)清晰；书名'第八种谋杀'的'种'字清晰"
+    },
+    {
+      "rank": 8,
+      "posted_date": "11.19",
+      "tags": [
+        "双男主",
+        "纯爱"
+      ],
+      "title": "进击的宅男",
+      "author": "半生",
+      "likes": "1292",
+      "danping": "94",
+      "comment_status": "好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "书名、作者均放大确认清晰"
+    },
+    {
+      "rank": 9,
+      "posted_date": "11.19",
+      "tags": [
+        "豪门霸总",
+        "现言"
+      ],
+      "title": "谁先引诱她",
+      "author": "甜心硬汉",
+      "likes": "1857",
+      "danping": "108",
+      "comment_status": "好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "书名'谁先引诱她'、作者'甜心硬汉'清晰"
+    },
+    {
+      "rank": 10,
+      "posted_date": "11.19",
+      "tags": [
+        "双男主",
+        "脑洞"
+      ],
+      "title": "盲盒开出蛇人老公",
+      "author": "酸木瓜汁",
+      "likes": "7574",
+      "danping": "919",
+      "comment_status": "好评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名'盲盒'首字放大确认，'蛇人老公'清晰；作者'酸木瓜汁'清晰；likes末位清晰"
+    }
+  ],
+  "analysis_boundary": "Single-cover OCR of a third-party public ranking screenshot. Book/author names and counts are best-effort transcription from an embedded low-resolution table, not verified against the original platform; several glyphs flagged medium remain ambiguous. Qualitative comment_status is the screenshot author's label, not measured data. Do not treat as official ranking or as read book text. No full text of any work is stored."
+}
