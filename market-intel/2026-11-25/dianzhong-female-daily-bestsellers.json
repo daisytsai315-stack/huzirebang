@@ -1,0 +1,85 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "observed_date": "2026-11-25",
+  "ranking_date": null,
+  "source": {
+    "name": "点众阅读官网·女生小说畅销日榜",
+    "url": "https://www.ishugui.com/ranking/2-2-1",
+    "authority": "official_platform",
+    "platform_covered": "点众阅读",
+    "ranking": "女生小说·畅销榜·日榜",
+    "metric_note": "官网页面未标注榜单生成日期；仅存公开排名元数据，不抓取作品正文。"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "一树桃花，半生离恨",
+      "category": "精品短篇",
+      "heat_display": "181万热度",
+      "work_url": "https://www.ishugui.com/book/11010580963"
+    },
+    {
+      "rank": 2,
+      "title": "团宠妹妹被掉包，妹控魔丸靠bgm杀疯了",
+      "category": "精品短篇",
+      "heat_display": "142万热度",
+      "work_url": "https://www.ishugui.com/book/11010584847"
+    },
+    {
+      "rank": 3,
+      "title": "两任夫君替我择好归宿，我却死在第三顶花轿里",
+      "category": "精品短篇",
+      "heat_display": "128万热度",
+      "work_url": "https://www.ishugui.com/book/11010578201"
+    },
+    {
+      "rank": 4,
+      "title": "爸妈，我不想再做姐姐的墓碑了",
+      "category": "精品短篇",
+      "heat_display": "128万热度",
+      "work_url": "https://www.ishugui.com/book/11010528448"
+    },
+    {
+      "rank": 5,
+      "title": "此后长风不渡舟",
+      "category": "精品短篇",
+      "heat_display": "123万热度",
+      "work_url": "https://www.ishugui.com/book/11010485994"
+    },
+    {
+      "rank": 6,
+      "title": "一盏灯等夜归人",
+      "category": "精品短篇",
+      "heat_display": "123万热度",
+      "work_url": "https://www.ishugui.com/book/11010476999"
+    },
+    {
+      "rank": 7,
+      "title": "一念风止，一晌贪欢",
+      "category": "精品短篇",
+      "heat_display": "118万热度",
+      "work_url": "https://www.ishugui.com/book/11010471943"
+    },
+    {
+      "rank": 8,
+      "title": "未婚夫纵容他的女兄弟闹喜，却不知我和他爸妈都死了",
+      "category": "精品短篇",
+      "heat_display": "118万热度",
+      "work_url": "https://www.ishugui.com/book/11010582685"
+    },
+    {
+      "rank": 9,
+      "title": "他拿我的记忆哄白月光，事成又后悔求我别忘",
+      "category": "精品短篇",
+      "heat_display": "118万热度",
+      "work_url": "https://www.ishugui.com/book/11010585180"
+    },
+    {
+      "rank": 10,
+      "title": "可惜她不是顶美，纵使机关算尽也分不走我半杯羹",
+      "category": "精品短篇",
+      "heat_display": "118万热度",
+      "work_url": "https://www.ishugui.com/book/11010585348"
+    }
+  ]
+}
