@@ -1,0 +1,194 @@
+{
+  "schema_version": "xhs-ranking-ocr/v1",
+  "collection_date": "2026-11-25",
+  "source": {
+    "source_platform": "xiaohongshu",
+    "account": "绿酱(过稿就改名)",
+    "account_user_id": "6a6e7f370000000013003000",
+    "note_id": "6b04e1f9000000001601aff0",
+    "note_title": "🐯新书榜261124导语_不再缠着小黑蛇之后",
+    "note_posted_date_basis": "note title suffix 261124 interpreted as 2026-11-24 Asia/Shanghai; unverified against platform timestamp",
+    "source_url": "https://www.xiaohongshu.com/explore/6b04e1f9000000001601aff0",
+    "source_url_basis": "derived from note_id; xsec_token omitted from public export",
+    "post_likes": 18,
+    "post_likes_basis": "value shown on the user profile note card at collection time (18 on refreshed profile, 9->15 drift noted in cached reads)"
+  },
+  "evidence_scope": "COVER_IMAGE_OCR",
+  "capture_method": {
+    "page_access": "AUTHENTICATED_BROWSER_SESSION",
+    "readback": "User profile loaded in a logged-in RunningCheeseChrome browser (huashu-chrome CDP bridge; initial NO_EXTENSION cleared after browser launch + retry); card metadata extracted from DOM (section.note-item). IMPORTANT: first DOM read returned a CACHED stale list whose newest ranking was 261123; page reload exposed the true newest note 261124 (cover signature timestamp 202611250905). Always reload before selecting latest note.",
+    "ocr_method": "MULTIMODAL_VISION_READBACK",
+    "ocr_preprocessing": "cover upscaled 3x with ffmpeg lanczos (640x323 -> 1920x969), then cropped into left/right halves and per-row slices at 2x-4x for glyph disambiguation",
+    "ocr_uncertainty_note": "Book/author names transcribed from a low-resolution embedded table. Ambiguous glyphs flagged medium with per-item ocr_notes (e.g. 黏/粘, 妩/姝, 橘, 嫌凝/嫌疑, 祈/析); no glyph resolved by guessing. Qualitative label '好坏参半性转嫌疑' transcribed verbatim despite odd semantics.",
+    "danping_column_absent": "This cover has only 7 columns (排名/发表时间/标签题材/书名/作者名/喜欢/评论现状); there is NO 弹评 column. Schema requires danping, so danping is left as empty string for all rows — NOT an OCR omission, NOT zero, NOT fabricated. Differs from 261123 cover which did include a 弹评 numeric column."
+  },
+  "parsing": {
+    "ranking_scope": "single screenshot of one daily ranking table; not the full platform ranking",
+    "columns": [
+      "rank",
+      "posted_date",
+      "tags",
+      "title",
+      "author",
+      "likes",
+      "danping",
+      "comment_status"
+    ],
+    "column_semantics_note": "likes is the numeric count as printed under '喜欢'; danping is empty because the source cover has no 弹评 column (see capture_method.danping_column_absent); comment_status is a qualitative label under '评论现状'.",
+    "tags_normalization": "original '.' separators rendered as '/' in CSV for readability",
+    "parse_status": "OCR_TRANSCRIBED_UNVERIFIED_GLYPHS"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "posted_date": "11.21",
+      "tags": [
+        "双男主",
+        "现言白月光"
+      ],
+      "title": "阴湿病娇不在黏万人迷网恋男友后",
+      "author": "叁竹",
+      "likes": "3202",
+      "danping": "",
+      "comment_status": "好坏参半性转嫌疑",
+      "ocr_confidence": "medium",
+      "ocr_notes": "作者'叁竹'放大确认(叁=三大写)。书名第13字'黏'(黍+占)低分辨率下与'粘'(米+占)难定, 判黏存疑。评论现状末二字疑为'嫌疑', '疑'右下结构糊, 与'凝'易混, 照录嫌疑存疑。"
+    },
+    {
+      "rank": 2,
+      "posted_date": "11.21",
+      "tags": [
+        "豪门霸总",
+        "现言甜宠"
+      ],
+      "title": "假装失忆后拿到了大结果",
+      "author": "纯夜",
+      "likes": "5728",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "3倍局部放大逐字核对, 作者'纯夜'、书名、数字均清晰。 本图表头无弹评列, danping留空非遗漏。"
+    },
+    {
+      "rank": 3,
+      "posted_date": "11.19",
+      "tags": [
+        "现实情感",
+        "悬疑虐文"
+      ],
+      "title": "第八种谋杀",
+      "author": "酉(you)月堂",
+      "likes": "2143",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "作者首字'酉'带括号拼音(you)为图中原有标注, 末字'堂'清晰, 照录。 本图表头无弹评列, danping留空非遗漏。"
+    },
+    {
+      "rank": 4,
+      "posted_date": "11.20",
+      "tags": [
+        "追妻",
+        "古言病娇"
+      ],
+      "title": "阿妩",
+      "author": "幸运佩佩",
+      "likes": "2719",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名第二字4倍放大后右旁近'无'判'妩', 但低分辨率下与'姝'(右旁朱)易混, 存疑照录妩。作者后两字判'佩佩'(单人旁), 与'珮'(王旁)易混, 存疑。"
+    },
+    {
+      "rank": 5,
+      "posted_date": "11.18",
+      "tags": [
+        "现实情感",
+        "大女主"
+      ],
+      "title": "撬走男同事的老婆后，他疯了",
+      "author": "土豆不土",
+      "likes": "2.2万",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "喜欢列原文为'2.2万'(图中即带小数点与万字), 按图照录不换算。书名含逗号按图照录。"
+    },
+    {
+      "rank": 6,
+      "posted_date": "11.20",
+      "tags": [
+        "追妻",
+        "现言青梅竹马"
+      ],
+      "title": "祈佑佑今天也在好好吃饭吗",
+      "author": "西红柿炒鸡蛋",
+      "likes": "4208",
+      "danping": "",
+      "comment_status": "好坏参半",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名'祈佑佑'首字祈(示旁+斤)低分辨率下与'析'易混, 存疑照录。作者与数字清晰。"
+    },
+    {
+      "rank": 7,
+      "posted_date": "11.21",
+      "tags": [
+        "现实情感",
+        "现言"
+      ],
+      "title": "眼泪错觉",
+      "author": "橘又青",
+      "likes": "796",
+      "danping": "",
+      "comment_status": "差评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "作者首字左旁为木, 右旁'矞'结构糊, 判'橘'但与'桠/槁'等木旁字易混, 存疑照录。"
+    },
+    {
+      "rank": 8,
+      "posted_date": "11.21",
+      "tags": [
+        "现实情感",
+        "现言"
+      ],
+      "title": "过期沉溺",
+      "author": "爱吃糖",
+      "likes": "1568",
+      "danping": "",
+      "comment_status": "好坏参半",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名'沉溺'二字低分辨率下'溺'右旁易混, 存疑照录。作者与数字清晰。"
+    },
+    {
+      "rank": 9,
+      "posted_date": "11.20",
+      "tags": [
+        "双女主",
+        "真假千金现言"
+      ],
+      "title": "掉马后，毒舌真千金跪着叫我老婆",
+      "author": "天高海阔",
+      "likes": "624",
+      "danping": "",
+      "comment_status": "评论少",
+      "ocr_confidence": "high",
+      "ocr_notes": "标签题材'双女主.真假千金现言'因列宽在图中断行(现/言分两行), 合并照录。书名含逗号按图照录。 本图表头无弹评列, danping留空非遗漏。"
+    },
+    {
+      "rank": 10,
+      "posted_date": "11.21",
+      "tags": [
+        "病娇",
+        "现言"
+      ],
+      "title": "温顺男友暴露病娇本性了",
+      "author": "小渚(zhu)酱",
+      "likes": "553",
+      "danping": "",
+      "comment_status": "评论少",
+      "ocr_confidence": "medium",
+      "ocr_notes": "作者'渚'带括号拼音(zhu)为图中原有标注, 照录。书名清晰。"
+    }
+  ],
+  "analysis_boundary": "Single-cover OCR of a third-party public ranking screenshot. Book/author names and counts are best-effort transcription from an embedded low-resolution table, not verified against the original platform; several glyphs flagged medium remain ambiguous. This cover lacks a 弹评 column entirely; danping is deliberately empty rather than guessed. Qualitative comment_status is the screenshot author's label, not measured data. Do not treat as official ranking or as read book text. No full text of any work is stored."
+}
