@@ -1,0 +1,194 @@
+{
+  "schema_version": "xhs-ranking-ocr/v1",
+  "collection_date": "2026-11-26",
+  "source": {
+    "source_platform": "xiaohongshu",
+    "account": "绿酱(过稿就改名)",
+    "account_user_id": "6a6e7f370000000013003000",
+    "note_id": "6b0648fd000000002c00ec70",
+    "note_title": "🐯新书榜261125病弱娘娘她在后宫大杀四方",
+    "note_posted_date_basis": "note title suffix 261125 interpreted as 2026-11-25 Asia/Shanghai; unverified against platform timestamp",
+    "source_url": "https://www.xiaohongshu.com/explore/6b0648fd000000002c00ec70",
+    "source_url_basis": "derived from note_id; xsec_token omitted from public export",
+    "post_likes": 11,
+    "post_likes_basis": "value shown on the user profile note card at collection time (11 on refreshed profile)"
+  },
+  "evidence_scope": "COVER_IMAGE_OCR",
+  "capture_method": {
+    "page_access": "AUTHENTICATED_BROWSER_SESSION",
+    "readback": "User profile loaded in a logged-in RunningCheeseChrome browser (huashu-chrome CDP bridge). Browser was not running at task start; launched D:/Program Files (x86)/RunningCheeseChrome/App/chrome.exe, bridge recovered after retry. Profile tab was RELOADED before extraction to defeat cache (historical pitfall: cached view showed stale 261123). Reloaded DOM exposed newest ranking note 261125 with cover signature 202611261117; card metadata extracted from section.note-item.",
+    "ocr_method": "MULTIMODAL_VISION_READBACK",
+    "ocr_preprocessing": "cover upscaled 3x with ffmpeg lanczos (640x327 -> 1920x981), then cropped into left/right halves and per-row/per-field slices at 2x-10x for glyph disambiguation",
+    "ocr_uncertainty_note": "Book/author names transcribed from a low-resolution embedded table. Ambiguous glyphs flagged medium with per-item ocr_notes (圆/园, 黏/粘, 妩/妖, 道/导, 橘). No glyph resolved by guessing. Cross-day consistency with 261124 used only as corroboration, never as a substitute for what is visible in this cover. Odd semantic labels (大结果, 坏好参半性转嫌疑) transcribed verbatim as printed.",
+    "danping_column_absent": "This cover has only 7 columns (排名/发表时间/标签题材/书名/作者名/喜欢/评论现状); there is NO 弹评 column. Schema requires danping, so danping is left as empty string for all rows — NOT an OCR omission, NOT zero, NOT fabricated. Same as the 261123/261124 covers."
+  },
+  "parsing": {
+    "ranking_scope": "single screenshot of one daily ranking table; not the full platform ranking",
+    "columns": [
+      "rank",
+      "posted_date",
+      "tags",
+      "title",
+      "author",
+      "likes",
+      "danping",
+      "comment_status"
+    ],
+    "column_semantics_note": "likes is the numeric count as printed under '喜欢'; danping is empty because the source cover has no 弹评 column (see capture_method.danping_column_absent); comment_status is a qualitative label under '评论现状'.",
+    "tags_normalization": "original '.' separators rendered as '/' in CSV for readability",
+    "parse_status": "OCR_TRANSCRIBED_UNVERIFIED_GLYPHS"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "posted_date": "11.22",
+      "tags": [
+        "大女主",
+        "现言"
+      ],
+      "title": "不配",
+      "author": "甜酒酿雪梨",
+      "likes": "4089",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "8倍局部放大核对作者'甜酒酿雪梨'(酉旁+良为'酿')、数字与定性标签，均清晰。本图表头无弹评列，danping留空非遗漏。"
+    },
+    {
+      "rank": 2,
+      "posted_date": "11.21",
+      "tags": [
+        "豪门霸总",
+        "现言甜宠"
+      ],
+      "title": "假装失忆后拿到了大结果",
+      "author": "纯夜",
+      "likes": "7204",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "末二字按字形为'结果'('果'字田+木结构清楚)，虽语义反常仍照录；与261124榜单同书标题一致，互为印证。作者'纯夜'清晰。"
+    },
+    {
+      "rank": 3,
+      "posted_date": "11.22",
+      "tags": [
+        "大女主",
+        "古言"
+      ],
+      "title": "病弱娘娘她在后宫大杀四方",
+      "author": "白团芝麻圆",
+      "likes": "2864",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名与帖标题一致，'娘娘'二字清楚；作者末字字形为'圆'，但与'园/圆'在低分辨率下易混，存疑照录'圆'。"
+    },
+    {
+      "rank": 4,
+      "posted_date": "11.21",
+      "tags": [
+        "双男主",
+        "现言白月光"
+      ],
+      "title": "阴湿病娇不在黏万人迷网恋男友后",
+      "author": "叁竹",
+      "likes": "3202",
+      "danping": "",
+      "comment_status": "坏好参半性转嫌疑",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名按字形照录'不在黏'(非'不再粘')，'黏'字黍+占结构糊。评论现状4倍放大确认为'坏好参半性转嫌疑'——前四字顺序确为'坏好'而非通常的'好坏'，与261124同书标签语序不同，按本图照录不改写。作者'叁竹'清晰。"
+    },
+    {
+      "rank": 5,
+      "posted_date": "11.20",
+      "tags": [
+        "追妻",
+        "古言病娇"
+      ],
+      "title": "阿妩",
+      "author": "幸运佩佩",
+      "likes": "2971",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名第二字女旁右旁在10倍放大下'无/夭'仍难定，与261124榜单同书记录'阿妩'一致，故照录'妩'，但字形本身存疑。作者'幸运佩佩'放大后单人旁可辨。"
+    },
+    {
+      "rank": 6,
+      "posted_date": "11.22",
+      "tags": [
+        "双男主",
+        "风水道士"
+      ],
+      "title": "妖魔鬼怪快离开",
+      "author": "半生",
+      "likes": "3051",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "标签题材'风水道士'列宽较紧，'道'字与'导'低分辨率下易混，存疑照录。书名、作者、数字清晰。"
+    },
+    {
+      "rank": 7,
+      "posted_date": "11.22",
+      "tags": [
+        "情感背叛",
+        "现言"
+      ],
+      "title": "她是秩序外的半小时",
+      "author": "仙女棒",
+      "likes": "455",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "3倍局部放大逐字核对，'秩序'、'半小时'、作者'仙女棒'、数字455均清晰。"
+    },
+    {
+      "rank": 8,
+      "posted_date": "11.21",
+      "tags": [
+        "现实情感",
+        "现言"
+      ],
+      "title": "眼泪错觉",
+      "author": "橘又青",
+      "likes": "1001",
+      "danping": "",
+      "comment_status": "差评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "作者首字左旁为木、右旁'矞'结构糊，判'橘'但与'桠/槁'等木旁字易混，存疑照录。书名与数字清晰。"
+    },
+    {
+      "rank": 9,
+      "posted_date": "11.22",
+      "tags": [
+        "大女主",
+        "现言"
+      ],
+      "title": "没那么坏",
+      "author": "金墩墩",
+      "likes": "2110",
+      "danping": "",
+      "comment_status": "好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "作者'金墩墩'(土旁+敦)放大确认，书名、数字、标签均清晰。"
+    },
+    {
+      "rank": 10,
+      "posted_date": "11.21",
+      "tags": [
+        "现实情感",
+        "现言"
+      ],
+      "title": "过期沉溺",
+      "author": "爱吃糖",
+      "likes": "1876",
+      "danping": "",
+      "comment_status": "好坏参半",
+      "ocr_confidence": "high",
+      "ocr_notes": "4倍放大确认评论现状为'好坏参半'(顺序与本图第4行不同，照录各自原样)。书名、作者、数字清晰。"
+    }
+  ],
+  "analysis_boundary": "Single-cover OCR of a third-party public ranking screenshot. Book/author names and counts are best-effort transcription from an embedded low-resolution table, not verified against the original platform; several glyphs flagged medium remain ambiguous. This cover lacks a 弹评 column entirely; danping is deliberately empty rather than guessed. Qualitative comment_status is the screenshot author's label, not measured data. Do not treat as official ranking or as read book text. No full text of any work is stored."
+}
