@@ -1,0 +1,85 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "observed_date": "2026-11-26",
+  "ranking_date": null,
+  "source": {
+    "name": "点众阅读官网·女生小说畅销日榜",
+    "url": "https://www.ishugui.com/ranking/2-2-1",
+    "authority": "official_platform",
+    "platform_covered": "点众阅读",
+    "ranking": "女生小说·畅销榜·日榜",
+    "metric_note": "官网页面未标注榜单生成日期；仅存公开排名元数据，不抓取作品正文。"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "错笔成川，难渡宜舟",
+      "category": "精品短篇",
+      "heat_display": "163万热度",
+      "work_url": "https://www.ishugui.com/book/11010492310"
+    },
+    {
+      "rank": 2,
+      "title": "团宠妹妹被掉包，妹控魔丸靠bgm杀疯了",
+      "category": "精品短篇",
+      "heat_display": "149万热度",
+      "work_url": "https://www.ishugui.com/book/11010584847"
+    },
+    {
+      "rank": 3,
+      "title": "两任夫君替我择好归宿，我却死在第三顶花轿里",
+      "category": "精品短篇",
+      "heat_display": "148万热度",
+      "work_url": "https://www.ishugui.com/book/11010578201"
+    },
+    {
+      "rank": 4,
+      "title": "旧诺埋进枯梅雪，血莲也谢，我与故人死生不复见",
+      "category": "精品短篇",
+      "heat_display": "137万热度",
+      "work_url": "https://www.ishugui.com/book/11010586144"
+    },
+    {
+      "rank": 5,
+      "title": "一念风止，一晌贪欢",
+      "category": "精品短篇",
+      "heat_display": "128万热度",
+      "work_url": "https://www.ishugui.com/book/11010471943"
+    },
+    {
+      "rank": 6,
+      "title": "爸妈，我不想再做姐姐的墓碑了",
+      "category": "精品短篇",
+      "heat_display": "124万热度",
+      "work_url": "https://www.ishugui.com/book/11010528448"
+    },
+    {
+      "rank": 7,
+      "title": "山河四省编外雀，考公上岸不伺候了",
+      "category": "精品短篇",
+      "heat_display": "123万热度",
+      "work_url": "https://www.ishugui.com/book/11010585414"
+    },
+    {
+      "rank": 8,
+      "title": "他拿我的记忆哄白月光，事成又后悔求我别忘",
+      "category": "精品短篇",
+      "heat_display": "121万热度",
+      "work_url": "https://www.ishugui.com/book/11010585180"
+    },
+    {
+      "rank": 9,
+      "title": "他抽中的愿望里，不再有我",
+      "category": "精品短篇",
+      "heat_display": "121万热度",
+      "work_url": "https://www.ishugui.com/book/11010585431"
+    },
+    {
+      "rank": 10,
+      "title": "未婚夫删除我记忆十次，婚礼当天我彻底失忆",
+      "category": "精品短篇",
+      "heat_display": "120万热度",
+      "work_url": "https://www.ishugui.com/book/11010586073"
+    }
+  ]
+}

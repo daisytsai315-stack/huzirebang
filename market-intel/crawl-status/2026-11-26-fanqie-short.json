@@ -1,0 +1,7 @@
+{
+  "observed_at": "2026-11-26T17:54:24.645203+08:00",
+  "source_url": "https://novelcatch.com/short",
+  "ranking": "番茄短故事",
+  "status": "fetch_error",
+  "error": "公开番茄短故事榜抓取失败，已重试 5 次：Remote end closed connection without response"
+}
