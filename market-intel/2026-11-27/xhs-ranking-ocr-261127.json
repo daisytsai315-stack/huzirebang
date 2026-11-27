@@ -1,0 +1,196 @@
+{
+  "schema_version": "xhs-ranking-ocr/v1",
+  "collection_date": "2026-11-27",
+  "source": {
+    "source_platform": "xiaohongshu",
+    "account": "绿酱(过稿就改名)",
+    "account_user_id": "6a6e7f370000000013003000",
+    "note_id": "6b08df56000000002c00ecdb",
+    "note_title": "🐯新书榜261127",
+    "note_posted_date_basis": "note title suffix 261127 interpreted as 2026-11-27 Asia/Shanghai; unverified against platform timestamp",
+    "source_url": "https://www.xiaohongshu.com/explore/6b08df56000000002c00ecdb",
+    "source_url_basis": "derived from note_id; xsec_token omitted from public export",
+    "post_likes": 3,
+    "post_likes_basis": "value shown on the user profile note card at collection time (3 on refreshed profile)"
+  },
+  "evidence_scope": "COVER_IMAGE_OCR",
+  "capture_method": {
+    "page_access": "AUTHENTICATED_BROWSER_SESSION",
+    "readback": "User profile loaded in a logged-in RunningCheeseChrome browser (huashu-chrome CDP bridge). Browser was not running at task start; launched D:/Program Files (x86)/RunningCheeseChrome/App/chrome.exe, bridge recovered. Profile tab was RELOADED before extraction to defeat cache. Reloaded DOM exposed newest ranking note 261127 (cover signature 202611270947); card metadata extracted from section.note-item.",
+    "ocr_method": "MULTIMODAL_VISION_READBACK",
+    "ocr_preprocessing": "cover upscaled 3x with ffmpeg lanczos (640x280 -> 1920x840), then cropped into column slices (tags/title/author+num/comment/dates) at 2x and selected ambiguous glyphs at 3x-6x for disambiguation",
+    "ocr_uncertainty_note": "Book/author names transcribed from a low-resolution embedded table. Ambiguous glyphs flagged medium with per-item ocr_notes (沙雕文豪门霸总 tag, 恨海情天 line, 体教 glyph confirmed by 6x, 嫌, (za) parenthesis). No glyph resolved by guessing. Semantically odd strings (人间体教风吹去, 猫猫攻略手札(za), 求番外多) transcribed verbatim as printed.",
+    "column7_note": "Unlike the 261123/261124/261125 covers (which had NO 弹评 column), THIS cover's 7th column header prints '评论数量' (comment count) with numeric values (428/57/186/...). Per schema the field name is 'danping', so those printed numbers are placed in the 'danping' field verbatim. This is NOT a 弹评 label and NOT fabricated — it is the literal value under the 7th column as printed on this cover."
+  },
+  "parsing": {
+    "ranking_scope": "single screenshot of one daily ranking table; not the full platform ranking",
+    "columns": [
+      "rank",
+      "posted_date",
+      "tags",
+      "title",
+      "author",
+      "likes",
+      "danping",
+      "comment_status"
+    ],
+    "column_semantics_note": "likes is the numeric count printed under '喜欢'; danping holds the numeric value printed under this cover's 7th column '评论数量' (see capture_method.column7_note); comment_status is the qualitative label under '评论现状'.",
+    "tags_normalization": "original '.' separators rendered as '/' in CSV for readability",
+    "parse_status": "OCR_TRANSCRIBED_UNVERIFIED_GLYPHS"
+  },
+  "items": [
+    {
+      "rank": 1,
+      "posted_date": "11.23",
+      "tags": [
+        "替身",
+        "现言"
+      ],
+      "title": "见夏",
+      "author": "跑跑",
+      "likes": "4443",
+      "danping": "428",
+      "comment_status": "好坏参半",
+      "ocr_confidence": "high",
+      "ocr_notes": "3倍整图+按列2倍放大核对，字号清晰：书名'见夏'、作者'跑跑'、喜欢4443、评论数量428、评论现状'好坏参半'均清楚。"
+    },
+    {
+      "rank": 2,
+      "posted_date": "11.24",
+      "tags": [
+        "沙雕文豪门霸总",
+        "现言"
+      ],
+      "title": "左右为难",
+      "author": "王二喵",
+      "likes": "4400",
+      "danping": "57",
+      "comment_status": "求番外多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "标签第1项在图中换行显示为'沙雕文豪门霸总.现/言'，按所见合并照录为'沙雕文豪门霸总'（语义略怪，疑为'沙雕文豪门霸总'连写，未改写）。作者'王二喵'的'喵'字口旁清晰。其余清楚。"
+    },
+    {
+      "rank": 3,
+      "posted_date": "11.23",
+      "tags": [
+        "大女主",
+        "现言"
+      ],
+      "title": "小渔的爱",
+      "author": "耳东陈",
+      "likes": "2665",
+      "danping": "186",
+      "comment_status": "爽好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "作者'耳东陈'为拆字写法（耳+东=陈），按字形照录。书名、数字、评论现状均清晰。"
+    },
+    {
+      "rank": 4,
+      "posted_date": "11.24",
+      "tags": [
+        "青梅竹马",
+        "现言"
+      ],
+      "title": "退出小团体后我不再恨海情天",
+      "author": "海的鸽子",
+      "likes": "2217",
+      "danping": "72",
+      "comment_status": "差评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名3倍局部放大核对，第10-13字为'恨海情天'（恨海情天为成语，字形吻合），但'退出小团体后我不再'段字体较小，'不再'二字略糊，存疑照录。作者'海的鸽子'清晰。"
+    },
+    {
+      "rank": 5,
+      "posted_date": "11.24",
+      "tags": [
+        "大女主",
+        "复仇",
+        "古言"
+      ],
+      "title": "人间体教风吹去",
+      "author": "云津",
+      "likes": "3055",
+      "danping": "58",
+      "comment_status": "好评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名第3字经6倍局部放大确认为'体'（右侧'本'竖笔穿横出头），非'休'；'人间体教风吹去'语义反常，按字形照录不改写。作者'云津'、数字清晰。"
+    },
+    {
+      "rank": 6,
+      "posted_date": "11.24",
+      "tags": [
+        "现实情感",
+        "古言"
+      ],
+      "title": "女扮男装当官后，我绑定了万人迷系统",
+      "author": "暴躁白羊",
+      "likes": "1643",
+      "danping": "22",
+      "comment_status": "评论少",
+      "ocr_confidence": "high",
+      "ocr_notes": "书名较长但2倍列放大逐字清楚，含逗号按原图照录。作者'暴躁白羊'、数字、评论现状清晰。"
+    },
+    {
+      "rank": 7,
+      "posted_date": "11.23",
+      "tags": [
+        "脑洞",
+        "古言"
+      ],
+      "title": "嫌丑",
+      "author": "汤姆是玛丽",
+      "likes": "8141",
+      "danping": "226",
+      "comment_status": "好坏参半",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名首字女旁+右部在局部放大下糊，判为'嫌'（女字旁+兼），与'嫌丑'常见词吻合，但与相近女旁字易混，存疑照录。作者'汤姆是玛丽'（含'是'）清晰。"
+    },
+    {
+      "rank": 8,
+      "posted_date": "11.24",
+      "tags": [
+        "双男主",
+        "脑洞"
+      ],
+      "title": "猫猫攻略手札(za)",
+      "author": "乱叫的cake",
+      "likes": "2216",
+      "danping": "67",
+      "comment_status": "好评多",
+      "ocr_confidence": "medium",
+      "ocr_notes": "书名括号内为小写拉丁字母'za'（按所见照录，含义未知），'手札'的'札'为木旁。作者'乱叫的cake'中英文混排按原图照录。"
+    },
+    {
+      "rank": 9,
+      "posted_date": "11.23",
+      "tags": [
+        "白月光",
+        "沙雕",
+        "现言"
+      ],
+      "title": "月亮失期",
+      "author": "晚川",
+      "likes": "2092",
+      "danping": "76",
+      "comment_status": "友好讨论居多",
+      "ocr_confidence": "high",
+      "ocr_notes": "书名'月亮失期'、作者'晚川'、数字、评论现状'友好讨论居多'均清晰。"
+    },
+    {
+      "rank": 10,
+      "posted_date": "11.24",
+      "tags": [
+        "大女主",
+        "现言"
+      ],
+      "title": "打响老公保卫战",
+      "author": "布丁加盐",
+      "likes": "1738",
+      "danping": "55",
+      "comment_status": "脑洞大开好评多",
+      "ocr_confidence": "high",
+      "ocr_notes": "书名、作者'布丁加盐'、数字、评论现状'脑洞大开好评多'均清晰。"
+    }
+  ],
+  "analysis_boundary": "Single-cover OCR of a third-party public ranking screenshot. Book/author names and counts are best-effort transcription from an embedded low-resolution table, not verified against the original platform; several glyphs flagged medium remain ambiguous. On this cover the 7th column literally prints '评论数量' (comment count), stored in the 'danping' schema field verbatim — it is not an elastic 弹评 label. Qualitative comment_status is the screenshot author's label, not measured data. Do not treat as official ranking or as read book text. No full text of any work is stored."
+}
