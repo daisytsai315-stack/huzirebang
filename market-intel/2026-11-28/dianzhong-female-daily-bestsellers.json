@@ -1,0 +1,85 @@
+{
+  "schema_version": "ranking-snapshot/v1",
+  "observed_date": "2026-11-28",
+  "ranking_date": null,
+  "source": {
+    "name": "点众阅读官网·女生小说畅销日榜",
+    "url": "https://www.ishugui.com/ranking/2-2-1",
+    "authority": "official_platform",
+    "platform_covered": "点众阅读",
+    "ranking": "女生小说·畅销榜·日榜",
+    "metric_note": "官网页面未标注榜单生成日期；仅存公开排名元数据，不抓取作品正文。"
+  },
+  "works": [
+    {
+      "rank": 1,
+      "title": "池上春归，棠枝栖倦客",
+      "category": "精品短篇",
+      "heat_display": "167万热度",
+      "work_url": "https://www.ishugui.com/book/11010475255"
+    },
+    {
+      "rank": 2,
+      "title": "旧诺埋进枯梅雪，血莲也谢，我与故人死生不复见",
+      "category": "精品短篇",
+      "heat_display": "145万热度",
+      "work_url": "https://www.ishugui.com/book/11010586144"
+    },
+    {
+      "rank": 3,
+      "title": "团宠妹妹被掉包，妹控魔丸靠bgm杀疯了",
+      "category": "精品短篇",
+      "heat_display": "128万热度",
+      "work_url": "https://www.ishugui.com/book/11010584847"
+    },
+    {
+      "rank": 4,
+      "title": "爸妈，我不想再做姐姐的墓碑了",
+      "category": "精品短篇",
+      "heat_display": "126万热度",
+      "work_url": "https://www.ishugui.com/book/11010528448"
+    },
+    {
+      "rank": 5,
+      "title": "两任夫君替我择好归宿，我却死在第三顶花轿里",
+      "category": "精品短篇",
+      "heat_display": "126万热度",
+      "work_url": "https://www.ishugui.com/book/11010578201"
+    },
+    {
+      "rank": 6,
+      "title": "九千一百公里外，才有一个不怕多出我的家",
+      "category": "精品短篇",
+      "heat_display": "122万热度",
+      "work_url": "https://www.ishugui.com/book/11010585937"
+    },
+    {
+      "rank": 7,
+      "title": "借一场心动，止于夏风",
+      "category": "精品短篇",
+      "heat_display": "121万热度",
+      "work_url": "https://www.ishugui.com/book/11010514843"
+    },
+    {
+      "rank": 8,
+      "title": "假千金怂了十八年，上门认亲的真千金却更假",
+      "category": "精品短篇",
+      "heat_display": "121万热度",
+      "work_url": "https://www.ishugui.com/book/11010586602"
+    },
+    {
+      "rank": 9,
+      "title": "金丝雀外婆十九岁靠脸进城，六十岁教我甩豪门",
+      "category": "精品短篇",
+      "heat_display": "119万热度",
+      "work_url": "https://www.ishugui.com/book/11010586904"
+    },
+    {
+      "rank": 10,
+      "title": "朝露昙花，咫尺天涯",
+      "category": "精品短篇",
+      "heat_display": "118万热度",
+      "work_url": "https://www.ishugui.com/book/11010496195"
+    }
+  ]
+}
